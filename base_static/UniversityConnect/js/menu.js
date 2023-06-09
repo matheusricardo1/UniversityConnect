@@ -12,6 +12,13 @@ function sair(){
     sidebaroff.style.display = 'none';
 }
 
+
+
+window.onscroll = function arrowOff(){
+    var arrow = document.getElementById('arrow');
+    arrow.style.display ='none';
+}
+
 function checkScreenWidth() {
     if (window.matchMedia("(min-width: 684px)").matches) {
       document.getElementById("sidebar").style.display = "none";

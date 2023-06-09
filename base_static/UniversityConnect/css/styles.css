@@ -49,8 +49,8 @@
         
     }
     .block{
-        height: 14vh !important;
-        width: 14vh !important;
+        height: 90px !important;
+        width: 90px !important;
     }  
     .block-icon{
         height: 61px !important;
@@ -59,16 +59,65 @@
     .block-text{
         font-size: 80% !important;
     }
+    .home-contentblock{
+        padding: 20px 10px !important;
+        min-width: 350px !important;
+        max-width: 650px !important;
+        margin: auto;
+        
+    }
+    #arrow{
+        top: 190px !important;
+    }
 
 } 
+@media (max-width: 684px) and (max-width: 768px){
+    .home1-background{
+        min-height: 580px !important;
+        max-height: 1000px !important;
+    }
+}
+@media (max-width: 450px){
+    .home-contentblock{
+        padding: 20px 10px !important;
+        min-width: 350px !important;
+        max-width: 650px !important;
+        margin: auto;
+        
+    }
+    .options-block{
+        display: grid !important;
+        gap: 0 !important;
+    }
+    .details-icon{
+        position: relative !important;
+        bottom: 60px !important;
+        left: 300px;
+        width: 20px !important;
+        height: 20px !important
+    }
+    .home2{
+        padding: 0px !important;
+    }
+    .home2 > h2{
+        padding-top: 30px;
+    }
+}
 #arrow{
     font-family: var(--fontPrimary);
     text-shadow: 5px 4px solid var(--colorBlack); 
     color: #F1F1F0;
-    position: fixed;
-    right: 50%;
-    bottom: 5%;
+    position: relative;
+    top: 100px;
+    margin: auto;
+
+    width: 40px;
+    height: 40px;
     
+}
+#arrow img{
+    width: 100%;
+    height: 100%;
 }
 #sidebar{
     display: none;
@@ -189,7 +238,7 @@
     display: flex;
     justify-content: space-around;
     padding: 20px;
-    min-width: 400px;
+    min-width: 350px;
     max-width: 650px;
     margin: auto;
     
@@ -235,6 +284,7 @@
     background-color: var(--colorMidGray);
 }
 .home2 > h2{
+    text-shadow: 5px 4px 2px rgba(0, 0, 0, 0.407);
     font-family: var(--fontPrimary);
     text-align: center;
     margin-bottom: 50px;
@@ -250,6 +300,7 @@
 @media (max-width: 1260px){
     .home-options{
         display: block !important;
+        margin: auto !important;
     }
     .options-block{
         margin: 0 auto 30px !important;
@@ -263,7 +314,11 @@
 }
 @media (max-width: 684px) {
     .home-options{
+        
         display: block !important;
+        min-width: 370px !important;
+        max-width: 100% !important;
+        margin: auto !important;
     }
     .options-block{
         margin: 0 auto 10px !important;
@@ -298,7 +353,6 @@
     max-height: 1200px;
     min-width: 320px;
     max-width: 1200px;
-    background-color: gray;
     margin: auto;
 }
 .options-block{
