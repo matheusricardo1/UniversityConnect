@@ -4,12 +4,14 @@ function entrar(){
     sidebar.style.display = 'block';
     var sidebaroff = document.getElementById('sidebar-off');
     sidebaroff.style.display = 'block';
+    sidebar.classList.toggle("sidebar-show");
 }
 function sair(){
     var sidebar = document.getElementById('sidebar');
     sidebar.style.display = 'none';
     var sidebaroff = document.getElementById('sidebar-off');
     sidebaroff.style.display = 'none';
+    sidebar.classList.remove("sidebar-show");
 }
 
 
