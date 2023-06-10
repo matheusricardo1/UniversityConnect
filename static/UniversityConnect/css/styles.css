@@ -33,11 +33,11 @@
     .home-linkstyle{
         display: none !important;
     }
-    .home-linkstyle-menu{
+    #home-linkstyle-menu{
         display: block !important;
         border: 1px solid var(--colorBlack)!important;
     }
-    .home-linkstyle-menu:hover{
+    #home-linkstyle-menu:hover{
         border: 1px solid var(--colorMidGray)!important;
     }
     .home1-background{
@@ -139,7 +139,7 @@
     .main-header{
         padding: 18px 55px !important;
     }
-    .home-linkstyle-menu{
+    #home-linkstyle-menu{
         display: block !important;
         border: 1px solid var(--colorBlack)!important;
         padding: 3px 15px !important;
@@ -304,7 +304,7 @@
     
 }
 
-.main-header-logo, .home-linkstyle, .home-linkstyle-menu{
+.main-header-logo, .home-linkstyle, #home-linkstyle-menu{
     color: var(--colorBlack);
     text-decoration: none;
     font-family: var(--fontPrimary);
@@ -314,14 +314,14 @@
 .main-header-logo{
     padding: 2px 0 6px 0;
 }
-.home-linkstyle-menu{
+#home-linkstyle-menu{
     display: none;
 }
 .home-linkstyle:hover{
     color: var(--colorWhite);
     background-color: var(--colorPrimary);
 }
-.home-linkstyle-menu:hover{
+#home-linkstyle-menu:hover{
     color: var(--colorWhite);
     background-color: var(--colorPrimary);
 }
