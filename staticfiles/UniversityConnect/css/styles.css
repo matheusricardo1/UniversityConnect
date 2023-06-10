@@ -16,6 +16,16 @@
     --fontExtraLarge: 54px;
     --fontExtraExtraLarge: 65px;
 }
+
+
+@keyframes slideIn {
+    from {
+        right: -300px;
+    }
+    to {
+        right: 0; 
+    }
+}
 @media only screen and (max-width: 684px) {
     .main-header{
         padding: 20px 70px !important;
@@ -23,11 +33,11 @@
     .home-linkstyle{
         display: none !important;
     }
-    .home-linkstyle-menu{
+    #home-linkstyle-menu{
         display: block !important;
         border: 1px solid var(--colorBlack)!important;
     }
-    .home-linkstyle-menu:hover{
+    #home-linkstyle-menu:hover{
         border: 1px solid var(--colorMidGray)!important;
     }
     .home1-background{
@@ -129,7 +139,7 @@
     .main-header{
         padding: 18px 55px !important;
     }
-    .home-linkstyle-menu{
+    #home-linkstyle-menu{
         display: block !important;
         border: 1px solid var(--colorBlack)!important;
         padding: 3px 15px !important;
@@ -241,10 +251,17 @@
     font-family: var(--fontPrimary);
     background-color: var(--colorBox);
     position: fixed;
-    right: 0;
+    top: 0;
+    right: -300px; 
     width: 250px;
     height: 100%;
     z-index: 999;
+    transition: left 0.3s ease-in-out;
+}
+.sidebar-show {
+    right: 0 ;
+    animation: slideIn 0.3s forwards;
+    /* Mostrar o sidebar quando a classe 'sidebar-show' for adicionada */
 }
 #sidebar-off{
     display: none;
@@ -254,6 +271,7 @@
     height: 100%;
 
 }
+
 .sidebar-h1, .sidebar-p{
     text-align: center;
     color: var(--colorWhite);
@@ -286,7 +304,7 @@
     
 }
 
-.main-header-logo, .home-linkstyle, .home-linkstyle-menu{
+.main-header-logo, .home-linkstyle, #home-linkstyle-menu{
     color: var(--colorBlack);
     text-decoration: none;
     font-family: var(--fontPrimary);
@@ -296,14 +314,14 @@
 .main-header-logo{
     padding: 2px 0 6px 0;
 }
-.home-linkstyle-menu{
+#home-linkstyle-menu{
     display: none;
 }
 .home-linkstyle:hover{
     color: var(--colorWhite);
     background-color: var(--colorPrimary);
 }
-.home-linkstyle-menu:hover{
+#home-linkstyle-menu:hover{
     color: var(--colorWhite);
     background-color: var(--colorPrimary);
 }
