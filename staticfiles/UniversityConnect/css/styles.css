@@ -312,7 +312,17 @@
     padding: 6px 23px;
 }
 .main-header-logo{
-    padding: 2px 0 6px 0;
+    position: relative;
+    bottom: 24px;
+    margin: 0;
+    padding: 0;
+    width: 140px !important;
+    height: 35px !important;
+}
+.main-header-logo img{
+    width: 100%;
+    height: 260%;
+    
 }
 #home-linkstyle-menu{
     display: none;

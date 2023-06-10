@@ -316,8 +316,8 @@
     bottom: 24px;
     margin: 0;
     padding: 0;
-    width: 140px;
-    height: 35px;
+    width: 140px !important;
+    height: 35px !important;
 }
 .main-header-logo img{
     width: 100%;
