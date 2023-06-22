@@ -89,6 +89,9 @@
         max-width: 620px !important;
         margin: auto !important;
     }
+    .options-block:hover{
+        border: 1px solid rgba(0, 0, 0, 0.605) !important;
+    }
     .options-block{
         margin: 0px auto 10px auto !important;
         min-width: 230px !important;
@@ -129,6 +132,10 @@
     }
 }
 @media only screen and (max-width: 832px){
+    .home2 > h2{
+        text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.407) !important;
+   
+    }
     .home2 > h2{
         font-size: var(--fontLargeSize) !important;
     
