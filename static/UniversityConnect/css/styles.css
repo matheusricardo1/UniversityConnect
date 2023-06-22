@@ -299,6 +299,7 @@
 .main-header{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 22px 70px;
     background-color: var(--colorMidGray);
     
@@ -366,6 +367,11 @@
 .home-subtitle{
     font-size: var(--fontLargeSize);
 }
+.home-search{
+    display: block;
+    min-width: 200px;
+    max-width: 1200px;
+}
 #home-searchbar{
     border: 1px solid #FFFFFF;
     border-radius: 21px;
@@ -373,8 +379,17 @@
     margin: 5vh auto;
     padding: 6px 10px;
     height: 47px;
-    min-width: 500px;
-    
+    min-width: 500px;  
+}
+.home-searchbar-icon{
+    display: inline;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+}
+.home-searchbar-icon img{
+    width: 100%;
+    height: 100%;
 }
 #home-searchbar:focus{
     outline: none;
