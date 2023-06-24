@@ -89,6 +89,9 @@
         max-width: 620px !important;
         margin: auto !important;
     }
+    .options-block:hover{
+        border: 1px solid rgba(0, 0, 0, 0.605) !important;
+    }
     .options-block{
         margin: 0px auto 10px auto !important;
         min-width: 230px !important;
@@ -129,6 +132,10 @@
     }
 }
 @media only screen and (max-width: 832px){
+    .home2 > h2{
+        text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.407) !important;
+   
+    }
     .home2 > h2{
         font-size: var(--fontLargeSize) !important;
     
@@ -261,7 +268,6 @@
 .sidebar-show {
     right: 0 ;
     animation: slideIn 0.3s forwards;
-    /* Mostrar o sidebar quando a classe 'sidebar-show' for adicionada */
 }
 #sidebar-off{
     display: none;
@@ -269,7 +275,6 @@
     background-color: #00000055;
     width: 100%;
     height: 100%;
-
 }
 
 .sidebar-h1, .sidebar-p{
@@ -299,6 +304,7 @@
 .main-header{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 22px 70px;
     background-color: var(--colorMidGray);
     
@@ -366,6 +372,11 @@
 .home-subtitle{
     font-size: var(--fontLargeSize);
 }
+.home-search{
+    display: block;
+    min-width: 200px;
+    max-width: 1200px;
+}
 #home-searchbar{
     border: 1px solid #FFFFFF;
     border-radius: 21px;
@@ -373,8 +384,17 @@
     margin: 5vh auto;
     padding: 6px 10px;
     height: 47px;
-    min-width: 500px;
-    
+    min-width: 500px;  
+}
+.home-searchbar-icon{
+    display: inline;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+}
+.home-searchbar-icon img{
+    width: 100%;
+    height: 100%;
 }
 #home-searchbar:focus{
     outline: none;
