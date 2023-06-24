@@ -1,5 +1,6 @@
 {% load static %}
-{% include './partials/head.html' %}
+{% include '../partials/head.html' %}
+<link rel="stylesheet" href="{% static '/UniversityConnect/css/styles.css' %}">
 <title>Home</title>
 </head>
 <body>
@@ -15,25 +16,13 @@
                 <p class="sidebar-p">
                     Conecte-se com a gente!
                 </p>
-                <a class="sidebar-block" href="#">Login</a>
-                <a class="sidebar-block" href="#">Registar</a>
-                <a class="sidebar-block" href="#">Home</a>
-                <a class="sidebar-block" href="#">Sobre</a>
+                {% include '../partials/sidebar-options-br.html' %}
             </div>
             <header class="main-header">
                 <div class="main-header-logo">
                     <img src="{% static '/UniversityConnect/images/logo/full.png' %}" alt="logo">
                 </div>
-                <div class="main-header-links">
-                    <nav class="main-header-links-nav">
-                        <a class="home-linkstyle" href="#">Home</a>
-                        <a class="home-linkstyle" href="#">Sobre</a>
-                        <a class="home-linkstyle" href="#">Registar</a>
-                        <a class="home-linkstyle" href="#">Login</a>
-                        
-                        <input id="home-linkstyle-menu" type="button" value="Menu" onclick="entrar()">
-                    </nav>
-                </div>
+                {% include '../partials/headerlinks-br.html' %}
             </header>
             <div class="home1-background">
                 <div class="home">
@@ -49,7 +38,7 @@
                         </div>
                     </form>
                     <div class="home-contentblock">
-                        <a class="block" href="#">
+                        <a class="block" href="cursos/">
                             <div class="block-icon">
                                 <img src="{% static '/UniversityConnect/images/icons/curso.png' %}" alt="Cursos-Icon">
                             </div>

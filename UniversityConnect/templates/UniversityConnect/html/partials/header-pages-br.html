@@ -1,0 +1,20 @@
+{% load static %}
+<div id="sidebar-off" onclick="sair()"></div>
+<div id="sidebar">
+    <h1 class="sidebar-h1">
+        UnivesityConnect
+    </h1>
+    <p class="sidebar-p">
+        Conecte-se com a gente!
+    </p>
+    {% include '../partials/sidebar-options-br.html' %}
+</div>
+<header class="main-header">
+    <div class="main-header-logo">
+        <img src="{% static '/UniversityConnect/images/logo/full.png' %}" alt="logo">
+    </div>
+    <form class="home-search" action="">
+        <input type="search" name="home-searchbar" id="home-searchbar" placeholder="Tecnologia">
+    </form>
+    {% include '../partials/headerlinks-br.html' %}
+</header>
