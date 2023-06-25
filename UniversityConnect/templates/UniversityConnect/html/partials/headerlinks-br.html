@@ -3,7 +3,7 @@
         <a class="home-linkstyle" href="{% if request.path == '/' %}#{% elif request.path != '/' %}/{% endif %}">Home</a>
         <a class="home-linkstyle" href="#">Sobre</a>
         <a class="home-linkstyle" href="{% if request.path == '/' %}cadastrar/{% elif request.path != '/' %}#{% endif %}">Registar</a>
-        <a class="home-linkstyle" href="#">Login</a>
+        <a class="home-linkstyle" href="{% if request.path == '/' %}entrar/{% elif request.path != '/' %}#{% endif %}">Login</a>
         <input id="home-linkstyle-menu" type="button" value="Menu" onclick="entrar()">
     </nav>
 </div>

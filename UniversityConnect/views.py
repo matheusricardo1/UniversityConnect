@@ -2,6 +2,8 @@ from django.shortcuts import render
 from django.views.decorators.csrf import csrf_protect
 from django.contrib.auth.models import User
 from googletrans import Translator
+from django.contrib.auth import authenticate, login
+from django.contrib.auth.decorators import login_required
 from .models import Curso
 #from models 
 
@@ -30,9 +32,29 @@ def cursos(request):
 
 
 def entrar(request):
-    return render(request, 'UniversityConnect/html/pt/auth.html')
+    if request.method == 'GET':
+        return render(request, 'UniversityConnect/html/pt/entrar.html')
+    else:
+        username = request.POST.get('username')
+        password = request.POST.get('password')
+        user = authenticate(username=username, password=password) 
+        if user:
+            login(request, user)
+            auth_text = f"User Logou!{user.username}"
+        else:
+            auth_text = "User não conseguir entrar!"
+        
+        return render(request, 'UniversityConnect/html/pt/cadastrar.html', {'auth': auth_text,})
 
-
+@login_required(login_url='/entrar/')
+def plataforma(request):
+    curso = Curso.objects.all()
+    auth_text = "Você fez login"
+    return render(request, 'UniversityConnect/html/pt/entrar.html', {
+        'auth': auth_text,
+        'request': request,
+        'curso': curso, 
+    })
 
 def cadastrar(request):
     if request.method == 'GET':
