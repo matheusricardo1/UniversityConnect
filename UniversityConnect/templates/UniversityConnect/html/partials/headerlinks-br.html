@@ -2,7 +2,7 @@
     <nav class="main-header-links-nav">
         <a class="home-linkstyle" href="{% if request.path == '/' %}#{% elif request.path != '/' %}/{% endif %}">Home</a>
         <a class="home-linkstyle" href="#">Sobre</a>
-        <a class="home-linkstyle" href="#">Registar</a>
+        <a class="home-linkstyle" href="{% if request.path == '/' %}cadastrar/{% elif request.path != '/' %}#{% endif %}">Registar</a>
         <a class="home-linkstyle" href="#">Login</a>
         <input id="home-linkstyle-menu" type="button" value="Menu" onclick="entrar()">
     </nav>

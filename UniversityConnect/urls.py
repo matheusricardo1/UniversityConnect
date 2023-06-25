@@ -6,5 +6,6 @@ app_name = 'UniversityConnect'
 urlpatterns = [
    path('', views.homepage, name='homepage'),
    path('cursos/', views.cursos, name='cursos'),
-   path('atualizar-titulo/', views.atualizar_titulo, name='atualizar_titulo'),
+   path('cadastrar/', views.cadastrar, name='cadastrar'),
+   path('entrar/', views.entrar, name='entrar'),
 ]

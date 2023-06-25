@@ -11,7 +11,7 @@
             <div class="home-options">
                 <div class="home-title">
                     <h2>Cursos de Cambridge - Caixa abaixo para editar titulo</h2>
-                    <form method="post" action="/atualizar-titulo/">
+                    <form method="post" action="{% url 'UniversityConnect:cursos' %}">
                         {% csrf_token %}
                         <input type="text" name="novo_titulo" placeholder="Digite o novo título">
                         <button type="submit">Atualizar Título</button>
