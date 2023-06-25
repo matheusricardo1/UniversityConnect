@@ -6,7 +6,7 @@ from .models import Curso
 def homepage(request):
     return render(request, 'UniversityConnect/html/pt/index.html', {'request': request,})
 
-@csrf_protect
+
 def cursos(request):
     curso = Curso.objects.all()
     return render(request, 'UniversityConnect/html/pt/cursos.html', {
@@ -15,7 +15,7 @@ def cursos(request):
     })
 
 
-@csrf_protect
+
 def atualizar_titulo(request):
     if request.method == 'POST':
         novo_titulo = request.POST.get('novo_titulo')
