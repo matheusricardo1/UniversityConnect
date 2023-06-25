@@ -12,7 +12,7 @@
                 <div class="home-title">
                     <h2>Cursos de Cambridge - Caixa abixao para editar titulo</h2>
                     <form method="post" action="/atualizar-titulo/">
-                        
+                        {% csrf_token %}
                         <input type="text" name="novo_titulo" placeholder="Digite o novo título">
                         <button type="submit">Atualizar Título</button>
                       </form>   

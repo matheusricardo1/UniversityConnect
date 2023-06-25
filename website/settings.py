@@ -28,7 +28,6 @@ SECRET_KEY = "django-insecure-wr1lv02_aosknw3ei6@o(z^%z8cow#ck5vqsv)7hfc0u_%jdwi
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'web-production-ebeb5.up.railway.app',
     "*",
 ]
 
@@ -54,6 +53,8 @@ MIDDLEWARE = [
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
+
+CSRF_TRUSTED_ORIGINS = ['https://web-production-ebeb5.up.railway.app/']
 
 ROOT_URLCONF = "website.urls"
 
