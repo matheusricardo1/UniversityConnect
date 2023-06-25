@@ -10,16 +10,16 @@
             
             <div class="home-options">
                 <div class="home-title">
-                    <h2>Cursos de Cambridge</h2>
+                    <h2>Cursos de Cambridge - Caixa abixao para editar titulo</h2>
+                    <form method="post" action="/atualizar-titulo/">
+                        {% csrf_token %}
+                        <input type="text" name="novo_titulo" placeholder="Digite o novo título">
+                        <button type="submit">Atualizar Título</button>
+                      </form>   
                 </div>
-                <div class="options-block">
-                    <h2>Cursos da Universidade</h2>
-                    <p>Descubra a excelência acadêmica de Cambridge.</p>
-                    <div class="details-icon">
-                        <img src="{% static "/UniversityConnect/images/icons/enter.png" %}" alt="">
-                    </div>
-                </div>
-                
+                {% for curso in curso %}
+                    {% include '../partials/courses.html' %}
+                {% endfor %}
             </div>
         </section>
     </main>
