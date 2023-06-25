@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.views.decorators.csrf import csrf_protect
+from googletrans import Translator
 from .models import Curso
 #from models 
 
@@ -23,6 +24,10 @@ def atualizar_titulo(request):
 
         if novo_titulo and primeiro_curso:
             primeiro_curso.titulo = novo_titulo
+            trans = Translator()
+            novo_titulo_en = trans.translate(novo_titulo, dest='en').text
+            
+            primeiro_curso.tittle_en = novo_titulo_en
             primeiro_curso.save()
 
     curso = Curso.objects.all()
