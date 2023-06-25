@@ -1,9 +1,37 @@
 <div class="main-header-links">
     <nav class="main-header-links-nav">
-        <a class="home-linkstyle" href="{% if request.path == '/' %}#{% elif request.path != '/' %}/{% endif %}">Home</a>
+        <a class="home-linkstyle"
+            href="{% if request.path == '/' %}
+            {% elif request.path != '/' %}/
+            {% endif %}"
+        >Home</a>
         <a class="home-linkstyle" href="#">Sobre</a>
-        <a class="home-linkstyle" href="{% if request.path == '/' %}cadastrar/{% elif request.path != '/' %}#{% endif %}">Registar</a>
-        <a class="home-linkstyle" href="{% if request.path == '/' %}entrar/{% elif request.path != '/' %}#{% endif %}">Login</a>
+        
+        {% if user.username %}
+            <a class="home-linkstyle" 
+            href="{% if request.path == '/' %}accounts/profile/
+            {% elif request.path != '/' %}
+            {% endif %}">Perfil
+        {% else %} 
+            <a class="home-linkstyle" 
+            href="{% if request.path == '/' %}accounts/signup/
+            {% elif request.path != '/' %}
+            {% endif %}">Registrar
+        {% endif %}
+        </a>
+
+        {% if user.username %}
+            <a class="home-linkstyle" 
+            href="{% if request.path == '/' %}accounts/logout/
+            {% elif request.path != '/' %}
+            {% endif %}">Sair da Conta
+        {% else %}
+            <a class="home-linkstyle" 
+            href="{% if request.path == '/' %}accounts/login/
+            {% elif request.path != '/' %}
+            {% endif %}">Login
+        {% endif %}
+        </a>
         <input id="home-linkstyle-menu" type="button" value="Menu" onclick="entrar()">
     </nav>
 </div>
