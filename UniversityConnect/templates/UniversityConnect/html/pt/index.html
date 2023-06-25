@@ -14,7 +14,12 @@
                     UnivesityConnect
                 </h1>
                 <p class="sidebar-p">
-                    Conecte-se com a gente!
+                    {% if user.username %}
+                        Olá {{ user.username }}!
+                    {% else %}
+                        Conecte-se com a gente!
+                    {% endif %}
+                    
                 </p>
                 {% include '../partials/sidebar-options-br.html' %}
             </div>

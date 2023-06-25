@@ -17,6 +17,7 @@ def homepage(request):
         social_account = user.socialaccount_set.first()
         if social_account:
             user_social = social_account.user
+            user_social.username = user_social.username.title()
             return render(request, 'UniversityConnect/html/pt/index.html', {
             'request': request,
             'user': user_social,
@@ -51,7 +52,14 @@ def cursos(request):
 
 @login_required(login_url='/accounts/login/')
 def profile(request):
-    return render(request, 'UniversityConnect/html/pt/profile.html')
+    social_account = request.user.socialaccount_set.first()
+    user_social = social_account.user
+    user_social.username = user_social.username.title()
+    user_social.save()
+    return render(request, 'UniversityConnect/html/pt/profile.html', context={
+        'request': request,
+        'user': user_social,
+    })
 
 
 
