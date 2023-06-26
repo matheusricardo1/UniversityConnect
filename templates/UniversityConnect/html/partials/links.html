@@ -1,11 +1,11 @@
         {% if user.username %}
-            <a class="home-linkstyle sidebar-block" href="accounts/profile/"> Perfil</a>
+            <a class="home-linkstyle" href="accounts/profile/"> Perfil</a>
         {% else %} 
-            <a class="home-linkstyle sidebar-block" href="{% url 'account_signup' %}">Registrar</a>
+            <a class="home-linkstyle" href="{% url 'account_signup' %}">Registrar</a>
         {% endif %}
 
         {% if user.username %}
-            <a class="home-linkstyle sidebar-block" href="accounts/logout/">Sair </a>
+            <a class="home-linkstyle" href="accounts/logout/">Sair </a>
         {% else %}
-            <a class="home-linkstyle sidebar-block" href="{% url 'account_login' %}">Login</a>
+            <a class="home-linkstyle" href="{% url 'account_login' %}">Login</a>
         {% endif %}
