@@ -27,6 +27,20 @@
     }
 }
 @media only screen and (max-width: 684px) {
+    .sidebar-block{
+        text-decoration: none !important;
+        text-align: center !important;
+        display: block !important;
+        margin: 20px !important;
+        padding: 12px 30px !important;
+        background-color: var(--colorWhite) !important;
+        color: var(--colorBlack) !important;
+    }
+    .sidebar-block:hover{
+        background-color: var(--colorPrimary);
+        color: var(--colorWhite);
+    }
+
     .main-header{
         padding: 20px 70px !important;
     }
@@ -288,26 +302,14 @@
     padding-left: 25px;
     text-align: left;
 }
-.sidebar-block{
-    text-decoration: none;
-    text-align: center;
-    display: block;
-    margin: 20px;
-    padding: 12px 30px;
-    background-color: var(--colorWhite);
-    color: var(--colorBlack);
-}
-.sidebar-block:hover{
-    background-color: var(--colorPrimary);
-    color: var(--colorWhite);
-}
+
 .main-header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 22px 70px;
     background-color: var(--colorMidGray);
-    
+    s
     
 }
 

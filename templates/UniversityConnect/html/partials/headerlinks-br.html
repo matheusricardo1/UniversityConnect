@@ -7,17 +7,7 @@
         >Home</a>
         <a class="home-linkstyle" href="#">Sobre</a>
         
-        {% if user.username %}
-            <a class="home-linkstyle" href="accounts/profile/"> Perfil</a>
-        {% else %} 
-            <a class="home-linkstyle" href="{% url 'account_signup' %}">Registrar</a>
-        {% endif %}
-
-        {% if user.username %}
-            <a class="home-linkstyle" href="accounts/logout/">Sair </a>
-        {% else %}
-            <a class="home-linkstyle" href="{% url 'account_login' %}">Login</a>
-        {% endif %}
+        {% include '../partials/links.html' %}
         <input id="home-linkstyle-menu" type="button" value="Menu" onclick="entrar()">
     </nav>
 </div>
