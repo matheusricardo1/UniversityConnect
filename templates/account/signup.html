@@ -32,13 +32,12 @@
         <button type="submit">{% trans "Sign Up" %} &raquo;</button>
         <p>{% blocktrans %}Already have an account? Then please <a href="{{ login_url }}">sign in</a>.{% endblocktrans %}</p>
       </div>
-		  
-				<div class="socialaccount_ballot">
-					<div class="login-or">{% trans 'or' %}</div>
-					<class="socialaccount_providers">
-						{% include "socialaccount/snippets/provider_list.html" with process="login" %}
-					
-				</div>
+		<div class="socialaccount_ballot">
+			<div class="login-or">{% trans 'or' %}</div>
+			<class="socialaccount_providers">
+				{% include "socialaccount/snippets/provider_list.html" with process="login" %}
+			
+		</div>
 
 				{% include "socialaccount/snippets/login_extra.html" %}
 
