@@ -1,0 +1,131 @@
+{% load static %}
+{% include '../partials/head.html' %}
+<link rel="stylesheet" href="{% static '/UniversityConnect/css/styles.css' %}">
+<title>Home</title>
+</head>
+<body>
+    <main>
+        <section class="home1">
+            <div id="sidebar-off" onclick="sair()">
+            </div>
+            
+            <div id="sidebar">
+                <h1 class="sidebar-h1">
+                    UnivesityConnect
+                </h1>
+                <p class="sidebar-p">
+                    {% if user.username %}
+                        Olá {{ user.username }}!
+                    {% else %}
+                        Conecte-se com a gente!
+                    {% endif %}
+                    
+                </p>
+                {% include '../partials/sidebar-options-br.html' %}
+            </div>
+            {% include '../partials/header.html' %}
+            <div class="home1-background">
+                <div class="home">
+                    <div class="home-text">
+                        <h1 class="home-title">Universidade de Cambridge</h1>
+                        <h1 class="home-subtitle">Conheça a universidade de Isaac Newton</h1>
+                    </div>      
+                    <form class="home-search" action="">
+                        <input type="search" name="home-searchbar" id="home-searchbar">
+                        <div class="home-searchbar-icon">
+                            <!---<img src="{% static '/UniversityConnect/images/icons/search.png' %}" alt="search-icon">
+                            -->
+                        </div>
+                    </form>
+                    <div class="home-contentblock">
+                        <a class="block" href="cursos/">
+                            <div class="block-icon">
+                                <img src="{% static '/UniversityConnect/images/icons/curso.png' %}" alt="Cursos-Icon">
+                            </div>
+                            <h2 class="block-text">
+                                Cursos
+                            </h2>
+                        </a>
+                        <a class="block" href="#">
+                            <div class="block-icon">
+                                <img src="{% static '/UniversityConnect/images/icons/intercambio.png' %}" alt="Cursos-Icon">
+                            </div>
+                            <h2 class="block-text">
+                                Intercâmbio
+                            </h2>
+                        </a>
+                        <a class="block" href="#">
+                            <div class="block-icon">
+                                <img src="{% static '/UniversityConnect/images/icons/historia.png' %}" alt="Cursos-Icon">
+                            </div>
+                            <h2 class="block-text">
+                                História
+                            </h2>
+                        </a>
+                        <a class="block" href="#">
+                            <div class="block-icon">
+                                <img src="{% static '/UniversityConnect/images/icons/local.png' %}" alt="Cursos-Icon">
+                            </div>
+                            <h2 class="block-text">
+                                Local
+                            </h2>
+                        </a>
+                    </div>
+                </div>
+                <div id="arrow">
+                    <img src="{% static '/UniversityConnect/images/icons/arrowdown.png' %}" alt="">
+                </div>
+            </div>
+
+        </section>
+        <section class="home2">
+            <h2>Universidade de Cambridge</h2>
+            <div class="home-options">
+                
+                <div class="options-block" onclick="window.location.href='cursos/'">
+                    <h2>Cursos da Universidade</h2>
+                    <p>Descubra a excelência acadêmica de Cambridge.</p>
+                    <div class="details-icon">
+                        <img src="{% static "/UniversityConnect/images/icons/enter.png" %}" alt="">
+                    </div>
+                </div>
+                <div class="options-block">
+                    <h2>Programas de Intercâmbio</h2>
+                    <p>Descubra Cambridge em um intercâmbio transformador.</p>
+                    <div class="details-icon">
+                        <img src="{% static "/UniversityConnect/images/icons/enter.png" %}" alt="">
+                    </div>
+                </div>
+                <div class="options-block">
+                    <h2>História Local</h2>
+                    <p>Descubra a essência histórica de Cambridge.</p>
+                    <div class="details-icon">
+                        <img src="{% static "/UniversityConnect/images/icons/enter.png" %}" alt="">
+                    </div>
+                </div>
+                <div class="options-block">
+                    <h2>Moradia para Universitários</h2>
+                    <p>Descubra o lar acadêmico perfeito em Cambridge.</p>
+                    <div class="details-icon">
+                        <img src="{% static "/UniversityConnect/images/icons/enter.png" %}" alt="">
+                    </div>
+                </div>
+                <div class="options-block">
+                    <h2>Principais Personalidades</h2>
+                    <p>escubra as mentes brilhantes de Cambridge.</p>
+                    <div class="details-icon">
+                        <img src="{% static "/UniversityConnect/images/icons/enter.png" %}" alt="">
+                    </div>
+                </div>
+                <div class="options-block">
+                    <h2>História da Universidade</h2>
+                    <p>Descubra a grandeza da história de Cambridge.</p>
+                    <div class="details-icon">
+                        <img src="{% static "/UniversityConnect/images/icons/enter.png" %}" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

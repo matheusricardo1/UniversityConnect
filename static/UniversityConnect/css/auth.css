@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --colorPrimary: #EF4B4B;
+    --colorWhite: #FFFFFF;
+    --colorBlack: #000000;
+    --colorMidGray: #F1F1F0;
+    --colorBox: #353539;
+    --colorBoxHover: #2c2c30;
+
+    --fontPrimary: Arial;
+    --fontMidSize: 20px;
+    --fontLargeSize: 38px;
+    --fontExtraLarge: 54px;
+    --fontExtraExtraLarge: 65px;
+}
+.auth{
+    display: flex;
+    justify-content: space-around;
+    min-height: 620px;
+    max-height: 800px;
+    min-width: none;
+    max-width: 1300px;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+@media (max-width: 1000px) {
+    .login_block1{
+        display: none !important;
+    }
+ 
+}   
+@media (max-width: 500px) {
+    .block2{
+        width: 240px !important;
+    }
+}  
+.login_block1, .login_block2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 800px;
+    padding: 20px;
+}
+.login_block2{
+    background-color: var(--colorBox);
+}
+.block1, .block2{
+    padding: 20px;
+    position: relative;
+    bottom: 30px;
+    width: 420px;
+    
+}
+.block1 > h2{
+    font-size: var(--fontLargeSize);
+    color: var(--colorPrimary)
+}
+.block1 > h2, .block1 > p, .block1 > a{
+    margin-bottom: 20px;
+}
+.block2{
+    display: flex;
+    justify-content: center;
+}
+.primaryAction{
+    display: block;
+    margin: auto;
+}
+.login_block2 div{
+    background-color: var(--colorMidGray);
+    margin: auto;
+}
+.socialaccount_ballot{
+    position: relative;
+    bottom: 30px;
+    text-align: center;
+}
+
+.free_text{
+    font-size: 100%;
+   
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 40px auto;
+    padding: 35px;
+    border: 1px solid var(--colorBlack);
+   
+    width: 440px;
+    
+}
+
+.free_text form button{
+    display: block;
+    margin: 15px auto 0px auto;
+    padding: 8px 15px ;
+}
+
+.login_block2 form input[type="text"], .login_block2 form input[type="password"]{
+    display: block;
+    width: 100%;
+    margin: 7px 0px;
+    padding: 13px 10px;
+}

@@ -1,0 +1,27 @@
+    {% if user.username %}
+        <a class="sidebar-block" 
+        href="{% if request.path == '/' %}accounts/profile/
+        {% elif request.path != '/' %}
+        {% endif %}">Perfil
+    {% else %} 
+        <a class="sidebar-block" 
+        href="{% if request.path == '/' %}accounts/signup/
+        {% elif request.path != '/' %}
+        {% endif %}">Registrar
+    {% endif %}
+    </a>
+
+    {% if user.username %}
+        <a class="sidebar-block" 
+        href="{% if request.path == '/' %}accounts/logout/
+        {% elif request.path != '/' %}
+        {% endif %}">Sair da Conta
+    {% else %}
+        <a class="sidebar-block" 
+        href="{% if request.path == '/' %}accounts/login/
+        {% elif request.path != '/' %}
+        {% endif %}">Login
+    {% endif %}
+        
+    <a class="sidebar-block" href="{% if request.path == '/' %}#{% elif request.path != '/' %}/{% endif %}">Home</a>
+    <a class="sidebar-block" href="#">Sobre</a>

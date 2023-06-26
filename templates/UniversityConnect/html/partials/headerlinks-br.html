@@ -8,24 +8,16 @@
         <a class="home-linkstyle" href="#">Sobre</a>
         
         {% if user.username %}
-            <a class="home-linkstyle" 
-            href="accounts/profile/
-            ">Perfil
-
-            
-			<a href="{% url 'account_signup' %}"
+            <a class="home-linkstyle" href="accounts/profile/"> Perfil</a>
         {% else %} 
-            <a class="home-linkstyle" href="{% url 'account_signup' %}">Registrar
+            <a class="home-linkstyle" href="{% url 'account_signup' %}">Registrar</a>
         {% endif %}
-        </a>
 
         {% if user.username %}
-            <a class="home-linkstyle" 
-            href="accounts/logout/">Sair
+            <a class="home-linkstyle" href="accounts/logout/">Sair </a>
         {% else %}
-            <a class="home-linkstyle" href="{% url 'account_login' %}">Login
+            <a class="home-linkstyle" href="{% url 'account_login' %}">Login</a>
         {% endif %}
-        </href=>
         <input id="home-linkstyle-menu" type="button" value="Menu" onclick="entrar()">
     </nav>
 </div>
