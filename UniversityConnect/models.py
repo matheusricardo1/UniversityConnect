@@ -25,7 +25,9 @@ class NivelCurso(models.Model):
 class Curso(models.Model):
     titulo = models.CharField(max_length=100)
     tittle_en = models.CharField(max_length=100, default='English Name')
-    descricao = models.TextField(max_length=350)
+    mini_descricao = models.TextField(max_length=130, default='English Description')
+    mini_description_en = models.TextField(max_length=130, default='English Description')
+    descricao = models.TextField(max_length=550)
     description_en = models.TextField(max_length=350, default='English Description')
     carga_horaria = models.IntegerField()
     tempo_curso = models.CharField(max_length=100)

@@ -342,8 +342,6 @@
     color: var(--colorWhite);
     background-color: var(--colorPrimary);
 }
-
-
 .home{
     display: flex;
     justify-content: space-around;
