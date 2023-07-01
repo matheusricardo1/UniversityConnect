@@ -1,0 +1,32 @@
+{% load static %}
+{% include '../partials/head.html' %}
+<link rel="stylesheet" href="{% static '/UniversityConnect/css/course_detail.css' %}">
+</head>
+{% include '../partials/header.html' %}
+<main>
+    <section class="home"> 
+        <div class="block1">
+            <div class="block1-img">
+                <img src="" alt="">
+            </div>
+            <div class="content">
+                <p class="content-description">{{ curso.titulo }}</p>
+                <p class="content-description">{{ curso.descricao }}</p>
+                <p class="content-time">{{ curso.carga_horaria }}</p>
+                <p class="content-description">{{ curso.categoria }}</p>
+                <p class="content-description">{{ curso.formacao }}</p>
+                
+            </div>
+        </div>
+        <div class="block2">
+            <div class="block2-content">
+                <p class="content-time">{{ curso.mensalidade }}</p>
+                <p class="content-time">{{ curso.tempo_curso }}</p>
+                <p class="content-description">{{ curso.nivel_curso }}</p>
+                
+                <a href="#">Cadastrar no Curso!</a>
+            </div>
+        </div>
+    </section>
+    
+</main>

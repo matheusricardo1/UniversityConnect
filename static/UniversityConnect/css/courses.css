@@ -26,6 +26,7 @@
         right: 0; 
     }
 }
+
 @media only screen and (max-width: 890px) {
     .main-header{
         padding: 20px 70px !important;
@@ -305,7 +306,10 @@
     max-height: 1200px;
     margin: auto;
 }
-
+.option-block-link{
+    all: unset;
+    cursor: pointer;
+}
 .options-block{
     min-height: 110px;
     max-height: 150px;
@@ -317,11 +321,7 @@
     border: 1px solid rgba(0, 0, 0, 0);
     
 }
-.options-block > a{
-    width: 100%;
-    height: 100%;
 
-}
 .options-block:hover{
     border: 1px solid rgba(0, 0, 0, 0.605);
 }

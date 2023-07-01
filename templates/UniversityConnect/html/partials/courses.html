@@ -1,8 +1,10 @@
 {% load static %}
-<div class="options-block" onclick="window.location.href='{{ curso.botao }}'">
-    <h2>{{ curso.titulo }}</h2>
-    <p>{{ curso.tittle_en }}</p>
-    <div class="details-icon">
-        <img src="{% static "/UniversityConnect/images/icons/enter.png" %}" alt="">
+<a class="option-block-link" href="{% url 'UniversityConnect:cursos_detail' curso.id %}">
+    <div class="options-block">
+        <h2>{{ curso.titulo }}</h2>
+        <p>{{ curso.tittle_en }}</p>
+        <div class="details-icon">
+            <img src="{% static "/UniversityConnect/images/icons/enter.png" %}" alt="">
+        </div>
     </div>
-</div>
+</a>

@@ -31,6 +31,7 @@ class Curso(models.Model):
     tempo_curso = models.CharField(max_length=100)
     mensalidade = models.DecimalField(max_digits=8, decimal_places=2)
     tipo_aula = models.CharField(max_length=100)
+    image = models.ImageField(upload_to='recipes/cover/%Y/%m/%d/', blank=True, default="")
     categoria = models.ForeignKey(Categoria, on_delete=models.CASCADE)
     formacao = models.ForeignKey(Formacao, on_delete=models.CASCADE)
     nivel_curso = models.ForeignKey(NivelCurso, on_delete=models.CASCADE)
