@@ -1,28 +1,26 @@
 <div id="sidebar-off" onclick="sair()"></div>
 <div id="sidebar">
-    <h1 class="sidebar-h1">
-        UnivesityConnect
-    </h1>
+    <h1 class="sidebar-h1">UnivesityConnect</h1>
     <p class="sidebar-p">
-        {% if user.username %}
-            Olá {{ user.username }}!
-        {% else %}
-            Conecte-se com a gente!
+        {% if user.username %}Olá {{ user.username }}!
+        {% else %}Conecte-se com a gente!
         {% endif %}
-        
     </p>
     {% if user.username %}
-    <a class="sidebar-block" href="{% url 'UniversityConnect:profile' %}"> Perfil</a>
+        <a class="sidebar-block" href="{% url 'UniversityConnect:profile' %}"> Perfil</a>
     {% else %} 
-    <a class="sidebar-block" href="{% url 'account_signup' %}">Registrar</a>
+        <a class="sidebar-block" href="{% url 'account_signup' %}">Registrar</a>
     {% endif %}
     {% if user.username %}
-    <a class="sidebar-block" href="accounts/logout/">Sair </a>
+        <a class="sidebar-block" href="accounts/logout/">Sair </a>
     {% else %}
-    <a class="sidebar-block" href="{% url 'account_login' %}">Login</a>
+        <a class="sidebar-block" href="{% url 'account_login' %}">Login</a>
     {% endif %}
     
-    <a class="sidebar-block" href="{% if request.path == '/' %}#{% elif request.path != '/' %}/{% endif %}">Home</a>
+    <a class="sidebar-block" href="
+    {% if request.path == '/' %}#
+    {% elif request.path != '/' %}/
+    {% endif %}">Home</a>
     <a class="sidebar-block" href="#">Sobre</a>
 </div>
     
