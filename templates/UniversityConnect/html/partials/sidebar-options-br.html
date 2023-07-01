@@ -1,0 +1,14 @@
+    {% if user.username %}
+    <a class="sidebar-block href="accounts/profile/"> Perfil</a>
+    {% else %} 
+    <a class="sidebar-block href="{% url 'account_signup' %}">Registrar</a>
+    {% endif %}
+
+    {% if user.username %}
+    <a class="sidebar-block" href="accounts/logout/">Sair </a>
+    {% else %}
+    <a class="sidebar-block" href="{% url 'account_login' %}">Login</a>
+    {% endif %}
+        
+    <a class="sidebar-block" href="{% if request.path == '/' %}#{% elif request.path != '/' %}/{% endif %}">Home</a>
+    <a class="sidebar-block" href="#">Sobre</a>
