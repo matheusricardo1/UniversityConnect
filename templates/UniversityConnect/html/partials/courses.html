@@ -1,10 +1,24 @@
 {% load static %}
-<a class="option-block-link" href="{% url 'UniversityConnect:cursos_detail' curso.id %}">
-    <div class="options-block">
-        <h2>{{ curso.titulo }}</h2>
-        <p>{{ curso.tittle_en }}</p>
-        <div class="details-icon">
-            <img src="{% static "/UniversityConnect/images/icons/enter.png" %}" alt="">
+{% if curso %}
+    {% for curso in curso %}
+        <a class="option-block-link" href="{% url 'UniversityConnect:cursos_detail' curso.id %}">
+            <div class="options-block">
+                <h2>{{ curso.titulo }}</h2>
+                <p>{{ curso.tittle_en }}</p>
+                <div class="details-icon">
+                    <img src="{% static "/UniversityConnect/images/icons/enter.png" %}" alt="">
+                </div>
+            </div>
+        </a>
+    {% endfor %}
+{% else %}
+    <a class="option-block-link" href="{% url 'UniversityConnect:homepage' %}">
+        <div class="options-block">
+            <h2>Nenhum curso encontrado!</h2>
+            <p>Clique aqui para voltar ao inicio</p>
+            <div class="details-icon">
+                <img src="{% static "/UniversityConnect/images/icons/enter.png" %}" alt="">
+            </div>
         </div>
-    </div>
-</a>
+    </a>
+{% endif %}

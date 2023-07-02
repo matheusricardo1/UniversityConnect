@@ -117,12 +117,12 @@
     }
     .main-header-logo{
         bottom: 4px !important;
-        width: 80px !important;
+        width: 100px !important;
         height: 35px !important;
     }
     .main-header-logo img{
         width: 100% !important;
-        height: 140% !important;
+        height: 160% !important;
     }
 
    
@@ -170,6 +170,9 @@
         height: 20px !important
     }
     
+}
+html{
+    background-color: var(--colorMidGray);
 }
 #sidebar{
     display: none;
@@ -239,8 +242,8 @@
     bottom: 24px;
     margin: 0;
     padding: 0;
-    width: 140px ;
-    height: 35px ;
+    width: 140px;
+    height: 35px;
 }
 .main-header-logo img{
     width: 100%;

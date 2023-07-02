@@ -31,14 +31,6 @@ def homepage(request):
 @csrf_protect
 def cursos(request):
     PAGE_NAME = 'Cursos'
-    if request.method == 'POST':
-        novo_titulo = request.POST.get('novo_titulo')
-        primeiro_curso = Curso.objects.first()
-
-        if novo_titulo and primeiro_curso:
-            primeiro_curso.titulo = novo_titulo
-            primeiro_curso.save()
-
     curso = Curso.objects.all()
     for curso in curso:
         trans = Translator()
@@ -47,28 +39,39 @@ def cursos(request):
         description_en = trans.translate(curso.titulo, dest='en').text
         curso.description_en = description_en
         curso.save()
+    
+    if request.GET.get('course-searchbar', ''):
+        termo_pesquisa = request.GET.get('course-searchbar', '')
+        curso = Curso.objects.filter(titulo__icontains=termo_pesquisa)
+        context = {'request': request, 'curso': curso, 'page_name': 'Cursos', 'page_name': PAGE_NAME}
+        return render(request, 'UniversityConnect/html/pt/cursos.html', context=context)
+    
+    if request.method == 'POST':
+        novo_titulo = request.POST.get('novo_titulo')
+        primeiro_curso = Curso.objects.first()
+
+        if novo_titulo and primeiro_curso:
+            primeiro_curso.titulo = novo_titulo
+            primeiro_curso.save()
 
     categoria_selecionada = request.GET.get('categoria', '')
     if categoria_selecionada == '':
         curso = Curso.objects.all()
     else:
         curso = Curso.objects.filter(categoria=categoria_selecionada)
-    context = {'request': request, 'curso': curso, 'page_name': 'Cursos', 'page_name': PAGE_NAME,}
+    
+    if len(curso) == 0:
+        curso = False
+    context = {'request': request, 'curso': curso, 'page_name': 'Cursos', 'page_name': PAGE_NAME}
     return render(request, 'UniversityConnect/html/pt/cursos.html', context=context)
 
 
 
 def cursos_detail(request, id):
-    curso = get_object_or_404(
-        Curso,
-        id=id,
-    )
-
+    curso = get_object_or_404(Curso,id=id,)
     PAGE_NAME = f'{curso.titulo}'
     context = {'request': request, 'curso': curso, 'page_name': 'Cursos', 'page_name': PAGE_NAME,}
     return render(request, 'UniversityConnect/html/pt/cursos_detail.html', context=context)
-
-
 
 
 @login_required(login_url='/accounts/login/')

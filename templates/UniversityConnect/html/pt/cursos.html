@@ -1,6 +1,5 @@
 {% load static %}
 {% include '../partials/head.html' %}
-
 <link rel="stylesheet" href="{% static '/UniversityConnect/css/courses.css' %}">
 </head>
 <body>
@@ -20,13 +19,14 @@
                             <option value="">Todas as categorias</option>
                             <option value="1">Tecnologia</option>
                             <option value="2">Medicina</option>
+                            <option value="3">Química</option>
                         </select>
                         <button type="submit">Filtrar</button>
                     </form>
                 </div>
-                {% for curso in curso %}
-                    {% include '../partials/courses.html' %}
-                {% endfor %}
+                {% include '../partials/courses.html' %}
+                
+                
             </div>
         </section>
     </main>

@@ -7,15 +7,18 @@
     <section class="home"> 
         <div class="block1">
             <div class="block1-img">
-                <img src="" alt="">
+                {% if curso.image %}
+                    <img src="{{curso.image.url}}" alt="curso img">
+                {% else %} 
+                    <div class="no-img"> NO IMG </div>
+                {% endif %}
             </div>
-            <div class="content">
-                <p class="content-description">{{ curso.titulo }}</p>
+            <div class="block1-content">
+                <h2 class="content-description">{{ curso.titulo }}</h2>
                 <p class="content-description">{{ curso.descricao }}</p>
                 <p class="content-time">{{ curso.carga_horaria }}</p>
                 <p class="content-description">{{ curso.categoria }}</p>
                 <p class="content-description">{{ curso.formacao }}</p>
-                
             </div>
         </div>
         <div class="block2">
@@ -23,8 +26,7 @@
                 <p class="content-time">{{ curso.mensalidade }}</p>
                 <p class="content-time">{{ curso.tempo_curso }}</p>
                 <p class="content-description">{{ curso.nivel_curso }}</p>
-                
-                <a href="#">Cadastrar no Curso!</a>
+                <a class="content-course" href="#">Cadastrar no Curso!</a>
             </div>
         </div>
     </section>
