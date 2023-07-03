@@ -1,16 +1,18 @@
 {% load static %}
 {% if curso %}
+
     {% for curso in curso %}
         <a class="option-block-link" href="{% url 'UniversityConnect:cursos_detail' curso.id %}">
             <div class="options-block">
                 <h2>{{ curso.titulo }}</h2>
-                <p>{{ curso.tittle_en }}</p>
+                <p>{{ curso.mini_descricao }}</p>
                 <div class="details-icon">
                     <img src="{% static "/UniversityConnect/images/icons/enter.png" %}" alt="">
                 </div>
             </div>
         </a>
     {% endfor %}
+
 {% else %}
     <a class="option-block-link" href="{% url 'UniversityConnect:homepage' %}">
         <div class="options-block">

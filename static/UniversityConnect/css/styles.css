@@ -37,8 +37,8 @@
         color: var(--colorBlack) !important;
     }
     .sidebar-block:hover{
-        background-color: var(--colorPrimary);
-        color: var(--colorWhite);
+        background-color: var(--colorPrimary) !important;
+        color: var(--colorWhite) !important;
     }
 
     .main-header{
@@ -312,6 +312,10 @@ html{
     padding-left: 25px;
     text-align: left;
 }
+.sidebar-block:hover{
+    background-color: var(--colorPrimary);
+    color: var(--colorWhite);
+}
 
 .main-header{
     display: flex;
@@ -486,6 +490,7 @@ html{
     cursor: pointer;
 }
 .options-block{
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.172) !important;
     min-height: 110px;
     max-height: 150px;
     min-width: 230px;

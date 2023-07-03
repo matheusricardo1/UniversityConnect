@@ -37,6 +37,9 @@
         width: 240px !important;
     }
 }  
+html{
+    background-color: var(--colorMidGray);
+}
 .login_block1, .login_block2{
     display: flex;
     align-items: center;

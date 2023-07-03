@@ -37,8 +37,8 @@
         color: var(--colorBlack) !important;
     }
     .sidebar-block:hover{
-        background-color: var(--colorPrimary);
-        color: var(--colorWhite);
+        background-color: var(--colorPrimary) !important;
+        color: var(--colorWhite) !important;
     }
 
     .main-header{
@@ -165,7 +165,6 @@
         border: 1px solid var(--colorBlack)!important;
         padding: 3px 15px !important;
     }
-
     .home-title{
         font-size:  160% !important;
         min-width: 230px !important;
@@ -180,6 +179,15 @@
         min-width: 230px !important;
         max-width: 500px !important;
         
+    }
+    .main-header-logo{
+        bottom: 4px !important;
+        width: 100px !important;
+        height: 35px !important;
+    }
+    .main-header-logo img{
+        width: 100% !important;
+        height: 160% !important;
     }
     .block{
         height: 65px !important;
@@ -214,7 +222,7 @@
     .options-block{
         display: block;
         margin: 0 auto 10px auto !important;
-        min-width: 160px !important;
+        min-width: 140px !important;
         max-width: 400px !important;
         min-height: 40px !important;
         max-height: 50px !important;
@@ -249,7 +257,9 @@
         padding-top: 30px !important;
     }
 }
-
+html{
+    background-color: var(--colorMidGray);
+}
 #arrow{
     font-family: var(--fontPrimary);
     box-shadow: 4px 2px 2px rgba(0, 0, 0, 0.407);
@@ -302,13 +312,17 @@
     padding-left: 25px;
     text-align: left;
 }
+.sidebar-block:hover{
+    background-color: var(--colorPrimary);
+    color: var(--colorWhite);
+}
 
 .main-header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 22px 70px;
-    background-color: var(--colorMidGray);    
+    background-color: var(--colorWhite);    
 }
 
 .main-header-logo, .home-linkstyle, #home-linkstyle-menu{
@@ -321,10 +335,10 @@
 .main-header-logo{
     position: relative;
     bottom: 24px;
-    margin: 0;
-    padding: 0;
-    width: 140px !important;
-    height: 35px !important;
+    margin: 0px;
+    padding: 0px;
+    width: 140px;
+    height: 35px;
 }
 .main-header-logo img{
     width: 100%;
@@ -476,6 +490,7 @@
     cursor: pointer;
 }
 .options-block{
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.172) !important;
     min-height: 110px;
     max-height: 150px;
     min-width: 230px;

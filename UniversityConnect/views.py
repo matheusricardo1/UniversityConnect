@@ -1,8 +1,7 @@
 from django.shortcuts import render
 from django.views.decorators.csrf import csrf_protect
 from django.contrib.auth.models import User, AnonymousUser
-from googletrans import Translator
-from django.contrib.auth import authenticate, login
+from django.db.models import Q
 from django.contrib.auth.decorators import login_required
 from .models import Curso
 from django.shortcuts import get_object_or_404
@@ -32,18 +31,15 @@ def homepage(request):
 def cursos(request):
     PAGE_NAME = 'Cursos'
     curso = Curso.objects.all()
-    for curso in curso:
-        trans = Translator()
-        titulo_en = trans.translate(curso.titulo, dest='en').text
-        curso.tittle_en = titulo_en
-        description_en = trans.translate(curso.titulo, dest='en').text
-        curso.description_en = description_en
-        curso.save()
     
     if request.GET.get('course-searchbar', ''):
         termo_pesquisa = request.GET.get('course-searchbar', '')
-        curso = Curso.objects.filter(titulo__icontains=termo_pesquisa)
-        context = {'request': request, 'curso': curso, 'page_name': 'Cursos', 'page_name': PAGE_NAME}
+        curso = Curso.objects.filter(
+        Q(titulo__icontains=termo_pesquisa) |
+        Q(categoria__nome__icontains=termo_pesquisa) |
+        Q(descricao__icontains=termo_pesquisa)
+    )
+        context = {'request': request, 'curso': curso, 'page_name': 'Cursos', 'pesquisa':termo_pesquisa, 'page_name': PAGE_NAME}
         return render(request, 'UniversityConnect/html/pt/cursos.html', context=context)
     
     if request.method == 'POST':
@@ -69,8 +65,9 @@ def cursos(request):
 
 def cursos_detail(request, id):
     curso = get_object_or_404(Curso,id=id,)
+    outros = Curso.objects.all().filter(categoria=curso.categoria)
     PAGE_NAME = f'{curso.titulo}'
-    context = {'request': request, 'curso': curso, 'page_name': 'Cursos', 'page_name': PAGE_NAME,}
+    context = {'request': request, 'curso': curso, 'outro': outros, 'page_name': PAGE_NAME,}
     return render(request, 'UniversityConnect/html/pt/cursos_detail.html', context=context)
 
 

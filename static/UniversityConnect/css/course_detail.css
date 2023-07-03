@@ -135,15 +135,7 @@
         display: block !important;
         margin: auto !important;
     }
-    .options-block{
-        margin: 0 auto 30px !important;
-        min-width: 320px !important;
-        max-width: 100% !important;
-       
-        background-color: var(--colorWhite) !important;
-        padding: 25px !important;
-        border: 1px solid rgba(0, 0, 0, 0) !important;
-    }
+
 }
 @media only screen and (max-width: 832px){
     .home2 > h2{
@@ -308,11 +300,10 @@ html{
 .sidebar-h1{
     padding: 30px 20px 6px;
 }
-.sidebar-p{
-    padding-left: 25px;
-    text-align: left;
+.sidebar-block:hover{
+    background-color: var(--colorPrimary);
+    color: var(--colorWhite);
 }
-
 .main-header{
     display: flex;
     justify-content: space-between;
@@ -344,27 +335,74 @@ html{
     display: none;
 }
 .home-linkstyle:hover{
-    color: var(--colorWhite);
-    background-color: var(--colorPrimary);
+    color: var(--colorWhite) !important;
+    background-color: var(--colorPrimary) !important;
 }
 #home-linkstyle-menu:hover{
     color: var(--colorWhite);
     background-color: var(--colorPrimary);
 }
 .home{
+    background-color: var(--colorWhite);
     font-family: var(--fontPrimary);
     display: flex;
     justify-content: space-around;
     min-width: 230px;
     max-width: 1200px;
-    border: 1px solid black;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.172) !important;
+
     padding: 30px;
-    margin: 30px auto;
+    margin: 10px auto;
 }
-.home > div, .home{
-    border: 1px solid black;
+
+.option-block-link{
+    all: unset;
+    cursor: pointer;
 }
+.options-block{
+    min-height: 110px;
+    max-height: 150px;
+    min-width: 230px;
+    max-width: 100%;
+    background-color: var(--colorWhite);
+    margin: 0px auto 10px auto;
+    padding: 25px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    transition: 0.4s;
+}
+
+.options-block:hover{
+    box-shadow: 0px 0px 15px rgba(187, 187, 187, 0.172) !important;
+    border: 1px solid rgba(0, 0, 0, 0.605);
+}
+.options-block > h2, .options-block > p{
+    margin: 7px 0;
+    font-family: var(--fontPrimary);
+    text-decoration: none !important;
+}
+
+.options-block > h2, .home-title > h2{
+    color: var(--colorPrimary);
+    font-size: large !important;
+}   
+.options-block > p{
+    padding-right: 14px;
+    font-size: medium !important;
+}
+.details-icon{
+    position: relative;
+    bottom: 50px;
+    float: right;
+    width: 20px;
+    height: 20px;
+}
+.details-icon img {
+    width: 100%;
+    height: 100%;
+}
+
 .block1{
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.172) !important;
     width: 800px;
     padding: 10px;
 }
@@ -379,7 +417,6 @@ html{
     height: 100%;
 }
 .no-img{
-    border: 1px solid black;
     width: 100%;
     height: 420px;
     display: flex;
@@ -389,32 +426,95 @@ html{
 .block1-content{
     padding: 10px;
 }
+.content-title{
+    margin-bottom: 10px;
+}
 .block2{
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.172) !important;
+    background-color: var(--colorBox);
     width: 360px;
     padding: 10px;
 }
 .block2-content{
     padding: 10px;
 }
+.block2-content > p{
+    display: inline-block;
+    align-items: center;
+    min-width: none;
+    max-width: 140px;
+    border-radius: 4px;
+    margin: 2px;
+    padding: 10px;
+
+    text-align: center;
+    background-color: var(--colorWhite);
+    color: var(--colorBlack);
+}
+.content-course{
+    display: block;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+    background-color: var(--colorWhite);
+    color: var(--colorBlack);
+    font-weight: bold;
+    text-decoration: none;
+}
+.content-course:hover{
+    background-color: var(--colorPrimary);
+    color: var(--colorWhite);
+}   
+.content-description{
+    text-align: justify;
+}
 @media only screen and (max-width: 714px) {
     .home{
         display: block !important;
         min-width: 230px !important;
         max-width: 540px !important;
+        border: 0px;
+        
     }
     .block1{
-        font-size: small;
+        font-size: medium;
         display: block !important;
         width: 100% !important;
+        
+        padding: 0px !important;
+    }
+    .block1-img{
         padding: 0px !important;
     }
     .no-img{
         height: 220px !important;
     }
+    .content-description{
+        padding: 10px 0;
+    }
     .block2{
-        font-size: small;
+        font-size: medium;
         display: block !important;
         width: 100% !important;
         padding: 0px !important;
     }
+}
+
+.other{
+    margin-top: 10px;
+    padding-bottom: 4px;
+}
+.other > h2{
+
+    text-align: center;
+    color: var(--colorWhite);
+}
+.other > p{
+    font-size: large;
+    margin-bottom: 10px;
+    text-align: center;
+    color: var(--colorWhite);
+}
+.options-block{
+    overflow: hidden;
 }

@@ -1,20 +1,14 @@
 {% load static %}
-<div id="sidebar-off" onclick="sair()"></div>
-<div id="sidebar">
-    <h1 class="sidebar-h1">
-        UnivesityConnect
-    </h1>
-    <p class="sidebar-p">
-        Conecte-se com a gente!
-    </p>
-    {% include '../partials/sidebar-options.html' %}
-</div>
+{% include '../partials/sidebar-options.html' %}
 <header class="main-header">
     <div class="main-header-logo">
         <img src="{% static '/UniversityConnect/images/logo/full.png' %}" alt="logo">
     </div>
     <form class="home-search" action="">
-        <input type="search" name="course-searchbar" id="home-searchbar" placeholder="Tecnologia">
+        <input type="search" name="course-searchbar" id="home-searchbar" 
+        {% if pesquisa %}value="{{ pesquisa }}"
+        {% else %}placeholder="Tecnologia"
+        {% endif %}>
     </form>
     {% include '../partials/headerlink.html' %}
 </header>

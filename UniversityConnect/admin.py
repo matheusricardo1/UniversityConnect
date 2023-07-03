@@ -7,6 +7,7 @@ def traduzir_titulo(modeladmin, request, queryset):
     translator = Translator(service_urls=['translate.google.com'])
     for curso in queryset:
         curso.tittle_en = translator.translate(curso.titulo, dest='en').text
+        curso.mini_description_en = translator.translate(curso.mini_descricao, dest='en').text
         curso.description_en = translator.translate(curso.descricao, dest='en').text
         curso.save()
 traduzir_titulo.short_description = 'Traduzir para inglês'
