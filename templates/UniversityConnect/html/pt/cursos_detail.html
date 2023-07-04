@@ -34,17 +34,30 @@
             <div class="other">
                 <h2>Outros Cursos</h2>
                 <p>Relacionados com {{ curso.categoria }}</p>
-                {% for outro in outro %}
-                    <a class="option-block-link" href="{% url 'UniversityConnect:cursos_detail' curso.id %}">
-                        <div class="options-block">
-                            <h2>{{ outro.titulo }}</h2>
-                            <p>{{ outro.mini_descricao }}</p>
-                            <div class="details-icon">
-                                <img src="{% static "/UniversityConnect/images/icons/enter.png" %}" alt="">
+                {% if outros %}
+                    {% for outro in outro %}
+                        <a class="option-block-link" href="{% url 'UniversityConnect:cursos_detail' curso.id %}">
+                            <div class="options-block">
+                                <h2>{{ outro.titulo }}</h2>
+                                <p>{{ outro.mini_descricao }}</p>
+                                <div class="details-icon">
+                                    <img src="{% static "/UniversityConnect/images/icons/enter.png" %}" alt="">
+                                </div>
                             </div>
+                        </a>
+                    {% endfor %}
+                {% else %}
+                <a class="option-block-link" href="">
+                    <div class="options-block">
+                        <h2>Não há cursos</h2>
+                        <p>Não há mais cursos cadastrados com essa categoria.</p>
+                        <div class="details-icon">
+                            <img src="{% static "/UniversityConnect/images/icons/enter.png" %}" alt="">
                         </div>
-                    </a>
-                {% endfor %}
+                    </div>
+                </a>
+                {% endif %}
+                
             </div>
         </div>
     </section>

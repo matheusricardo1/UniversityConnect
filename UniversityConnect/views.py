@@ -1,4 +1,6 @@
 from django.shortcuts import render
+import cssutils
+from django.contrib.staticfiles import finders
 from django.views.decorators.csrf import csrf_protect
 from django.contrib.auth.models import User, AnonymousUser
 from django.db.models import Q
@@ -8,10 +10,18 @@ from django.shortcuts import get_object_or_404
 
 def homepage(request):
     PAGE_NAME = 'Home'
+
+    if request.method == 'POST':
+        if request.POST.get('meu_checkbox', False) == 'on':
+            theme = request.POST.get('meu_checkbox', False) == 'on'
+        else:
+            theme = request.POST.get('meu_checkbox', False) == 'on'
+
+
     user = request.user
     if isinstance(user, AnonymousUser):
         return render(request, 'UniversityConnect/html/pt/index.html', {
-            'request': request,
+            'request': request,'page_name':PAGE_NAME,'theme_footer':theme,
             })
     else:
         social_account = user.socialaccount_set.first()
@@ -21,10 +31,14 @@ def homepage(request):
             return render(request, 'UniversityConnect/html/pt/index.html', {
             'request': request,
             'user': user_social,
+            'page_name':PAGE_NAME,
+            'theme_footer':theme,
             })
         else:
             return render(request, 'UniversityConnect/html/pt/index.html', {
             'request': request,
+            'page_name':PAGE_NAME,
+            'theme_footer':theme,
             })
 
 @csrf_protect
@@ -66,6 +80,7 @@ def cursos(request):
 def cursos_detail(request, id):
     curso = get_object_or_404(Curso,id=id,)
     outros = Curso.objects.all().filter(categoria=curso.categoria)
+    outros = outros.filter(id=curso.id).delete()
     PAGE_NAME = f'{curso.titulo}'
     context = {'request': request, 'curso': curso, 'outro': outros, 'page_name': PAGE_NAME,}
     return render(request, 'UniversityConnect/html/pt/cursos_detail.html', context=context)
