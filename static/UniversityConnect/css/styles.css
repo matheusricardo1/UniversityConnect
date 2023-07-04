@@ -528,19 +528,30 @@ html{
     width: 100%;
     height: 100%;
 }
-
+.right {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding-bottom: 10px;
+}
+.right > div{
+    width: 90%;
+}
 #theme-form{
     display: block;
-    margin: 40px 0 !important;
     width: 200px;
-    height: 120px;
+
+}
+#theme-form > h2{
+    font-family: var(--fontPrimary);
+    font-size: medium;
 }
 #theme-form input{
     display: inline;
 }
 #theme{
     display: inline;
-    padding: 20px;
+    padding: 10px;
     cursor: pointer;
 }
 

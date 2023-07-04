@@ -15,7 +15,9 @@ def homepage(request):
         if request.POST.get('meu_checkbox', False) == 'on':
             theme = request.POST.get('meu_checkbox', False) == 'on'
         else:
-            theme = request.POST.get('meu_checkbox', False) == 'on'
+            theme = request.POST.get('meu_checkbox', True) == 'off'
+    else:
+        theme = False
 
 
     user = request.user

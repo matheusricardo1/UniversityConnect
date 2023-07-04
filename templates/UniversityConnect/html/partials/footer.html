@@ -1,16 +1,13 @@
 {% load static %}
-<head>
-    {% if theme_footer %}
-    <link rel="stylesheet" href="{% static '/UniversityConnect/css/footer_white.css' %}">
-{% endif %}
-</head>
-
-<form id="theme-form" action="" method="post">
-    {% csrf_token %}
-    <h2>Alternar modo</h2>
-    <input id="theme-form-checkbox" type="checkbox" name="meu_checkbox" {% if theme_footer %}checked{% endif %}>
-    <button id="theme" type="submit">Mudar tema</button>
-</form>
+<div class="right">
+<div></div>
+    <form id="theme-form" action="" method="post">
+        {% csrf_token %}
+        <h2>Alternar modo</h2>
+        <input id="theme-form-checkbox" type="checkbox" name="meu_checkbox" {% if theme_footer %}checked{% endif %}>
+        <button id="theme" type="submit">Mudar tema</button>
+    </form>
+</div>
 <footer>
 <div class="footer-top">
     <div class="footer-logo">
