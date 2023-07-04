@@ -1,0 +1,71 @@
+{% load static %}
+<head>
+    {% if theme_footer %}
+    <link rel="stylesheet" href="{% static '/UniversityConnect/css/footer_white.css' %}">
+{% endif %}
+</head>
+
+<form id="theme-form" action="" method="post">
+    {% csrf_token %}
+    <h2>Alternar modo</h2>
+    <input id="theme-form-checkbox" type="checkbox" name="meu_checkbox" {% if theme_footer %}checked{% endif %}>
+    <button id="theme" type="submit">Mudar tema</button>
+</form>
+<footer>
+<div class="footer-top">
+    <div class="footer-logo">
+        <img src="{% static '/UniversityConnect/images/logo/full.png' %}" alt="logo">
+    </div>
+<div class="footer-mid">
+    <div class="footer-info">
+        <div class="footer-info-lang">
+            <div class="footer-info-lang-img">
+                <img src="{% static '/UniversityConnect/images/icons/globe.png' %}" alt="logo">
+            </div>
+            <button>Português</button>
+        </div>
+        <div class="footer-info-content">
+            <div class="footer-info-content-support">
+                <h2>Suporte</h2>
+                <h3>FAQ</h3>
+                <h3>Telefones</h3>
+                <h3>Chat</h3>
+            </div>
+            <div class="footer-info-content-menu">
+                <h2>Início</h2>
+                <h3>Home</h3>
+                <h3>Cursos</h3>
+                <h3>Notícias</h3>
+            </div>
+            <div class="footer-info-content-about">
+                <h2>Sobre nós</h2>
+                <h3>Informações</h3>
+                <h3>Contato</h3>
+                <h3>Blog</h3>
+            </div>
+        </div>
+        <div class="footer-info-media">
+            <div class="media">
+                <div class="media-img">
+                    <img src="{% static '/UniversityConnect/images/icons/twitter.png' %}" alt="logo">
+                </div>
+                <div class="media-img">
+                    <img src="{% static '/UniversityConnect/images/icons/instagram.png' %}" alt="logo">
+                </div>
+                <div class="media-img">
+                    <img src="{% static '/UniversityConnect/images/icons/facebook.png' %}" alt="logo">
+                </div>
+            </div>
+            <div class="follow">
+                Siga-nos nas redes sociais!
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer-bottom">
+    <div>
+        <h2>Termos de Uso * Política de Privacidade</h2>
+        <p>&copy; 2023 UniversityConnect</p>
+    </div>
+</div>
+</footer>

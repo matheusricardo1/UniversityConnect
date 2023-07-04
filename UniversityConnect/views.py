@@ -44,6 +44,14 @@ def homepage(request):
 @csrf_protect
 def cursos(request):
     PAGE_NAME = 'Cursos'
+
+    if request.method == 'POST':
+        if request.POST.get('meu_checkbox', False) == 'on':
+            theme = request.POST.get('meu_checkbox', False) == 'on'
+        else:
+            theme = request.POST.get('meu_checkbox', False) == 'on'
+
+
     curso = Curso.objects.all()
     
     if request.GET.get('course-searchbar', ''):
@@ -53,7 +61,7 @@ def cursos(request):
         Q(categoria__nome__icontains=termo_pesquisa) |
         Q(descricao__icontains=termo_pesquisa)
     )
-        context = {'request': request, 'curso': curso, 'page_name': 'Cursos', 'pesquisa':termo_pesquisa, 'page_name': PAGE_NAME}
+        context = {'request': request, 'curso': curso, 'page_name': 'Cursos', 'pesquisa':termo_pesquisa, 'page_name': PAGE_NAME, 'theme_footer':theme,}
         return render(request, 'UniversityConnect/html/pt/cursos.html', context=context)
     
     if request.method == 'POST':
@@ -72,17 +80,24 @@ def cursos(request):
     
     if len(curso) == 0:
         curso = False
-    context = {'request': request, 'curso': curso, 'page_name': 'Cursos', 'page_name': PAGE_NAME}
+    context = {'request': request, 'curso': curso, 'page_name': 'Cursos', 'page_name': PAGE_NAME, 'theme_footer':theme,}
     return render(request, 'UniversityConnect/html/pt/cursos.html', context=context)
 
 
 
 def cursos_detail(request, id):
+    if request.method == 'POST':
+        if request.POST.get('meu_checkbox', False) == 'on':
+            theme = request.POST.get('meu_checkbox', False) == 'on'
+        else:
+            theme = request.POST.get('meu_checkbox', False) == 'on'
+
+
     curso = get_object_or_404(Curso,id=id,)
     outros = Curso.objects.all().filter(categoria=curso.categoria)
     outros = outros.filter(id=curso.id).delete()
     PAGE_NAME = f'{curso.titulo}'
-    context = {'request': request, 'curso': curso, 'outro': outros, 'page_name': PAGE_NAME,}
+    context = {'request': request, 'curso': curso, 'outro': outros, 'page_name': PAGE_NAME,'theme_footer':theme,}
     return render(request, 'UniversityConnect/html/pt/cursos_detail.html', context=context)
 
 
