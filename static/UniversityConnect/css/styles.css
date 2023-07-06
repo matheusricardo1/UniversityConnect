@@ -589,11 +589,11 @@ html{
     }
 }
 footer{
-    background-color: var(--colorBox);
+    background-color: ;
 }
 .footer-top{
     width: 100%;
-    background-color: var(--colorBox);
+    background-color: rgb(68, 66, 66) ;
 }
 .footer-logo{
     margin-left: 20px;

@@ -51,8 +51,9 @@ def cursos(request):
         if request.POST.get('meu_checkbox', False) == 'on':
             theme = request.POST.get('meu_checkbox', False) == 'on'
         else:
-            theme = request.POST.get('meu_checkbox', False) == 'on'
-
+            theme = False
+    else:
+        theme = False
 
     curso = Curso.objects.all()
     
@@ -93,6 +94,8 @@ def cursos_detail(request, id):
             theme = request.POST.get('meu_checkbox', False) == 'on'
         else:
             theme = request.POST.get('meu_checkbox', False) == 'on'
+    else:
+        theme = False
 
 
     curso = get_object_or_404(Curso,id=id,)
