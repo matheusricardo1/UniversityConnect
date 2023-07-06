@@ -1,14 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+{% load static %}
+{% include '../partials/head.html' %}
+<link rel="stylesheet" href="{% static '/UniversityConnect/css/profile.css' %}">
 </head>
 <body>
-    Página de perfil, como vai {{ user.username }}
-    <br>
-    <br>
-    <a href="{% url 'UniversityConnect:homepage' %}">Clique aqui para voltar para a págnia inicial</a>
+    <main>
+        {% include '../partials/header.html' %}
+            
+        <section class='profile'>
+            <a href="{% if request.path == '/' %}
+            {% elif request.path != '/' %}/
+            {% endif %}" class="btn">Voltar</a>
+            <a href="#" class="btn2">Editar Perfil</a>
+            <h1>Perfil</h1>
+            <h3>Bem vindo - {{ user.username }}</h3>
+
+            <a href="{% url 'account_logout' %}" class="btn3"> Sair da Conta</a>
+        </section>
+    </main>
+{% include '../partials/footer.html' %}
 </body>
 </html>

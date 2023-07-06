@@ -1,13 +1,4 @@
 {% load static %}
-<div class="right">
-<div></div>
-    <form id="theme-form" action="" method="post">
-        {% csrf_token %}
-        <h2>Alternar modo</h2>
-        <input id="theme-form-checkbox" type="checkbox" name="meu_checkbox" {% if theme_footer %}checked{% endif %}>
-        <button id="theme" type="submit">Mudar tema</button>
-    </form>
-</div>
 <footer>
 <div class="footer-top">
     <div class="footer-logo">
@@ -46,9 +37,9 @@
                 <div class="media-img">
                     <img src="{% static '/UniversityConnect/images/icons/twitter.png' %}" alt="logo">
                 </div>
-                <div class="media-img">
+                <a href="https://www.instagram.com/universityconnect_/" target="_blank" class="media-img">
                     <img src="{% static '/UniversityConnect/images/icons/instagram.png' %}" alt="logo">
-                </div>
+                </a>
                 <div class="media-img">
                     <img src="{% static '/UniversityConnect/images/icons/facebook.png' %}" alt="logo">
                 </div>

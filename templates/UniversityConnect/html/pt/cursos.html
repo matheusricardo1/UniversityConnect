@@ -9,17 +9,12 @@
             <div class="home-options">
                 <div class="home-title">
                     <h2>Cursos de Cambridge</h2>
-                    <form method="post" action="{% url 'UniversityConnect:cursos' %}">
-                        {% csrf_token %}
-                        <input type="text" name="novo_titulo" placeholder="Digite o novo título">
-                        <button type="submit">Atualizar Título</button>
-                    </form>   
                     <form method="GET" action="{% url 'UniversityConnect:cursos' %}">
                         <select name="categoria">
                             <option value="">Todas as categorias</option>
-                            <option value="1">Tecnologia</option>
-                            <option value="2">Medicina</option>
-                            <option value="3">Química</option>
+                            {% for categoria in categoria %}
+                                <option value="{{ categoria.id }}">{{ categoria.nome }}</option>
+                            {% endfor %}
                         </select>
                         <button type="submit">Filtrar</button>
                     </form>

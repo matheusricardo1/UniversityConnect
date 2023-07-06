@@ -8,20 +8,21 @@
     </p>
     {% if user.username %}
         <a class="sidebar-block" href="{% url 'UniversityConnect:profile' %}"> Perfil</a>
-    {% else %} 
-        <a class="sidebar-block" href="{% url 'account_signup' %}">Registrar</a>
-    {% endif %}
-    {% if user.username %}
-        <a class="sidebar-block" href="accounts/logout/">Sair </a>
+        <a class="sidebar-block" href="
+        {% if request.path == '/' %}#
+        {% elif request.path != '/' %}/
+        {% endif %}">Home</a>
+        <a class="sidebar-block" href="#">Sobre</a>
+        <a class="sidebar-block sidebar-block-bottom" href="accounts/logout/">Sair </a>
     {% else %}
         <a class="sidebar-block" href="{% url 'account_login' %}">Login</a>
+        <a class="sidebar-block" href="{% url 'account_signup' %}">Registrar</a>
+        <a class="sidebar-block" href="
+        {% if request.path == '/' %}#
+        {% elif request.path != '/' %}/
+        {% endif %}">Home</a>
+        <a class="sidebar-block" href="#">Sobre</a>
     {% endif %}
-    
-    <a class="sidebar-block" href="
-    {% if request.path == '/' %}#
-    {% elif request.path != '/' %}/
-    {% endif %}">Home</a>
-    <a class="sidebar-block" href="#">Sobre</a>
 </div>
     
     
