@@ -7,7 +7,7 @@
         >Home</a>
         <a class="home-linkstyle" href="#">Sobre</a>
         {% if user.username %}
-            <a class="home-linkstyle" href="accounts/profile/"> Perfil</a>
+            <a class="home-linkstyle" href="{% url 'UniversityConnect:profile' %}"> Perfil</a>
         {% else %} 
             <a class="home-linkstyle" href="{% url 'account_signup' %}">Registrar</a>
         {% endif %}

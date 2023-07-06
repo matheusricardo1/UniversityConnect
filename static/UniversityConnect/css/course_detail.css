@@ -146,6 +146,9 @@
         font-size: var(--fontLargeSize) !important;
     
     }
+    .home-title h2{
+        font-size: large !important;
+    }
 }
 @media only screen and (max-width: 400px){
     
@@ -309,7 +312,7 @@ html{
     font-size: large !important;
 }   
 .options-block > p{
-    padding-right: 14px;
+    padding-right: 40px !important;
     font-size: medium !important;
 }
 .details-icon{
@@ -394,6 +397,7 @@ html{
 }   
 .content-description{
     text-align: justify;
+    
 }
 @media only screen and (max-width: 714px) {
     .home{

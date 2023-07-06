@@ -116,6 +116,14 @@ html{
     color: var(--colorWhite);
 }
 .sidebar-block {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    background-color: white;
+    padding: 10px;
     position: relative;
 }
   
