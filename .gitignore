@@ -1,10 +1,9 @@
-venv
+
 venv_if
 .idea
 
 .env
 env/
-venv/
 venv_if/
 ENV/
 env.bak/
