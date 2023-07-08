@@ -1,3 +1,3 @@
 # UniversityConnect
-Meu nome é Matheus Ricardo, Scrum Master, este projeto é focado ajudar estudantes que desejam estudar na universidade de Cambridge.
+O site UniversityConnect é um projeto focado em ajudar estudantes que desejam estudar na universidade de Cambridge, localizado no Reino Unido.
 
