@@ -19,7 +19,6 @@
             <div class="block1-content">
                 <h2 class="content-title">{{ curso.titulo }}</h2>
                 <p class="content-description">{{ curso.descricao }}</p>
-                
             </div>
         </div>
         <div class="block2">
@@ -28,18 +27,16 @@
                 <p class="content-description">{{ curso.formacao }}</p>
                 <p class="content-level">{{ curso.nivel_curso }}</p>
                 <p class="content-time">{{ curso.tempo_curso }}</p>
-                
                 <p class="content-hours">{{ curso.carga_horaria }} horas</p>
-                
                 <p class="content-pay">R${{ curso.mensalidade }}</p>
                 <a class="content-course" href="#">Cadastrar no Curso!</a>
             </div>
             <div class="other">
                 <h2>Outros Cursos</h2>
                 <p>Relacionados com {{ curso.categoria }}</p>
-                {% if outros %}
+                {% if outro %}
                     {% for outro in outro %}
-                        <a class="option-block-link" href="{% url 'UniversityConnect:cursos_detail' curso.id %}">
+                        <a class="option-block-link" href="{% url 'UniversityConnect:cursos_detail' outro.id %}">
                             <div class="options-block">
                                 <h2>{{ outro.titulo }}</h2>
                                 <p>{{ outro.mini_descricao }}</p>
@@ -60,10 +57,8 @@
                     </div>
                 </a>
                 {% endif %}
-                
             </div>
         </div>
     </section>
-    
 </main>
 {% include '../partials/footer.html' %}

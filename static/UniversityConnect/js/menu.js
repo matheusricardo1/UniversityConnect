@@ -32,30 +32,15 @@ window.onscroll = function arrowOff(){
 }
 
 function checkScreenWidth() {
-    if (window.matchMedia("(min-width: 684px)").matches) {
-      document.getElementById("sidebar").style.display = "none";
-      var sidebaroff = document.getElementById('sidebar-off');
-      sidebaroff.style.display = 'none';
+    var sidebar = document.getElementById("sidebar");
+    if (window.matchMedia("(min-width: 714px)").matches && sidebar.classList.contains("sidebar-show")) {
+        var sidebar = document.getElementById("sidebar");
+        sidebar.style.display = "none";
+        sidebar.classList.toggle("sidebar-show");
+        document.getElementById('sidebar-off').style.display = "none";
+
     }
 }
 
 window.addEventListener("DOMContentLoaded", checkScreenWidth);
 window.addEventListener("resize", checkScreenWidth);
-
-
-document.getElementById('theme-form').addEventListener('submit', function(event) {
-    event.preventDefault(); // Impede o envio padrão do formulário
-    this.submit(); // Envia o formulário programaticamente
-});
-
-window.onbeforeunload = function() {
-    // Limpa o evento de submissão do formulário para evitar o alerta de confirmação
-    document.getElementById('theme-form').removeEventListener('submit', preventUnloadAlert);
-};
-
-function preventUnloadAlert() {
-    // Retorna uma string vazia para evitar o alerta de confirmação
-    return '';
-}
-
-document.getElementById('theme-form').addEventListener('submit', preventUnloadAlert);

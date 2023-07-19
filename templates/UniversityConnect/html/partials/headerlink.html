@@ -1,21 +1,18 @@
 <div class="main-header-links">
     <nav class="main-header-links-nav">
-        <a class="home-linkstyle"
-            href="{% if request.path == '/' %}
-            {% elif request.path != '/' %}/
-            {% endif %}"
-        >Home</a>
+        <a class="home-linkstyle" href="{% if request.path == '/' %}
+        {% elif request.path != '/' %}/
+        {% endif %}">Home</a>
+
         <a class="home-linkstyle" href="#">Sobre</a>
         {% if user.username %}
-            <a class="home-linkstyle" href="{% url 'UniversityConnect:profile' %}"> Perfil</a>
-        {% else %} 
-            <a class="home-linkstyle" href="{% url 'account_signup' %}">Registrar</a>
-        {% endif %}
-        {% if user.username %}
-            <a class="home-linkstyle" href="accounts/logout/">Sair </a>
+            <a class="home-linkstyle" href="{% url 'UniversityConnect:profile' %}">Perfil</a>
+            <a class="home-linkstyle" href="{% url 'account_logout' %}">Sair</a>
         {% else %}
+            <a class="home-linkstyle" href="{% url 'account_signup' %}">Registrar</a>
             <a class="home-linkstyle" href="{% url 'account_login' %}">Login</a>
         {% endif %}
         <input id="home-linkstyle-menu" type="button" value="Menu" onclick="entrar()">
     </nav>
+    
 </div>

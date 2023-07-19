@@ -2,15 +2,14 @@ from django.shortcuts import render
 from django.contrib.staticfiles import finders
 from django.views.decorators.csrf import csrf_protect
 from django.contrib.auth.models import User, AnonymousUser
+from allauth.socialaccount.models import SocialAccount
 from django.db.models import Q
-from django.db import models
 from django.contrib.auth.decorators import login_required
 from .models import Curso, Categoria
 from django.shortcuts import get_object_or_404
 
 def homepage(request):
     PAGE_NAME = 'Home'
-
     user = request.user
     if isinstance(user, AnonymousUser):
         return render(request, 'UniversityConnect/html/pt/index.html', {
@@ -64,8 +63,7 @@ def cursos(request):
 
 def cursos_detail(request, id):
     curso = get_object_or_404(Curso,id=id,)
-    outros = Curso.objects.all().filter(categoria=curso.categoria)
-    
+    outros = Curso.objects.filter(categoria=curso.categoria).exclude(id=curso.id)
 
     PAGE_NAME = f'{curso.titulo}'
     context = {'request': request, 'curso': curso, 'outro': outros, 'page_name': PAGE_NAME,}
@@ -74,8 +72,9 @@ def cursos_detail(request, id):
 
 @login_required(login_url='/accounts/login/')
 def profile(request):
-    PAGE_NAME = 'Cursos'
-    context = {'request': request, 'page_name': 'Perfil','page_name': PAGE_NAME,}
+    user = request.user
+    PAGE_NAME = f'Perfil - {user.username}'
+    context = {'request': request,'page_name': PAGE_NAME, 'user':user,}
 
     return render(request, 'UniversityConnect/html/pt/profile.html', context=context)
 
