@@ -8,9 +8,8 @@
     </p>
     {% if user.username %}
         <a class="sidebar-block" href="{% url 'UniversityConnect:profile' %}"> Perfil</a>
-        <a class="sidebar-block" href="
-        {% if request.path == '/' %}#
-        {% elif request.path != '/' %}/
+        <a class="sidebar-block" href="{% if request.path == '/' %}
+        {% elif request.path != '/' %}{% url 'UniversityConnect:homepage' %}
         {% endif %}">Home</a>
         <a class="sidebar-block" href="#">Sobre</a>
         <a class="sidebar-block sidebar-block-bottom" href="{% url 'account_logout' %}">Sair </a>

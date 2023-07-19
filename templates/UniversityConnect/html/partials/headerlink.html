@@ -1,10 +1,14 @@
 <div class="main-header-links">
     <nav class="main-header-links-nav">
         <a class="home-linkstyle" href="{% if request.path == '/' %}
-        {% elif request.path != '/' %}/
+        {% elif request.path != '/' %}{% url 'UniversityConnect:homepage' %}
         {% endif %}">Home</a>
-
-        <a class="home-linkstyle" href="#">Sobre</a>
+        
+        {% if '/en/' in request.path %}
+            <a class="home-linkstyle" href="{% url 'set-language' 'pt-br' %}">Português</a>
+        {% else %}
+		    <a class="home-linkstyle" href="{% url 'set-language' 'en' %}">English</a>
+        {% endif %}
         {% if user.username %}
             <a class="home-linkstyle" href="{% url 'UniversityConnect:profile' %}">Perfil</a>
             <a class="home-linkstyle" href="{% url 'account_logout' %}">Sair</a>
