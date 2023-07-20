@@ -14,7 +14,11 @@
                         <select name="categoria">
                             <option value="">{% trans "Todas as categorias" %}</option>
                             {% for categoria in categoria %}
-                                <option value="{{ categoria.id }}">{{ categoria.nome }}</option>
+                                <option value="{{ categoria.id }}">
+                                    {% if lang %}{{ categoria.name_en }}
+                                    {% else %}{{ categoria.nome }}
+                                    {% endif %}
+                                </option>
                             {% endfor %}
                         </select>
                         <button type="submit">{% trans "Filtrar" %}</button>

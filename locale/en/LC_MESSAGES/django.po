@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-19 22:18-0400\n"
+"POT-Creation-Date: 2023-07-20 11:52-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -127,36 +127,30 @@ msgid "Todas as categorias"
 msgstr "All categories"
 
 #: .\templates\UniversityConnect\html\pt\cursos.html:20
-#, fuzzy
-#| msgid "Registrar"
 msgid "Filtrar"
-msgstr "Signup"
+msgstr "Filter"
 
 #: .\templates\UniversityConnect\html\pt\cursos_detail.html:9
-#, fuzzy
-#| msgid "Cursos"
 msgid "Curso de"
-msgstr "Courses"
+msgstr "Course of"
 
-#: .\templates\UniversityConnect\html\pt\cursos_detail.html:33
+#: .\templates\UniversityConnect\html\pt\cursos_detail.html:52
 msgid "Cadastrar no Curso!"
 msgstr "Register in the course!"
 
-#: .\templates\UniversityConnect\html\pt\cursos_detail.html:36
-#, fuzzy
-#| msgid "Cursos"
+#: .\templates\UniversityConnect\html\pt\cursos_detail.html:55
 msgid "Outros Cursos"
-msgstr "Courses"
+msgstr "Other Courses"
 
-#: .\templates\UniversityConnect\html\pt\cursos_detail.html:37
+#: .\templates\UniversityConnect\html\pt\cursos_detail.html:56
 msgid "Relacionados com"
 msgstr "Related to"
 
-#: .\templates\UniversityConnect\html\pt\cursos_detail.html:53
+#: .\templates\UniversityConnect\html\pt\cursos_detail.html:77
 msgid "Não há cursos"
 msgstr "There are no courses"
 
-#: .\templates\UniversityConnect\html\pt\cursos_detail.html:54
+#: .\templates\UniversityConnect\html\pt\cursos_detail.html:78
 msgid "Não há mais cursos cadastrados com essa categoria."
 msgstr "There are no more courses registered with this category."
 
@@ -190,10 +184,8 @@ msgid "Descubra a excelência acadêmica de Cambridge."
 msgstr "Discover Cambridge's academic excellence."
 
 #: .\templates\UniversityConnect\html\pt\index.html:69
-#, fuzzy
-#| msgid "Intercâmbio"
 msgid "Programas de Intercâmbio"
-msgstr "Exchange"
+msgstr "Exchange Programs"
 
 #: .\templates\UniversityConnect\html\pt\index.html:70
 msgid "Descubra Cambridge em um intercâmbio transformador."
@@ -305,12 +297,10 @@ msgstr "Warning:"
 #: .\templates\account\email.html:43
 msgid ""
 "You currently do not have any e-mail address set up. You should really add "
-"an e-mail address so you can receive notifications, reset your password, "
-"etc."
+"an e-mail address so you can receive notifications, reset your password, etc."
 msgstr ""
 "You currently do not have any e-mail address set up. You should really add "
-"an e-mail address so you can receive notifications, reset your password, "
-"etc."
+"an e-mail address so you can receive notifications, reset your password, etc."
 
 #: .\templates\account\email.html:48
 msgid "Add E-mail Address"
@@ -327,24 +317,30 @@ msgstr "Do you really want to remove the selected e-mail address?"
 #: .\templates\account\email\account_already_exists_message.txt:4
 #, python-format
 msgid ""
-"You are receiving this e-mail because you or someone else tried to signup for an\n"
+"You are receiving this e-mail because you or someone else tried to signup "
+"for an\n"
 "account using e-mail address:\n"
 "\n"
 "%(email)s\n"
 "\n"
-"However, an account using that e-mail address already exists.  In case you have\n"
-"forgotten about this, please use the password forgotten procedure to recover\n"
+"However, an account using that e-mail address already exists.  In case you "
+"have\n"
+"forgotten about this, please use the password forgotten procedure to "
+"recover\n"
 "your account:\n"
 "\n"
 "%(password_reset_url)s"
 msgstr ""
-"You are receiving this e-mail because you or someone else tried to signup for an\n"
+"You are receiving this e-mail because you or someone else tried to signup "
+"for an\n"
 "account using e-mail address:\n"
 "\n"
 "%(email)s\n"
 "\n"
-"However, an account using that e-mail address already exists.  In case you have\n"
-"forgotten about this, please use the password forgotten procedure to recover\n"
+"However, an account using that e-mail address already exists.  In case you "
+"have\n"
+"forgotten about this, please use the password forgotten procedure to "
+"recover\n"
 "your account:\n"
 "\n"
 "%(password_reset_url)s"
@@ -370,11 +366,13 @@ msgstr ""
 #: .\templates\account\email\email_confirmation_message.txt:5
 #, python-format
 msgid ""
-"You're receiving this e-mail because user %(user_display)s has given your e-mail address to register an account on %(site_domain)s.\n"
+"You're receiving this e-mail because user %(user_display)s has given your e-"
+"mail address to register an account on %(site_domain)s.\n"
 "\n"
 "To confirm this is correct, go to %(activate_url)s"
 msgstr ""
-"You're receiving this e-mail because user %(user_display)s has given your e-mail address to register an account on %(site_domain)s.\n"
+"You're receiving this e-mail because user %(user_display)s has given your e-"
+"mail address to register an account on %(site_domain)s.\n"
 "\n"
 "To confirm this is correct, go to %(activate_url)s"
 
@@ -384,11 +382,15 @@ msgstr "Please Confirm Your E-mail Address"
 
 #: .\templates\account\email\password_reset_key_message.txt:4
 msgid ""
-"You're receiving this e-mail because you or someone else has requested a password for your user account.\n"
-"It can be safely ignored if you did not request a password reset. Click the link below to reset your password."
+"You're receiving this e-mail because you or someone else has requested a "
+"password for your user account.\n"
+"It can be safely ignored if you did not request a password reset. Click the "
+"link below to reset your password."
 msgstr ""
-"You're receiving this e-mail because you or someone else has requested a password for your user account.\n"
-"It can be safely ignored if you did not request a password reset. Click the link below to reset your password."
+"You're receiving this e-mail because you or someone else has requested a "
+"password for your user account.\n"
+"It can be safely ignored if you did not request a password reset. Click the "
+"link below to reset your password."
 
 #: .\templates\account\email\password_reset_key_message.txt:9
 #, python-format
@@ -404,7 +406,8 @@ msgstr "Password Reset E-mail"
 #, python-format
 msgid ""
 "You are receiving this e-mail because you or someone else has requested a\n"
-"password for your user account. However, we do not have any record of a user\n"
+"password for your user account. However, we do not have any record of a "
+"user\n"
 "with email %(email)s in our database.\n"
 "\n"
 "This mail can be safely ignored if you did not request a password reset.\n"
@@ -412,7 +415,8 @@ msgid ""
 "If it was you, you can sign up for an account using the link below."
 msgstr ""
 "You are receiving this e-mail because you or someone else has requested a\n"
-"password for your user account. However, we do not have any record of a user\n"
+"password for your user account. However, we do not have any record of a "
+"user\n"
 "with email %(email)s in our database.\n"
 "\n"
 "This mail can be safely ignored if you did not request a password reset.\n"
@@ -440,11 +444,11 @@ msgstr "Confirm"
 #: .\templates\account\email_confirm.html:27
 #, python-format
 msgid ""
-"This e-mail confirmation link expired or is invalid. Please <a "
-"href=\"%(email_url)s\">issue a new e-mail confirmation request</a>."
+"This e-mail confirmation link expired or is invalid. Please <a href="
+"\"%(email_url)s\">issue a new e-mail confirmation request</a>."
 msgstr ""
-"This e-mail confirmation link expired or is invalid. Please <a "
-"href=\"%(email_url)s\">issue a new e-mail confirmation request</a>."
+"This e-mail confirmation link expired or is invalid. Please <a href="
+"\"%(email_url)s\">issue a new e-mail confirmation request</a>."
 
 #: .\templates\account\login.html:7 .\templates\account\login.html:24
 #: .\templates\account\login.html:39 .\templates\account\signup.html:18
@@ -461,6 +465,16 @@ msgstr "Change E-mail"
 #: .\templates\account\signup.html:14
 msgid "Sign Out"
 msgstr "Sign Out"
+
+#: .\templates\account\login.html:22
+msgid "Faça parte dessa comunidade!"
+msgstr ""
+
+#: .\templates\account\login.html:23
+msgid ""
+"Junte-se e fique ligado com as atualizações e informações da Universidade de "
+"Cambridge"
+msgstr ""
 
 #: .\templates\account\login.html:25 .\templates\account\signup.html:19
 #: .\templates\account\signup.html:32 .\templates\socialaccount\signup.html:8
@@ -545,11 +559,11 @@ msgstr "Password Reset"
 
 #: .\templates\account\password_reset.html:15
 msgid ""
-"Forgotten your password? Enter your e-mail address below, and we'll send you"
-" an e-mail allowing you to reset it."
+"Forgotten your password? Enter your e-mail address below, and we'll send you "
+"an e-mail allowing you to reset it."
 msgstr ""
-"Forgotten your password? Enter your e-mail address below, and we'll send you"
-" an e-mail allowing you to reset it."
+"Forgotten your password? Enter your e-mail address below, and we'll send you "
+"an e-mail allowing you to reset it."
 
 #: .\templates\account\password_reset.html:20
 msgid "Reset My Password"
@@ -575,12 +589,12 @@ msgstr "Bad Token"
 #, python-format
 msgid ""
 "The password reset link was invalid, possibly because it has already been "
-"used.  Please request a <a href=\"%(passwd_reset_url)s\">new password "
-"reset</a>."
+"used.  Please request a <a href=\"%(passwd_reset_url)s\">new password reset</"
+"a>."
 msgstr ""
 "The password reset link was invalid, possibly because it has already been "
-"used.  Please request a <a href=\"%(passwd_reset_url)s\">new password "
-"reset</a>."
+"used.  Please request a <a href=\"%(passwd_reset_url)s\">new password reset</"
+"a>."
 
 #: .\templates\account\password_reset_from_key.html:16
 msgid "change password"
@@ -657,21 +671,25 @@ msgstr ""
 #: .\templates\account\verified_email_required.html:16
 msgid ""
 "We have sent an e-mail to you for\n"
-"verification. Please click on the link inside that e-mail. If you do not see the verification e-mail in your main inbox, check your spam folder. Otherwise\n"
+"verification. Please click on the link inside that e-mail. If you do not see "
+"the verification e-mail in your main inbox, check your spam folder. "
+"Otherwise\n"
 "contact us if you do not receive it within a few minutes."
 msgstr ""
 "We have sent an e-mail to you for\n"
-"verification. Please click on the link inside that e-mail. If you do not see the verification e-mail in your main inbox, check your spam folder. Otherwise\n"
+"verification. Please click on the link inside that e-mail. If you do not see "
+"the verification e-mail in your main inbox, check your spam folder. "
+"Otherwise\n"
 "contact us if you do not receive it within a few minutes."
 
 #: .\templates\account\verified_email_required.html:20
 #, python-format
 msgid ""
-"<strong>Note:</strong> you can still <a href=\"%(email_url)s\">change your "
-"e-mail address</a>."
+"<strong>Note:</strong> you can still <a href=\"%(email_url)s\">change your e-"
+"mail address</a>."
 msgstr ""
-"<strong>Note:</strong> you can still <a href=\"%(email_url)s\">change your "
-"e-mail address</a>."
+"<strong>Note:</strong> you can still <a href=\"%(email_url)s\">change your e-"
+"mail address</a>."
 
 #: .\templates\openid\login.html:9
 msgid "OpenID Sign In"
@@ -722,14 +740,12 @@ msgid "You are about to connect a new third party account from %(provider)s."
 msgstr "You are about to connect a new third party account from %(provider)s."
 
 #: .\templates\socialaccount\login.html:14
-#, python-format
-msgid "Sign In Via %(provider)s"
-msgstr "Sign In Via %(provider)s"
+msgid "Entrar com %(provider)s"
+msgstr "Sign With %(provider)s"
 
 #: .\templates\socialaccount\login.html:16
 #, python-format
-msgid ""
-"You are about to sign in using a third party account from %(provider)s."
+msgid "You are about to sign in using a third party account from %(provider)s."
 msgstr ""
 "You are about to sign in using a third party account from %(provider)s."
 
@@ -746,12 +762,12 @@ msgstr "Login Cancelled"
 #, python-format
 msgid ""
 "You decided to cancel logging in to our site using one of your existing "
-"accounts. If this was a mistake, please proceed to <a "
-"href=\"%(login_url)s\">sign in</a>."
+"accounts. If this was a mistake, please proceed to <a href=\"%(login_url)s"
+"\">sign in</a>."
 msgstr ""
 "You decided to cancel logging in to our site using one of your existing "
-"accounts. If this was a mistake, please proceed to <a "
-"href=\"%(login_url)s\">sign in</a>."
+"accounts. If this was a mistake, please proceed to <a href=\"%(login_url)s"
+"\">sign in</a>."
 
 #: .\templates\socialaccount\messages\account_connected.txt:2
 msgid "The social account has been connected."
@@ -781,3 +797,7 @@ msgstr "Portuguese"
 #: .\website\settings.py:136
 msgid "English"
 msgstr "English"
+
+#, python-format
+#~ msgid "Sign With %(provider)s"
+#~ msgstr "Sign With %(provider)s"

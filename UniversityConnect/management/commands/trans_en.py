@@ -6,9 +6,6 @@ from pathlib import Path
 
 class Command(BaseCommand):
 
-    def add_arguments(self, parser):
-        parser.add_argument('lang', type=str, default='en')
-
     def handle(self, *args, **options ):
         BASE_DIR = Path(__file__).resolve().parent.parent
         if __name__ == "__main__":

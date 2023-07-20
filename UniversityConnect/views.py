@@ -69,8 +69,13 @@ def cursos_detail(request, id):
     curso = get_object_or_404(Curso,id=id,)
     outros = Curso.objects.filter(categoria=curso.categoria).exclude(id=curso.id)
 
+    if 'en/' in request.path:
+        lang = True
+    else:
+        lang = False 
+
     PAGE_NAME = f'{curso.titulo}'
-    context = {'request': request, 'curso': curso, 'outro': outros, 'page_name': PAGE_NAME,}
+    context = {'request': request, 'curso': curso, 'outro': outros, 'page_name': PAGE_NAME,'lang':lang,}
     return render(request, 'UniversityConnect/html/pt/cursos_detail.html', context=context)
 
 

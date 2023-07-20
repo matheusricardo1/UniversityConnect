@@ -6,30 +6,31 @@ from googletrans import Translator
 def traduzir_titulo(modeladmin, request, queryset):
     translator = Translator(service_urls=['translate.google.com'])
     for curso in queryset:
-        curso.tittle_en = translator.translate(curso.titulo, dest='en').text
+        curso.tittle_en = (translator.translate(curso.titulo, dest='en').text).title()
         curso.mini_description_en = translator.translate(curso.mini_descricao, dest='en').text
         curso.description_en = translator.translate(curso.descricao, dest='en').text
+        curso.time_course_en = (translator.translate(curso.tempo_curso, dest='en').text).title()
         curso.save()
 traduzir_titulo.short_description = 'Traduzir para inglês'
 
 def traduzir_formacao(modeladmin, request, queryset):
     translator = Translator(service_urls=['translate.google.com'])
     for formacao in queryset:
-        formacao.name_en = translator.translate(formacao.nome, dest='en').text
+        formacao.name_en = (translator.translate(formacao.nome, dest='en').text).title()
         formacao.save()
 traduzir_formacao.short_description = 'Traduzir para inglês'
 
 def traduzir_categoria(modeladmin, request, queryset):
     translator = Translator(service_urls=['translate.google.com'])
     for formacao in queryset:
-        formacao.name_en = translator.translate(formacao.nome, dest='en').text
+        formacao.name_en = (translator.translate(formacao.nome, dest='en').text).title()
         formacao.save()
 traduzir_categoria.short_description = 'Traduzir para inglês'
 
 def traduzir_nivel_curso(modeladmin, request, queryset):
     translator = Translator(service_urls=['translate.google.com'])
     for nivelcurso in queryset:
-        nivelcurso.name_en = translator.translate(nivelcurso.nome, dest='en').text
+        nivelcurso.name_en = (translator.translate(nivelcurso.nome, dest='en').text).title()
         nivelcurso.save()
 traduzir_nivel_curso.short_description = 'Traduzir para inglês'
 

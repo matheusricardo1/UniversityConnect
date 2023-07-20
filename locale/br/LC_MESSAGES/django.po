@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-19 22:18-0400\n"
+"POT-Creation-Date: 2023-07-20 11:50-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -53,7 +53,7 @@ msgstr ""
 #: .\templates\UniversityConnect\html\partials\footer.html:26
 #: .\templates\UniversityConnect\html\pt\index.html:28
 msgid "Cursos"
-msgstr "Cursos"
+msgstr ""
 
 #: .\templates\UniversityConnect\html\partials\footer.html:27
 msgid "Notícias"
@@ -121,10 +121,8 @@ msgid "Conecte-se com a gente!"
 msgstr ""
 
 #: .\templates\UniversityConnect\html\pt\cursos.html:12
-#, fuzzy
-#| msgid "Universidade de Cambridge"
 msgid "Cursos de Cambridge"
-msgstr "Universidade de Cambridge"
+msgstr ""
 
 #: .\templates\UniversityConnect\html\pt\cursos.html:15
 msgid "Todas as categorias"
@@ -132,56 +130,52 @@ msgstr ""
 
 #: .\templates\UniversityConnect\html\pt\cursos.html:20
 msgid "Filtrar"
-msgstr ""
+msgstr "Filtrar"
 
 #: .\templates\UniversityConnect\html\pt\cursos_detail.html:9
-#, fuzzy
-#| msgid "Cursos"
 msgid "Curso de"
-msgstr "Cursos"
+msgstr ""
 
-#: .\templates\UniversityConnect\html\pt\cursos_detail.html:33
+#: .\templates\UniversityConnect\html\pt\cursos_detail.html:52
 msgid "Cadastrar no Curso!"
 msgstr ""
 
-#: .\templates\UniversityConnect\html\pt\cursos_detail.html:36
-#, fuzzy
-#| msgid "Cursos"
+#: .\templates\UniversityConnect\html\pt\cursos_detail.html:55
 msgid "Outros Cursos"
-msgstr "Cursos"
+msgstr ""
 
-#: .\templates\UniversityConnect\html\pt\cursos_detail.html:37
+#: .\templates\UniversityConnect\html\pt\cursos_detail.html:56
 msgid "Relacionados com"
 msgstr ""
 
-#: .\templates\UniversityConnect\html\pt\cursos_detail.html:53
+#: .\templates\UniversityConnect\html\pt\cursos_detail.html:77
 msgid "Não há cursos"
 msgstr ""
 
-#: .\templates\UniversityConnect\html\pt\cursos_detail.html:54
+#: .\templates\UniversityConnect\html\pt\cursos_detail.html:78
 msgid "Não há mais cursos cadastrados com essa categoria."
 msgstr ""
 
 #: .\templates\UniversityConnect\html\pt\index.html:13
 #: .\templates\UniversityConnect\html\pt\index.html:56
 msgid "Universidade de Cambridge"
-msgstr "Universidade de Cambridge"
+msgstr ""
 
 #: .\templates\UniversityConnect\html\pt\index.html:14
 msgid "Conheça a universidade de Isaac Newton"
-msgstr "Conheça a universidade de Isaac Newton"
+msgstr ""
 
 #: .\templates\UniversityConnect\html\pt\index.html:34
 msgid "Intercâmbio"
-msgstr "Intercâmbio"
+msgstr ""
 
 #: .\templates\UniversityConnect\html\pt\index.html:40
 msgid "História"
-msgstr "História"
+msgstr ""
 
 #: .\templates\UniversityConnect\html\pt\index.html:46
 msgid "Local"
-msgstr "Local"
+msgstr ""
 
 #: .\templates\UniversityConnect\html\pt\index.html:60
 msgid "Cursos da Universidade"
@@ -192,20 +186,16 @@ msgid "Descubra a excelência acadêmica de Cambridge."
 msgstr ""
 
 #: .\templates\UniversityConnect\html\pt\index.html:69
-#, fuzzy
-#| msgid "Intercâmbio"
 msgid "Programas de Intercâmbio"
-msgstr "Intercâmbio"
+msgstr ""
 
 #: .\templates\UniversityConnect\html\pt\index.html:70
 msgid "Descubra Cambridge em um intercâmbio transformador."
 msgstr ""
 
 #: .\templates\UniversityConnect\html\pt\index.html:78
-#, fuzzy
-#| msgid "História"
 msgid "História Local"
-msgstr "História"
+msgstr ""
 
 #: .\templates\UniversityConnect\html\pt\index.html:79
 msgid "Descubra a essência histórica de Cambridge."
@@ -439,6 +429,16 @@ msgstr ""
 #: .\templates\account\logout.html:8 .\templates\account\logout.html:17
 #: .\templates\account\signup.html:14
 msgid "Sign Out"
+msgstr ""
+
+#: .\templates\account\login.html:22
+msgid "Faça parte dessa comunidade!"
+msgstr ""
+
+#: .\templates\account\login.html:23
+msgid ""
+"Junte-se e fique ligado com as atualizações e informações da Universidade de "
+"Cambridge"
 msgstr ""
 
 #: .\templates\account\login.html:25 .\templates\account\signup.html:19
@@ -680,8 +680,8 @@ msgstr ""
 
 #: .\templates\socialaccount\login.html:14
 #, python-format
-msgid "Sign In Via %(provider)s"
-msgstr ""
+msgid "Entrar com %(provider)s"
+msgstr "Entrar com %(provider)s"
 
 #: .\templates\socialaccount\login.html:16
 #, python-format

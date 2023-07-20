@@ -31,6 +31,7 @@ class Curso(models.Model):
     description_en = models.TextField(max_length=2000, default='English Description')
     carga_horaria = models.IntegerField()
     tempo_curso = models.CharField(max_length=100)
+    time_course_en = models.CharField(max_length=100, default='0 years')
     mensalidade = models.DecimalField(max_digits=8, decimal_places=2)
     tipo_aula = models.CharField(max_length=100)
     image = models.ImageField(upload_to='cursos/cover/%Y/%m/%d/', blank=True, default="")

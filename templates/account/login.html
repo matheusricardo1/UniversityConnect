@@ -19,8 +19,8 @@
 				<a href="{% url 'account_email' %}">{% trans "Change E-mail" %}</a>
 				<a href="{% url 'account_logout' %}">{% trans "Sign Out" %}</a>
 			{% else %}
-				<h2>Faça parte dessa comunidade!</h2>
-				<p>Junte-se e fique ligado com as atualizações e informações da Universidade de Cambridge</p>
+				<h2>{% trans "Faça parte dessa comunidade!" %}</h2>
+				<p>{% trans "Junte-se e fique ligado com as atualizações e informações da Universidade de Cambridge" %}</p>
 				<a href="{% url 'account_login' %}">{% trans "Sign In" %}</a>
 				<a href="{% url 'account_signup' %}">{% trans "Sign Up" %}</a>
 			{% endif %}
