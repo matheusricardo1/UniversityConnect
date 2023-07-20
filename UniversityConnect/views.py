@@ -36,6 +36,10 @@ def cursos(request):
     PAGE_NAME = 'Cursos'
     curso = Curso.objects.all()
     categoria = Categoria.objects.all()
+    if 'en/' in request.path:
+        lang = True
+    else:
+        lang = False 
     
     if request.GET.get('course-searchbar', ''):
         termo_pesquisa = request.GET.get('course-searchbar', '')
@@ -45,7 +49,7 @@ def cursos(request):
         Q(descricao__icontains=termo_pesquisa)
     )
         curso = curso.order_by('?')
-        context = {'request': request, 'curso': curso, 'page_name': 'Cursos', 'pesquisa':termo_pesquisa, 'page_name': PAGE_NAME, 'categoria':categoria, }
+        context = {'request': request, 'curso': curso, 'pesquisa':termo_pesquisa, 'page_name': PAGE_NAME, 'categoria':categoria, 'lang':lang,}
         return render(request, 'UniversityConnect/html/pt/cursos.html', context=context)
     
     categoria_selecionada = request.GET.get('categoria', '')
@@ -56,7 +60,7 @@ def cursos(request):
     if len(curso) == 0:
         curso = False
     curso = curso.order_by('?')
-    context = {'request': request, 'curso': curso, 'page_name': 'Cursos', 'page_name': PAGE_NAME, 'categoria':categoria,}
+    context = {'request': request, 'curso': curso, 'page_name': PAGE_NAME, 'categoria':categoria, 'lang':lang,}
     return render(request, 'UniversityConnect/html/pt/cursos.html', context=context)
 
 
@@ -77,31 +81,3 @@ def profile(request):
     context = {'request': request,'page_name': PAGE_NAME, 'user':user,}
 
     return render(request, 'UniversityConnect/html/pt/profile.html', context=context)
-
-
-
-from urllib.parse import urlparse
-from django.conf import settings
-from django.http import HttpResponseRedirect
-from django.urls.base import resolve, reverse
-from django.urls.exceptions import Resolver404
-from django.utils import translation
-
-def set_language(request, language):
-    for lang, _ in settings.LANGUAGES:
-        translation.activate(lang)
-        try:
-            view = resolve(urlparse(request.META.get("HTTP_REFERER")).path)
-        except Resolver404:
-            view = None
-        if view:
-            break
-    if view:
-        translation.activate(language)
-        print(view.url_name)
-        next_url = reverse(view.url_name, args=view.args, kwargs=view.kwargs)
-        response = HttpResponseRedirect(next_url)
-        response.set_cookie(settings.LANGUAGE_COOKIE_NAME, language)
-    else:
-        response = HttpResponseRedirect("/")
-    return response

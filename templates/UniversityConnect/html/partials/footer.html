@@ -1,4 +1,5 @@
 {% load static %}
+{% load i18n %}
 <footer>
 <div class="footer-top">
     <div class="footer-logo">
@@ -14,22 +15,22 @@
         </div>
         <div class="footer-info-content">
             <div class="footer-info-content-support">
-                <h2>Suporte</h2>
+                <h2>{% trans "Suporte" %}</h2>
                 <h3>FAQ</h3>
-                <h3>Telefones</h3>
-                <h3>Chat</h3>
+                <h3>{% trans "Telefones" %}</h3>
+                <h3>{% trans "Chat" %}</h3>
             </div>
             <div class="footer-info-content-menu">
-                <h2>Início</h2>
-                <h3>Home</h3>
-                <h3>Cursos</h3>
-                <h3>Notícias</h3>
+                <h2>{% trans "Início" %}</h2>
+                <h3>{% trans "Home" %}</h3>
+                <h3>{% trans "Cursos" %}</h3>
+                <h3>{% trans "Notícias" %}</h3>
             </div>
             <div class="footer-info-content-about">
-                <h2>Sobre nós</h2>
-                <h3>Informações</h3>
-                <h3>Contato</h3>
-                <h3>Blog</h3>
+                <h2>{% trans "Sobre nós" %}</h2>
+                <h3>{% trans "Informações" %}</h3>
+                <h3>{% trans "Contato" %}</h3>
+                <h3>{% trans "Blog" %}</h3>
             </div>
         </div>
         <div class="footer-info-media">
@@ -45,15 +46,15 @@
                 </div>
             </div>
             <div class="follow">
-                Siga-nos nas redes sociais!
+                {% trans "Siga-nos nas redes sociais!" %}
             </div>
         </div>
     </div>
 </div>
 <div class="footer-bottom">
     <div>
-        <h2>Termos de Uso * Política de Privacidade</h2>
-        <p>&copy; 2023 UniversityConnect</p>
+        <h2>{% trans "Termos de Uso * Política de Privacidade" %}</h2>
+        <p>&copy; {% trans "2023 UniversityConnect" %}</p>
     </div>
 </div>
 </footer>

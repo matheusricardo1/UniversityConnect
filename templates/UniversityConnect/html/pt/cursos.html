@@ -1,4 +1,5 @@
 {% load static %}
+{% load i18n %}
 {% include '../partials/head.html' %}
 <link rel="stylesheet" href="{% static '/UniversityConnect/css/courses.css' %}">
 </head>
@@ -8,15 +9,15 @@
         <section class="home2">            
             <div class="home-options">
                 <div class="home-title">
-                    <h2>Cursos de Cambridge</h2>
+                    <h2>{% trans "Cursos de Cambridge" %}</h2>
                     <form method="GET" action="{% url 'UniversityConnect:cursos' %}">
                         <select name="categoria">
-                            <option value="">Todas as categorias</option>
+                            <option value="">{% trans "Todas as categorias" %}</option>
                             {% for categoria in categoria %}
                                 <option value="{{ categoria.id }}">{{ categoria.nome }}</option>
                             {% endfor %}
                         </select>
-                        <button type="submit">Filtrar</button>
+                        <button type="submit">{% trans "Filtrar" %}</button>
                     </form>
                 </div>
                 {% include '../partials/courses.html' %}

@@ -1,11 +1,12 @@
 {% load static %}
+{% load i18n %}
 {% include '../partials/head.html' %}
 <link rel="stylesheet" href="{% static '/UniversityConnect/css/course_detail.css' %}">
 </head>
 {% include '../partials/header.html' %}
 <main>
     <div class="home-title">
-        <h2>Curso de {{ curso.titulo }}</h2>
+        <h2>{% trans "Curso de" %} {{ curso.titulo }}</h2>
     </div>
     <section class="home"> 
         <div class="block1">
@@ -29,11 +30,11 @@
                 <p class="content-time">{{ curso.tempo_curso }}</p>
                 <p class="content-hours">{{ curso.carga_horaria }} horas</p>
                 <p class="content-pay">R${{ curso.mensalidade }}</p>
-                <a class="content-course" href="#">Cadastrar no Curso!</a>
+                <a class="content-course" href="#">{% trans "Cadastrar no Curso!" %}</a>
             </div>
             <div class="other">
-                <h2>Outros Cursos</h2>
-                <p>Relacionados com {{ curso.categoria }}</p>
+                <h2>{% trans "Outros Cursos" %}</h2>
+                <p>{% trans "Relacionados com" %} {{ curso.categoria }}</p>
                 {% if outro %}
                     {% for outro in outro %}
                         <a class="option-block-link" href="{% url 'UniversityConnect:cursos_detail' outro.id %}">
@@ -49,8 +50,8 @@
                 {% else %}
                 <a class="option-block-link" href="">
                     <div class="options-block">
-                        <h2>Não há cursos</h2>
-                        <p>Não há mais cursos cadastrados com essa categoria.</p>
+                        <h2>{% trans "Não há cursos" %}</h2>
+                        <p>{% trans "Não há mais cursos cadastrados com essa categoria." %}</p>
                         <div class="details-icon">
                             <img src="{% static "/UniversityConnect/images/icons/enter.png" %}" alt="">
                         </div>

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-19 18:45-0400\n"
+"POT-Creation-Date: 2023-07-19 22:18-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,13 +21,240 @@ msgstr ""
 "%100 !=92) ? 1 :(n%10 ==3 || n%10==4 || n%10==9) && (n%100 < 10 || n% 100 > "
 "19) && (n%100 < 70 || n%100 > 79) && (n%100 < 90 || n%100 > 99) ? 2 :(n != 0 "
 "&& n % 1000000 == 0) ? 3 : 4);\n"
+
+#: .\templates\UniversityConnect\html\partials\courses.html:25
+msgid "Nenhum curso encontrado!"
+msgstr ""
+
+#: .\templates\UniversityConnect\html\partials\courses.html:26
+msgid "Clique aqui para voltar ao inicio"
+msgstr ""
+
+#: .\templates\UniversityConnect\html\partials\footer.html:18
+msgid "Suporte"
+msgstr ""
+
+#: .\templates\UniversityConnect\html\partials\footer.html:20
+msgid "Telefones"
+msgstr ""
+
+#: .\templates\UniversityConnect\html\partials\footer.html:21
+msgid "Chat"
+msgstr ""
+
+#: .\templates\UniversityConnect\html\partials\footer.html:24
+msgid "Início"
+msgstr ""
+
+#: .\templates\UniversityConnect\html\partials\footer.html:25
+msgid "Home"
+msgstr ""
+
+#: .\templates\UniversityConnect\html\partials\footer.html:26
+#: .\templates\UniversityConnect\html\pt\index.html:28
+msgid "Cursos"
+msgstr "Cursos"
+
+#: .\templates\UniversityConnect\html\partials\footer.html:27
+msgid "Notícias"
+msgstr ""
+
+#: .\templates\UniversityConnect\html\partials\footer.html:30
+msgid "Sobre nós"
+msgstr ""
+
+#: .\templates\UniversityConnect\html\partials\footer.html:31
+msgid "Informações"
+msgstr ""
+
+#: .\templates\UniversityConnect\html\partials\footer.html:32
+msgid "Contato"
+msgstr ""
+
+#: .\templates\UniversityConnect\html\partials\footer.html:33
+msgid "Blog"
+msgstr ""
+
+#: .\templates\UniversityConnect\html\partials\footer.html:49
+msgid "Siga-nos nas redes sociais!"
+msgstr ""
+
+#: .\templates\UniversityConnect\html\partials\footer.html:56
+msgid "Termos de Uso * Política de Privacidade"
+msgstr ""
+
+#: .\templates\UniversityConnect\html\partials\footer.html:57
+msgid "2023 UniversityConnect"
+msgstr ""
+
+#: .\templates\UniversityConnect\html\partials\header-pages.html:11
+msgid "Tecnologia"
+msgstr ""
+
+#: .\templates\UniversityConnect\html\partials\headerlink.html:14
+#: .\templates\UniversityConnect\html\partials\sidebar-options.html:11
+#: .\templates\UniversityConnect\html\pt\profile.html:16
+msgid "Perfil"
+msgstr ""
+
+#: .\templates\UniversityConnect\html\partials\headerlink.html:15
+#: .\templates\UniversityConnect\html\partials\sidebar-options.html:21
+msgid "Sair"
+msgstr ""
+
+#: .\templates\UniversityConnect\html\partials\headerlink.html:17
+#: .\templates\UniversityConnect\html\partials\sidebar-options.html:24
+msgid "Registrar"
+msgstr ""
+
+#: .\templates\UniversityConnect\html\partials\headerlink.html:18
+#: .\templates\UniversityConnect\html\partials\sidebar-options.html:23
+msgid "Entrar"
+msgstr ""
+
+#: .\templates\UniversityConnect\html\partials\sidebar-options.html:6
+msgid "Olá"
+msgstr ""
+
+#: .\templates\UniversityConnect\html\partials\sidebar-options.html:7
+msgid "Conecte-se com a gente!"
+msgstr ""
+
+#: .\templates\UniversityConnect\html\pt\cursos.html:12
+#, fuzzy
+#| msgid "Universidade de Cambridge"
+msgid "Cursos de Cambridge"
+msgstr "Universidade de Cambridge"
+
+#: .\templates\UniversityConnect\html\pt\cursos.html:15
+msgid "Todas as categorias"
+msgstr ""
+
+#: .\templates\UniversityConnect\html\pt\cursos.html:20
+msgid "Filtrar"
+msgstr ""
+
+#: .\templates\UniversityConnect\html\pt\cursos_detail.html:9
+#, fuzzy
+#| msgid "Cursos"
+msgid "Curso de"
+msgstr "Cursos"
+
+#: .\templates\UniversityConnect\html\pt\cursos_detail.html:33
+msgid "Cadastrar no Curso!"
+msgstr ""
+
+#: .\templates\UniversityConnect\html\pt\cursos_detail.html:36
+#, fuzzy
+#| msgid "Cursos"
+msgid "Outros Cursos"
+msgstr "Cursos"
+
+#: .\templates\UniversityConnect\html\pt\cursos_detail.html:37
+msgid "Relacionados com"
+msgstr ""
+
+#: .\templates\UniversityConnect\html\pt\cursos_detail.html:53
+msgid "Não há cursos"
+msgstr ""
+
+#: .\templates\UniversityConnect\html\pt\cursos_detail.html:54
+msgid "Não há mais cursos cadastrados com essa categoria."
+msgstr ""
+
 #: .\templates\UniversityConnect\html\pt\index.html:13
+#: .\templates\UniversityConnect\html\pt\index.html:56
 msgid "Universidade de Cambridge"
 msgstr "Universidade de Cambridge"
 
 #: .\templates\UniversityConnect\html\pt\index.html:14
 msgid "Conheça a universidade de Isaac Newton"
 msgstr "Conheça a universidade de Isaac Newton"
+
+#: .\templates\UniversityConnect\html\pt\index.html:34
+msgid "Intercâmbio"
+msgstr "Intercâmbio"
+
+#: .\templates\UniversityConnect\html\pt\index.html:40
+msgid "História"
+msgstr "História"
+
+#: .\templates\UniversityConnect\html\pt\index.html:46
+msgid "Local"
+msgstr "Local"
+
+#: .\templates\UniversityConnect\html\pt\index.html:60
+msgid "Cursos da Universidade"
+msgstr ""
+
+#: .\templates\UniversityConnect\html\pt\index.html:61
+msgid "Descubra a excelência acadêmica de Cambridge."
+msgstr ""
+
+#: .\templates\UniversityConnect\html\pt\index.html:69
+#, fuzzy
+#| msgid "Intercâmbio"
+msgid "Programas de Intercâmbio"
+msgstr "Intercâmbio"
+
+#: .\templates\UniversityConnect\html\pt\index.html:70
+msgid "Descubra Cambridge em um intercâmbio transformador."
+msgstr ""
+
+#: .\templates\UniversityConnect\html\pt\index.html:78
+#, fuzzy
+#| msgid "História"
+msgid "História Local"
+msgstr "História"
+
+#: .\templates\UniversityConnect\html\pt\index.html:79
+msgid "Descubra a essência histórica de Cambridge."
+msgstr ""
+
+#: .\templates\UniversityConnect\html\pt\index.html:87
+msgid "Moradia para Universitários"
+msgstr ""
+
+#: .\templates\UniversityConnect\html\pt\index.html:88
+msgid "Descubra o lar acadêmico perfeito em Cambridge."
+msgstr ""
+
+#: .\templates\UniversityConnect\html\pt\index.html:96
+msgid "Principais Personalidades"
+msgstr ""
+
+#: .\templates\UniversityConnect\html\pt\index.html:97
+msgid "Descubra as mentes brilhantes de Cambridge."
+msgstr ""
+
+#: .\templates\UniversityConnect\html\pt\index.html:105
+msgid "História da Universidade"
+msgstr ""
+
+#: .\templates\UniversityConnect\html\pt\index.html:106
+msgid "Descubra a grandeza da história de Cambridge."
+msgstr ""
+
+#: .\templates\UniversityConnect\html\pt\profile.html:14
+msgid "Voltar"
+msgstr ""
+
+#: .\templates\UniversityConnect\html\pt\profile.html:15
+msgid "Editar Perfil"
+msgstr ""
+
+#: .\templates\UniversityConnect\html\pt\profile.html:19
+msgid "Bem vindo - "
+msgstr ""
+
+#: .\templates\UniversityConnect\html\pt\profile.html:26
+#: .\templates\UniversityConnect\html\pt\profile.html:36
+msgid "Sair da Conta"
+msgstr ""
+
+#: .\templates\UniversityConnect\html\pt\profile.html:29
+msgid "Tem certeza que deseja sair?"
+msgstr ""
 
 #: .\templates\account\account_inactive.html:5
 #: .\templates\account\account_inactive.html:8
@@ -497,10 +724,10 @@ msgid ""
 "%(site_name)s. As a final step, please complete the following form:"
 msgstr ""
 
-#: .\website\settings.py:136
+#: .\website\settings.py:135
 msgid "Portuguese"
 msgstr ""
 
-#: .\website\settings.py:137
+#: .\website\settings.py:136
 msgid "English"
 msgstr ""

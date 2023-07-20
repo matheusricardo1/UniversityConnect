@@ -12,10 +12,39 @@ def traduzir_titulo(modeladmin, request, queryset):
         curso.save()
 traduzir_titulo.short_description = 'Traduzir para inglês'
 
+def traduzir_formacao(modeladmin, request, queryset):
+    translator = Translator(service_urls=['translate.google.com'])
+    for formacao in queryset:
+        formacao.name_en = translator.translate(formacao.nome, dest='en').text
+        formacao.save()
+traduzir_formacao.short_description = 'Traduzir para inglês'
 
-admin.site.register(Categoria)
-admin.site.register(Formacao)
-admin.site.register(NivelCurso)
+def traduzir_categoria(modeladmin, request, queryset):
+    translator = Translator(service_urls=['translate.google.com'])
+    for formacao in queryset:
+        formacao.name_en = translator.translate(formacao.nome, dest='en').text
+        formacao.save()
+traduzir_categoria.short_description = 'Traduzir para inglês'
+
+def traduzir_nivel_curso(modeladmin, request, queryset):
+    translator = Translator(service_urls=['translate.google.com'])
+    for nivelcurso in queryset:
+        nivelcurso.name_en = translator.translate(nivelcurso.nome, dest='en').text
+        nivelcurso.save()
+traduzir_nivel_curso.short_description = 'Traduzir para inglês'
+
+@admin.register(NivelCurso)
+class NivelCursoAdmin(admin.ModelAdmin):
+    actions = [traduzir_nivel_curso]
+
+@admin.register(Categoria)
+class CategoriaAdmin(admin.ModelAdmin):
+    actions = [traduzir_categoria]
+
+@admin.register(Formacao)
+class FormacaoAdmin(admin.ModelAdmin):
+    actions = [traduzir_formacao]
+
 
 @admin.register(Curso)
 class CursoAdmin(admin.ModelAdmin):

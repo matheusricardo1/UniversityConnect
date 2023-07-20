@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-19 18:45-0400\n"
+"POT-Creation-Date: 2023-07-19 22:18-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,151 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\templates\UniversityConnect\html\partials\courses.html:25
+msgid "Nenhum curso encontrado!"
+msgstr "No course found!"
+
+#: .\templates\UniversityConnect\html\partials\courses.html:26
+msgid "Clique aqui para voltar ao inicio"
+msgstr "Click here to return to the beginning"
+
+#: .\templates\UniversityConnect\html\partials\footer.html:18
+msgid "Suporte"
+msgstr "Support"
+
+#: .\templates\UniversityConnect\html\partials\footer.html:20
+msgid "Telefones"
+msgstr "Phones"
+
+#: .\templates\UniversityConnect\html\partials\footer.html:21
+msgid "Chat"
+msgstr "Chat"
+
+#: .\templates\UniversityConnect\html\partials\footer.html:24
+msgid "Início"
+msgstr "Start"
+
+#: .\templates\UniversityConnect\html\partials\footer.html:25
+msgid "Home"
+msgstr "Home"
+
+#: .\templates\UniversityConnect\html\partials\footer.html:26
+#: .\templates\UniversityConnect\html\pt\index.html:28
+msgid "Cursos"
+msgstr "Courses"
+
+#: .\templates\UniversityConnect\html\partials\footer.html:27
+msgid "Notícias"
+msgstr "News"
+
+#: .\templates\UniversityConnect\html\partials\footer.html:30
+msgid "Sobre nós"
+msgstr "About Us"
+
+#: .\templates\UniversityConnect\html\partials\footer.html:31
+msgid "Informações"
+msgstr "Information"
+
+#: .\templates\UniversityConnect\html\partials\footer.html:32
+msgid "Contato"
+msgstr "Contact"
+
+#: .\templates\UniversityConnect\html\partials\footer.html:33
+msgid "Blog"
+msgstr "Blog"
+
+#: .\templates\UniversityConnect\html\partials\footer.html:49
+msgid "Siga-nos nas redes sociais!"
+msgstr "Follow us on social networks!"
+
+#: .\templates\UniversityConnect\html\partials\footer.html:56
+msgid "Termos de Uso * Política de Privacidade"
+msgstr "Terms of Use * Privacy Policy"
+
+#: .\templates\UniversityConnect\html\partials\footer.html:57
+msgid "2023 UniversityConnect"
+msgstr "2023 UniversityConnect"
+
+#: .\templates\UniversityConnect\html\partials\header-pages.html:11
+msgid "Tecnologia"
+msgstr "Technology"
+
+#: .\templates\UniversityConnect\html\partials\headerlink.html:14
+#: .\templates\UniversityConnect\html\partials\sidebar-options.html:11
+#: .\templates\UniversityConnect\html\pt\profile.html:16
+msgid "Perfil"
+msgstr "Profile"
+
+#: .\templates\UniversityConnect\html\partials\headerlink.html:15
+#: .\templates\UniversityConnect\html\partials\sidebar-options.html:21
+msgid "Sair"
+msgstr "Logout"
+
+#: .\templates\UniversityConnect\html\partials\headerlink.html:17
+#: .\templates\UniversityConnect\html\partials\sidebar-options.html:24
+msgid "Registrar"
+msgstr "Signup"
+
+#: .\templates\UniversityConnect\html\partials\headerlink.html:18
+#: .\templates\UniversityConnect\html\partials\sidebar-options.html:23
+msgid "Entrar"
+msgstr "Login"
+
+#: .\templates\UniversityConnect\html\partials\sidebar-options.html:6
+msgid "Olá"
+msgstr "Hello"
+
+#: .\templates\UniversityConnect\html\partials\sidebar-options.html:7
+msgid "Conecte-se com a gente!"
+msgstr "Connect with us!"
+
+#: .\templates\UniversityConnect\html\pt\cursos.html:12
+#, fuzzy
+#| msgid "Universidade de Cambridge"
+msgid "Cursos de Cambridge"
+msgstr "University of Cambridge"
+
+#: .\templates\UniversityConnect\html\pt\cursos.html:15
+msgid "Todas as categorias"
+msgstr "All categories"
+
+#: .\templates\UniversityConnect\html\pt\cursos.html:20
+#, fuzzy
+#| msgid "Registrar"
+msgid "Filtrar"
+msgstr "Signup"
+
+#: .\templates\UniversityConnect\html\pt\cursos_detail.html:9
+#, fuzzy
+#| msgid "Cursos"
+msgid "Curso de"
+msgstr "Courses"
+
+#: .\templates\UniversityConnect\html\pt\cursos_detail.html:33
+msgid "Cadastrar no Curso!"
+msgstr "Register in the course!"
+
+#: .\templates\UniversityConnect\html\pt\cursos_detail.html:36
+#, fuzzy
+#| msgid "Cursos"
+msgid "Outros Cursos"
+msgstr "Courses"
+
+#: .\templates\UniversityConnect\html\pt\cursos_detail.html:37
+msgid "Relacionados com"
+msgstr "Related to"
+
+#: .\templates\UniversityConnect\html\pt\cursos_detail.html:53
+msgid "Não há cursos"
+msgstr "There are no courses"
+
+#: .\templates\UniversityConnect\html\pt\cursos_detail.html:54
+msgid "Não há mais cursos cadastrados com essa categoria."
+msgstr "There are no more courses registered with this category."
+
 #: .\templates\UniversityConnect\html\pt\index.html:13
+#: .\templates\UniversityConnect\html\pt\index.html:56
 msgid "Universidade de Cambridge"
 msgstr "University of Cambridge"
 
@@ -25,100 +169,194 @@ msgstr "University of Cambridge"
 msgid "Conheça a universidade de Isaac Newton"
 msgstr "Discover the University of Isaac Newton"
 
+#: .\templates\UniversityConnect\html\pt\index.html:34
+msgid "Intercâmbio"
+msgstr "Exchange"
+
+#: .\templates\UniversityConnect\html\pt\index.html:40
+msgid "História"
+msgstr "History"
+
+#: .\templates\UniversityConnect\html\pt\index.html:46
+msgid "Local"
+msgstr "Local"
+
+#: .\templates\UniversityConnect\html\pt\index.html:60
+msgid "Cursos da Universidade"
+msgstr "University courses"
+
+#: .\templates\UniversityConnect\html\pt\index.html:61
+msgid "Descubra a excelência acadêmica de Cambridge."
+msgstr "Discover Cambridge's academic excellence."
+
+#: .\templates\UniversityConnect\html\pt\index.html:69
+#, fuzzy
+#| msgid "Intercâmbio"
+msgid "Programas de Intercâmbio"
+msgstr "Exchange"
+
+#: .\templates\UniversityConnect\html\pt\index.html:70
+msgid "Descubra Cambridge em um intercâmbio transformador."
+msgstr "Discover Cambridge in a transforming exchange."
+
+#: .\templates\UniversityConnect\html\pt\index.html:78
+msgid "História Local"
+msgstr "Local History"
+
+#: .\templates\UniversityConnect\html\pt\index.html:79
+msgid "Descubra a essência histórica de Cambridge."
+msgstr "Discover the historical essence of Cambridge."
+
+#: .\templates\UniversityConnect\html\pt\index.html:87
+msgid "Moradia para Universitários"
+msgstr "Housing for university students"
+
+#: .\templates\UniversityConnect\html\pt\index.html:88
+msgid "Descubra o lar acadêmico perfeito em Cambridge."
+msgstr "Find out the perfect academic home in Cambridge."
+
+#: .\templates\UniversityConnect\html\pt\index.html:96
+msgid "Principais Personalidades"
+msgstr "Main personalities"
+
+#: .\templates\UniversityConnect\html\pt\index.html:97
+msgid "Descubra as mentes brilhantes de Cambridge."
+msgstr "Discover the bright minds of Cambridge."
+
+#: .\templates\UniversityConnect\html\pt\index.html:105
+msgid "História da Universidade"
+msgstr "University History"
+
+#: .\templates\UniversityConnect\html\pt\index.html:106
+msgid "Descubra a grandeza da história de Cambridge."
+msgstr "Discover the greatness of the history of Cambridge."
+
+#: .\templates\UniversityConnect\html\pt\profile.html:14
+msgid "Voltar"
+msgstr "Back"
+
+#: .\templates\UniversityConnect\html\pt\profile.html:15
+msgid "Editar Perfil"
+msgstr "Edit Profile"
+
+#: .\templates\UniversityConnect\html\pt\profile.html:19
+msgid "Bem vindo - "
+msgstr "Welcome -"
+
+#: .\templates\UniversityConnect\html\pt\profile.html:26
+#: .\templates\UniversityConnect\html\pt\profile.html:36
+msgid "Sair da Conta"
+msgstr "Logout"
+
+#: .\templates\UniversityConnect\html\pt\profile.html:29
+msgid "Tem certeza que deseja sair?"
+msgstr "Are you sure you want to quit?"
+
 #: .\templates\account\account_inactive.html:5
 #: .\templates\account\account_inactive.html:8
 msgid "Account Inactive"
-msgstr ""
+msgstr "Account Inactive"
 
 #: .\templates\account\account_inactive.html:10
 msgid "This account is inactive."
-msgstr ""
+msgstr "This account is inactive."
 
 #: .\templates\account\base.html:22
 msgid "Messages:"
-msgstr ""
+msgstr "Messages:"
 
 #: .\templates\account\email.html:5 .\templates\account\email.html:8
 msgid "E-mail Addresses"
-msgstr ""
+msgstr "E-mail Addresses"
 
 #: .\templates\account\email.html:10
 msgid "The following e-mail addresses are associated with your account:"
-msgstr ""
+msgstr "The following e-mail addresses are associated with your account:"
 
 #: .\templates\account\email.html:24
 msgid "Verified"
-msgstr ""
+msgstr "Verified"
 
 #: .\templates\account\email.html:26
 msgid "Unverified"
-msgstr ""
+msgstr "Unverified"
 
 #: .\templates\account\email.html:28
 msgid "Primary"
-msgstr ""
+msgstr "Primary"
 
 #: .\templates\account\email.html:34
 msgid "Make Primary"
-msgstr ""
+msgstr "Make Primary"
 
 #: .\templates\account\email.html:35
 msgid "Re-send Verification"
-msgstr ""
+msgstr "Re-send Verification"
 
 #: .\templates\account\email.html:36
 #: .\templates\socialaccount\connections.html:35
 msgid "Remove"
-msgstr ""
+msgstr "Remove"
 
 #: .\templates\account\email.html:43
 msgid "Warning:"
-msgstr ""
+msgstr "Warning:"
 
 #: .\templates\account\email.html:43
 msgid ""
 "You currently do not have any e-mail address set up. You should really add "
-"an e-mail address so you can receive notifications, reset your password, etc."
+"an e-mail address so you can receive notifications, reset your password, "
+"etc."
 msgstr ""
+"You currently do not have any e-mail address set up. You should really add "
+"an e-mail address so you can receive notifications, reset your password, "
+"etc."
 
 #: .\templates\account\email.html:48
 msgid "Add E-mail Address"
-msgstr ""
+msgstr "Add E-mail Address"
 
 #: .\templates\account\email.html:53
 msgid "Add E-mail"
-msgstr ""
+msgstr "Add E-mail"
 
 #: .\templates\account\email.html:63
 msgid "Do you really want to remove the selected e-mail address?"
-msgstr ""
+msgstr "Do you really want to remove the selected e-mail address?"
 
 #: .\templates\account\email\account_already_exists_message.txt:4
 #, python-format
 msgid ""
-"You are receiving this e-mail because you or someone else tried to signup "
-"for an\n"
+"You are receiving this e-mail because you or someone else tried to signup for an\n"
 "account using e-mail address:\n"
 "\n"
 "%(email)s\n"
 "\n"
-"However, an account using that e-mail address already exists.  In case you "
-"have\n"
-"forgotten about this, please use the password forgotten procedure to "
-"recover\n"
+"However, an account using that e-mail address already exists.  In case you have\n"
+"forgotten about this, please use the password forgotten procedure to recover\n"
 "your account:\n"
 "\n"
 "%(password_reset_url)s"
 msgstr ""
+"You are receiving this e-mail because you or someone else tried to signup for an\n"
+"account using e-mail address:\n"
+"\n"
+"%(email)s\n"
+"\n"
+"However, an account using that e-mail address already exists.  In case you have\n"
+"forgotten about this, please use the password forgotten procedure to recover\n"
+"your account:\n"
+"\n"
+"%(password_reset_url)s"
 
 #: .\templates\account\email\account_already_exists_subject.txt:3
 msgid "Account Already Exists"
-msgstr ""
+msgstr "Account Already Exists"
 
 #: .\templates\account\email\base_message.txt:1
 #, python-format
 msgid "Hello from %(site_name)s!"
-msgstr ""
+msgstr "Hello from %(site_name)s!"
 
 #: .\templates\account\email\base_message.txt:5
 #, python-format
@@ -126,55 +364,65 @@ msgid ""
 "Thank you for using %(site_name)s!\n"
 "%(site_domain)s"
 msgstr ""
+"Thank you for using %(site_name)s!\n"
+"%(site_domain)s"
 
 #: .\templates\account\email\email_confirmation_message.txt:5
 #, python-format
 msgid ""
-"You're receiving this e-mail because user %(user_display)s has given your e-"
-"mail address to register an account on %(site_domain)s.\n"
+"You're receiving this e-mail because user %(user_display)s has given your e-mail address to register an account on %(site_domain)s.\n"
 "\n"
 "To confirm this is correct, go to %(activate_url)s"
 msgstr ""
+"You're receiving this e-mail because user %(user_display)s has given your e-mail address to register an account on %(site_domain)s.\n"
+"\n"
+"To confirm this is correct, go to %(activate_url)s"
 
 #: .\templates\account\email\email_confirmation_subject.txt:3
 msgid "Please Confirm Your E-mail Address"
-msgstr ""
+msgstr "Please Confirm Your E-mail Address"
 
 #: .\templates\account\email\password_reset_key_message.txt:4
 msgid ""
-"You're receiving this e-mail because you or someone else has requested a "
-"password for your user account.\n"
-"It can be safely ignored if you did not request a password reset. Click the "
-"link below to reset your password."
+"You're receiving this e-mail because you or someone else has requested a password for your user account.\n"
+"It can be safely ignored if you did not request a password reset. Click the link below to reset your password."
 msgstr ""
+"You're receiving this e-mail because you or someone else has requested a password for your user account.\n"
+"It can be safely ignored if you did not request a password reset. Click the link below to reset your password."
 
 #: .\templates\account\email\password_reset_key_message.txt:9
 #, python-format
 msgid "In case you forgot, your username is %(username)s."
-msgstr ""
+msgstr "In case you forgot, your username is %(username)s."
 
 #: .\templates\account\email\password_reset_key_subject.txt:3
 #: .\templates\account\email\unknown_account_subject.txt:3
 msgid "Password Reset E-mail"
-msgstr ""
+msgstr "Password Reset E-mail"
 
 #: .\templates\account\email\unknown_account_message.txt:4
 #, python-format
 msgid ""
 "You are receiving this e-mail because you or someone else has requested a\n"
-"password for your user account. However, we do not have any record of a "
-"user\n"
+"password for your user account. However, we do not have any record of a user\n"
 "with email %(email)s in our database.\n"
 "\n"
 "This mail can be safely ignored if you did not request a password reset.\n"
 "\n"
 "If it was you, you can sign up for an account using the link below."
 msgstr ""
+"You are receiving this e-mail because you or someone else has requested a\n"
+"password for your user account. However, we do not have any record of a user\n"
+"with email %(email)s in our database.\n"
+"\n"
+"This mail can be safely ignored if you did not request a password reset.\n"
+"\n"
+"If it was you, you can sign up for an account using the link below."
 
 #: .\templates\account\email_confirm.html:6
 #: .\templates\account\email_confirm.html:10
 msgid "Confirm E-mail Address"
-msgstr ""
+msgstr "Confirm E-mail Address"
 
 #: .\templates\account\email_confirm.html:16
 #, python-format
@@ -182,97 +430,101 @@ msgid ""
 "Please confirm that <a href=\"mailto:%(email)s\">%(email)s</a> is an e-mail "
 "address for user %(user_display)s."
 msgstr ""
+"Please confirm that <a href=\"mailto:%(email)s\">%(email)s</a> is an e-mail "
+"address for user %(user_display)s."
 
 #: .\templates\account\email_confirm.html:20
 msgid "Confirm"
-msgstr ""
+msgstr "Confirm"
 
 #: .\templates\account\email_confirm.html:27
 #, python-format
 msgid ""
-"This e-mail confirmation link expired or is invalid. Please <a href="
-"\"%(email_url)s\">issue a new e-mail confirmation request</a>."
+"This e-mail confirmation link expired or is invalid. Please <a "
+"href=\"%(email_url)s\">issue a new e-mail confirmation request</a>."
 msgstr ""
+"This e-mail confirmation link expired or is invalid. Please <a "
+"href=\"%(email_url)s\">issue a new e-mail confirmation request</a>."
 
 #: .\templates\account\login.html:7 .\templates\account\login.html:24
 #: .\templates\account\login.html:39 .\templates\account\signup.html:18
 #: .\templates\socialaccount\login.html:4
 msgid "Sign In"
-msgstr ""
+msgstr "Sign In"
 
 #: .\templates\account\login.html:19 .\templates\account\signup.html:13
 msgid "Change E-mail"
-msgstr ""
+msgstr "Change E-mail"
 
 #: .\templates\account\login.html:20 .\templates\account\logout.html:5
 #: .\templates\account\logout.html:8 .\templates\account\logout.html:17
 #: .\templates\account\signup.html:14
 msgid "Sign Out"
-msgstr ""
+msgstr "Sign Out"
 
 #: .\templates\account\login.html:25 .\templates\account\signup.html:19
 #: .\templates\account\signup.html:32 .\templates\socialaccount\signup.html:8
 #: .\templates\socialaccount\signup.html:19
 msgid "Sign Up"
-msgstr ""
+msgstr "Sign Up"
 
 #: .\templates\account\login.html:41
 #: .\templates\account\password_change.html:14
 msgid "Forgot Password?"
-msgstr ""
+msgstr "Forgot Password?"
 
 #: .\templates\account\login.html:49 .\templates\account\signup.html:36
 msgid "or"
-msgstr ""
+msgstr "or"
 
 #: .\templates\account\logout.html:10
 msgid "Are you sure you want to sign out?"
-msgstr ""
+msgstr "Are you sure you want to sign out?"
 
 #: .\templates\account\messages\cannot_delete_primary_email.txt:2
 #, python-format
 msgid "You cannot remove your primary e-mail address (%(email)s)."
-msgstr ""
+msgstr "You cannot remove your primary e-mail address (%(email)s)."
 
 #: .\templates\account\messages\email_confirmation_sent.txt:2
 #, python-format
 msgid "Confirmation e-mail sent to %(email)s."
-msgstr ""
+msgstr "Confirmation e-mail sent to %(email)s."
 
 #: .\templates\account\messages\email_confirmed.txt:2
 #, python-format
 msgid "You have confirmed %(email)s."
-msgstr ""
+msgstr "You have confirmed %(email)s."
 
 #: .\templates\account\messages\email_deleted.txt:2
 #, python-format
 msgid "Removed e-mail address %(email)s."
-msgstr ""
+msgstr "Removed e-mail address %(email)s."
 
 #: .\templates\account\messages\logged_in.txt:4
 #, python-format
 msgid "Successfully signed in as %(name)s."
-msgstr ""
+msgstr "Successfully signed in as %(name)s."
 
 #: .\templates\account\messages\logged_out.txt:2
 msgid "You have signed out."
-msgstr ""
+msgstr "You have signed out."
 
 #: .\templates\account\messages\password_changed.txt:2
 msgid "Password successfully changed."
-msgstr ""
+msgstr "Password successfully changed."
 
 #: .\templates\account\messages\password_set.txt:2
 msgid "Password successfully set."
-msgstr ""
+msgstr "Password successfully set."
 
 #: .\templates\account\messages\primary_email_set.txt:2
 msgid "Primary e-mail address set."
-msgstr ""
+msgstr "Primary e-mail address set."
 
 #: .\templates\account\messages\unverified_primary_email.txt:2
 msgid "Your primary e-mail address must be verified."
-msgstr ""
+msgstr "Your primary e-mail address must be verified."
 
 #: .\templates\account\password_change.html:5
 #: .\templates\account\password_change.html:8
@@ -282,95 +534,103 @@ msgstr ""
 #: .\templates\account\password_reset_from_key_done.html:4
 #: .\templates\account\password_reset_from_key_done.html:7
 msgid "Change Password"
-msgstr ""
+msgstr "Change Password"
 
 #: .\templates\account\password_reset.html:6
 #: .\templates\account\password_reset.html:10
 #: .\templates\account\password_reset_done.html:6
 #: .\templates\account\password_reset_done.html:9
 msgid "Password Reset"
-msgstr ""
+msgstr "Password Reset"
 
 #: .\templates\account\password_reset.html:15
 msgid ""
-"Forgotten your password? Enter your e-mail address below, and we'll send you "
-"an e-mail allowing you to reset it."
+"Forgotten your password? Enter your e-mail address below, and we'll send you"
+" an e-mail allowing you to reset it."
 msgstr ""
+"Forgotten your password? Enter your e-mail address below, and we'll send you"
+" an e-mail allowing you to reset it."
 
 #: .\templates\account\password_reset.html:20
 msgid "Reset My Password"
-msgstr ""
+msgstr "Reset My Password"
 
 #: .\templates\account\password_reset.html:23
 msgid "Please contact us if you have any trouble resetting your password."
-msgstr ""
+msgstr "Please contact us if you have any trouble resetting your password."
 
 #: .\templates\account\password_reset_done.html:15
 msgid ""
 "We have sent you an e-mail. If you have not received it please check your "
 "spam folder. Otherwise contact us if you do not receive it in a few minutes."
 msgstr ""
+"We have sent you an e-mail. If you have not received it please check your "
+"spam folder. Otherwise contact us if you do not receive it in a few minutes."
 
 #: .\templates\account\password_reset_from_key.html:7
 msgid "Bad Token"
-msgstr ""
+msgstr "Bad Token"
 
 #: .\templates\account\password_reset_from_key.html:11
 #, python-format
 msgid ""
 "The password reset link was invalid, possibly because it has already been "
-"used.  Please request a <a href=\"%(passwd_reset_url)s\">new password reset</"
-"a>."
+"used.  Please request a <a href=\"%(passwd_reset_url)s\">new password "
+"reset</a>."
 msgstr ""
+"The password reset link was invalid, possibly because it has already been "
+"used.  Please request a <a href=\"%(passwd_reset_url)s\">new password "
+"reset</a>."
 
 #: .\templates\account\password_reset_from_key.html:16
 msgid "change password"
-msgstr ""
+msgstr "change password"
 
 #: .\templates\account\password_reset_from_key_done.html:8
 msgid "Your password is now changed."
-msgstr ""
+msgstr "Your password is now changed."
 
 #: .\templates\account\password_set.html:5
 #: .\templates\account\password_set.html:8
 #: .\templates\account\password_set.html:13
 msgid "Set Password"
-msgstr ""
+msgstr "Set Password"
 
 #: .\templates\account\signup.html:5 .\templates\socialaccount\signup.html:5
 msgid "Signup"
-msgstr ""
+msgstr "Signup"
 
 #: .\templates\account\signup.html:33
 #, python-format
 msgid ""
 "Already have an account? Then please <a href=\"%(login_url)s\">sign in</a>."
 msgstr ""
+"Already have an account? Then please <a href=\"%(login_url)s\">sign in</a>."
 
 #: .\templates\account\signup_closed.html:5
 #: .\templates\account\signup_closed.html:8
 msgid "Sign Up Closed"
-msgstr ""
+msgstr "Sign Up Closed"
 
 #: .\templates\account\signup_closed.html:10
 msgid "We are sorry, but the sign up is currently closed."
-msgstr ""
+msgstr "We are sorry, but the sign up is currently closed."
 
 #: .\templates\account\snippets\already_logged_in.html:5
 msgid "Note"
-msgstr ""
+msgstr "Note"
 
 #: .\templates\account\snippets\already_logged_in.html:5
 #, python-format
 msgid "you are already logged in as %(user_display)s."
-msgstr ""
+msgstr "you are already logged in as %(user_display)s."
 
 #: .\templates\account\verification_sent.html:5
 #: .\templates\account\verification_sent.html:8
 #: .\templates\account\verified_email_required.html:5
 #: .\templates\account\verified_email_required.html:8
 msgid "Verify Your E-mail Address"
-msgstr ""
+msgstr "Verify Your E-mail Address"
 
 #: .\templates\account\verification_sent.html:10
 msgid ""
@@ -379,6 +639,10 @@ msgid ""
 "your main inbox, check your spam folder. Please contact us if you do not "
 "receive the verification e-mail within a few minutes."
 msgstr ""
+"We have sent an e-mail to you for verification. Follow the link provided to "
+"finalize the signup process. If you do not see the verification e-mail in "
+"your main inbox, check your spam folder. Please contact us if you do not "
+"receive the verification e-mail within a few minutes."
 
 #: .\templates\account\verified_email_required.html:12
 msgid ""
@@ -386,105 +650,120 @@ msgid ""
 "you are who you claim to be. For this purpose, we require that you\n"
 "verify ownership of your e-mail address. "
 msgstr ""
+"This part of the site requires us to verify that\n"
+"you are who you claim to be. For this purpose, we require that you\n"
+"verify ownership of your e-mail address."
 
 #: .\templates\account\verified_email_required.html:16
 msgid ""
 "We have sent an e-mail to you for\n"
-"verification. Please click on the link inside that e-mail. If you do not see "
-"the verification e-mail in your main inbox, check your spam folder. "
-"Otherwise\n"
+"verification. Please click on the link inside that e-mail. If you do not see the verification e-mail in your main inbox, check your spam folder. Otherwise\n"
 "contact us if you do not receive it within a few minutes."
 msgstr ""
+"We have sent an e-mail to you for\n"
+"verification. Please click on the link inside that e-mail. If you do not see the verification e-mail in your main inbox, check your spam folder. Otherwise\n"
+"contact us if you do not receive it within a few minutes."
 
 #: .\templates\account\verified_email_required.html:20
 #, python-format
 msgid ""
-"<strong>Note:</strong> you can still <a href=\"%(email_url)s\">change your e-"
-"mail address</a>."
+"<strong>Note:</strong> you can still <a href=\"%(email_url)s\">change your "
+"e-mail address</a>."
 msgstr ""
+"<strong>Note:</strong> you can still <a href=\"%(email_url)s\">change your "
+"e-mail address</a>."
 
 #: .\templates\openid\login.html:9
 msgid "OpenID Sign In"
-msgstr ""
+msgstr "OpenID Sign In"
 
 #: .\templates\socialaccount\authentication_error.html:5
 #: .\templates\socialaccount\authentication_error.html:8
 msgid "Social Network Login Failure"
-msgstr ""
+msgstr "Social Network Login Failure"
 
 #: .\templates\socialaccount\authentication_error.html:10
 msgid ""
 "An error occurred while attempting to login via your social network account."
 msgstr ""
+"An error occurred while attempting to login via your social network account."
 
 #: .\templates\socialaccount\connections.html:5
 #: .\templates\socialaccount\connections.html:8
 msgid "Account Connections"
-msgstr ""
+msgstr "Account Connections"
 
 #: .\templates\socialaccount\connections.html:11
 msgid ""
 "You can sign in to your account using any of the following third party "
 "accounts:"
 msgstr ""
+"You can sign in to your account using any of the following third party "
+"accounts:"
 
 #: .\templates\socialaccount\connections.html:43
 msgid ""
 "You currently have no social network accounts connected to this account."
 msgstr ""
+"You currently have no social network accounts connected to this account."
 
 #: .\templates\socialaccount\connections.html:46
 msgid "Add a 3rd Party Account"
-msgstr ""
+msgstr "Add a 3rd Party Account"
 
 #: .\templates\socialaccount\login.html:10
 #, python-format
 msgid "Connect %(provider)s"
-msgstr ""
+msgstr "Connect %(provider)s"
 
 #: .\templates\socialaccount\login.html:12
 #, python-format
 msgid "You are about to connect a new third party account from %(provider)s."
-msgstr ""
+msgstr "You are about to connect a new third party account from %(provider)s."
 
 #: .\templates\socialaccount\login.html:14
 #, python-format
 msgid "Sign In Via %(provider)s"
-msgstr ""
+msgstr "Sign In Via %(provider)s"
 
 #: .\templates\socialaccount\login.html:16
 #, python-format
-msgid "You are about to sign in using a third party account from %(provider)s."
+msgid ""
+"You are about to sign in using a third party account from %(provider)s."
 msgstr ""
+"You are about to sign in using a third party account from %(provider)s."
 
 #: .\templates\socialaccount\login.html:21
 msgid "Continue"
-msgstr ""
+msgstr "Continue"
 
 #: .\templates\socialaccount\login_cancelled.html:5
 #: .\templates\socialaccount\login_cancelled.html:9
 msgid "Login Cancelled"
-msgstr ""
+msgstr "Login Cancelled"
 
 #: .\templates\socialaccount\login_cancelled.html:13
 #, python-format
 msgid ""
 "You decided to cancel logging in to our site using one of your existing "
-"accounts. If this was a mistake, please proceed to <a href=\"%(login_url)s"
-"\">sign in</a>."
+"accounts. If this was a mistake, please proceed to <a "
+"href=\"%(login_url)s\">sign in</a>."
 msgstr ""
+"You decided to cancel logging in to our site using one of your existing "
+"accounts. If this was a mistake, please proceed to <a "
+"href=\"%(login_url)s\">sign in</a>."
 
 #: .\templates\socialaccount\messages\account_connected.txt:2
 msgid "The social account has been connected."
-msgstr ""
+msgstr "The social account has been connected."
 
 #: .\templates\socialaccount\messages\account_connected_other.txt:2
 msgid "The social account is already connected to a different account."
-msgstr ""
+msgstr "The social account is already connected to a different account."
 
 #: .\templates\socialaccount\messages\account_disconnected.txt:2
 msgid "The social account has been disconnected."
-msgstr ""
+msgstr "The social account has been disconnected."
 
 #: .\templates\socialaccount\signup.html:10
 #, python-format
@@ -492,11 +771,13 @@ msgid ""
 "You are about to use your %(provider_name)s account to login to\n"
 "%(site_name)s. As a final step, please complete the following form:"
 msgstr ""
+"You are about to use your %(provider_name)s account to login to\n"
+"%(site_name)s. As a final step, please complete the following form:"
+
+#: .\website\settings.py:135
+msgid "Portuguese"
+msgstr "Portuguese"
 
 #: .\website\settings.py:136
-msgid "Portuguese"
-msgstr ""
-
-#: .\website\settings.py:137
 msgid "English"
-msgstr ""
+msgstr "English"
