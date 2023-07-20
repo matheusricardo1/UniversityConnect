@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-20 11:52-0400\n"
+"POT-Creation-Date: 2023-07-20 15:29-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -126,7 +126,7 @@ msgstr "University of Cambridge"
 msgid "Todas as categorias"
 msgstr "All categories"
 
-#: .\templates\UniversityConnect\html\pt\cursos.html:20
+#: .\templates\UniversityConnect\html\pt\cursos.html:24
 msgid "Filtrar"
 msgstr "Filter"
 
@@ -146,11 +146,11 @@ msgstr "Other Courses"
 msgid "Relacionados com"
 msgstr "Related to"
 
-#: .\templates\UniversityConnect\html\pt\cursos_detail.html:77
+#: .\templates\UniversityConnect\html\pt\cursos_detail.html:82
 msgid "Não há cursos"
 msgstr "There are no courses"
 
-#: .\templates\UniversityConnect\html\pt\cursos_detail.html:78
+#: .\templates\UniversityConnect\html\pt\cursos_detail.html:83
 msgid "Não há mais cursos cadastrados com essa categoria."
 msgstr "There are no more courses registered with this category."
 
@@ -231,16 +231,16 @@ msgstr "Back"
 msgid "Editar Perfil"
 msgstr "Edit Profile"
 
-#: .\templates\UniversityConnect\html\pt\profile.html:19
+#: .\templates\UniversityConnect\html\pt\profile.html:20
 msgid "Bem vindo - "
 msgstr "Welcome -"
 
-#: .\templates\UniversityConnect\html\pt\profile.html:26
-#: .\templates\UniversityConnect\html\pt\profile.html:36
+#: .\templates\UniversityConnect\html\pt\profile.html:30
+#: .\templates\UniversityConnect\html\pt\profile.html:40
 msgid "Sair da Conta"
 msgstr "Logout"
 
-#: .\templates\UniversityConnect\html\pt\profile.html:29
+#: .\templates\UniversityConnect\html\pt\profile.html:33
 msgid "Tem certeza que deseja sair?"
 msgstr "Are you sure you want to quit?"
 
@@ -253,7 +253,7 @@ msgstr "Account Inactive"
 msgid "This account is inactive."
 msgstr "This account is inactive."
 
-#: .\templates\account\base.html:22
+#: .\templates\account\base.html:23
 msgid "Messages:"
 msgstr "Messages:"
 
@@ -451,34 +451,32 @@ msgstr ""
 "\"%(email_url)s\">issue a new e-mail confirmation request</a>."
 
 #: .\templates\account\login.html:7 .\templates\account\login.html:24
-#: .\templates\account\login.html:39 .\templates\account\signup.html:18
+#: .\templates\account\login.html:39 .\templates\account\signup.html:19
 #: .\templates\socialaccount\login.html:4
 msgid "Sign In"
 msgstr "Sign In"
 
-#: .\templates\account\login.html:19 .\templates\account\signup.html:13
+#: .\templates\account\login.html:19 .\templates\account\signup.html:14
 msgid "Change E-mail"
 msgstr "Change E-mail"
 
 #: .\templates\account\login.html:20 .\templates\account\logout.html:5
 #: .\templates\account\logout.html:8 .\templates\account\logout.html:17
-#: .\templates\account\signup.html:14
+#: .\templates\account\signup.html:15
 msgid "Sign Out"
 msgstr "Sign Out"
 
-#: .\templates\account\login.html:22
+#: .\templates\account\login.html:22 .\templates\account\signup.html:17
 msgid "Faça parte dessa comunidade!"
-msgstr ""
+msgstr "Be part of this community!"
 
-#: .\templates\account\login.html:23
+#: .\templates\account\login.html:23 .\templates\account\signup.html:18
 msgid ""
-"Junte-se e fique ligado com as atualizações e informações da Universidade de "
-"Cambridge"
-msgstr ""
+"Junte-se e fique ligado com as atualizações e informações da Universidade de Cambridge"
+msgstr "Join and stay connected with updates and information from the University of Cambridge"
 
-#: .\templates\account\login.html:25 .\templates\account\signup.html:19
-#: .\templates\account\signup.html:32 .\templates\socialaccount\signup.html:8
-#: .\templates\socialaccount\signup.html:19
+#: .\templates\account\login.html:25 .\templates\account\signup.html:20
+#: .\templates\account\signup.html:33 .\templates\socialaccount\signup.html:29
 msgid "Sign Up"
 msgstr "Sign Up"
 
@@ -487,9 +485,17 @@ msgstr "Sign Up"
 msgid "Forgot Password?"
 msgstr "Forgot Password?"
 
-#: .\templates\account\login.html:49 .\templates\account\signup.html:36
-msgid "or"
-msgstr "or"
+#: .\templates\account\login.html:42
+msgid "Ainda não tem conta?"
+msgstr "Don't have an account yet?"
+
+#: .\templates\account\login.html:43
+msgid "Cadastre-se"
+msgstr "Sign in"
+
+#: .\templates\account\login.html:51 .\templates\account\signup.html:37
+msgid "Ou entre com:"
+msgstr "Or login with: "
 
 #: .\templates\account\logout.html:10
 msgid "Are you sure you want to sign out?"
@@ -610,11 +616,11 @@ msgstr "Your password is now changed."
 msgid "Set Password"
 msgstr "Set Password"
 
-#: .\templates\account\signup.html:5 .\templates\socialaccount\signup.html:5
+#: .\templates\account\signup.html:6 .\templates\socialaccount\signup.html:6
 msgid "Signup"
 msgstr "Signup"
 
-#: .\templates\account\signup.html:33
+#: .\templates\account\signup.html:34
 #, python-format
 msgid ""
 "Already have an account? Then please <a href=\"%(login_url)s\">sign in</a>."
@@ -740,6 +746,7 @@ msgid "You are about to connect a new third party account from %(provider)s."
 msgstr "You are about to connect a new third party account from %(provider)s."
 
 #: .\templates\socialaccount\login.html:14
+#, python-format
 msgid "Entrar com %(provider)s"
 msgstr "Sign With %(provider)s"
 
@@ -781,22 +788,36 @@ msgstr "The social account is already connected to a different account."
 msgid "The social account has been disconnected."
 msgstr "The social account has been disconnected."
 
-#: .\templates\socialaccount\signup.html:10
-#, python-format
-msgid ""
-"You are about to use your %(provider_name)s account to login to\n"
-"%(site_name)s. As a final step, please complete the following form:"
+#: .\templates\socialaccount\signup.html:15
+msgid "Quase lá!"
 msgstr ""
-"You are about to use your %(provider_name)s account to login to\n"
-"%(site_name)s. As a final step, please complete the following form:"
 
-#: .\website\settings.py:135
+#: .\templates\socialaccount\signup.html:16
+msgid "Coloque seu nome de usuário e seu email para concluir o cadastro!"
+msgstr ""
+
+#: .\templates\socialaccount\signup.html:17
+msgid "Voltar ao início"
+msgstr ""
+
+#: .\website\settings.py:149
 msgid "Portuguese"
 msgstr "Portuguese"
 
-#: .\website\settings.py:136
+#: .\website\settings.py:150
 msgid "English"
 msgstr "English"
+
+#~ msgid "or"
+#~ msgstr "or"
+
+#, python-format
+#~ msgid ""
+#~ "You are about to use your %(provider_name)s account to login to\n"
+#~ "%(site_name)s. As a final step, please complete the following form:"
+#~ msgstr ""
+#~ "You are about to use your %(provider_name)s account to login to\n"
+#~ "%(site_name)s. As a final step, please complete the following form:"
 
 #, python-format
 #~ msgid "Sign With %(provider)s"

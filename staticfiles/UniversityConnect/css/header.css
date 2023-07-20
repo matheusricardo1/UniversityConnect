@@ -8,19 +8,7 @@
     }
 }
 @media only screen and (max-width: 714px) {
-    .sidebar-block{
-        text-decoration: none !important;
-        text-align: center !important;
-        display: block !important;
-        margin: 20px !important;
-        padding: 12px 30px !important;
-        background-color: var(--colorWhite) !important;
-        color: var(--colorBlack) !important;
-    }
-    .sidebar-block:hover{
-        background-color: var(--colorPrimary) !important;
-        color: var(--colorWhite) !important;
-    }
+
 
     .main-header{
         padding: 20px 70px !important;
@@ -48,7 +36,6 @@
         max-width: 100% !important;
        
         background-color: var(--colorWhite) !important;
-        padding: 25px !important;
         border: 1px solid rgba(0, 0, 0, 0) !important;
     }
 }
@@ -86,7 +73,7 @@ html{
     right: -300px; 
     width: 250px;
     height: 100%;
-    z-index: 999;
+    z-index: 999999;
     transition: left 0.3s ease-in-out;
 }
 .sidebar-show {

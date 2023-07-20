@@ -83,6 +83,13 @@ def cursos_detail(request, id):
 def profile(request):
     user = request.user
     PAGE_NAME = f'Perfil - {user.username}'
-    context = {'request': request,'page_name': PAGE_NAME, 'user':user,}
+    if user.is_authenticated and SocialAccount.objects.filter(user=user, provider='google').exists():
+        google_account = SocialAccount.objects.get(user=user, provider='google')
+        email = google_account.extra_data['email']
+    else:
+        email = "Email não cadastradado!"
+
+
+    context = {'request': request,'page_name': PAGE_NAME, 'user':user, 'email':email,}
 
     return render(request, 'UniversityConnect/html/pt/profile.html', context=context)

@@ -11,34 +11,55 @@
         <section class='profile'>
             <a href="{% if request.path == '/' %}
             {% elif request.path != '/' %}{% url 'UniversityConnect:homepage' %}
-            {% endif %}" class="btn">{% trans "Voltar" %}</a>
-            <a href="#" class="btn2">{% trans "Editar Perfil" %}</a>
+            {% endif %}" class="button btn">{% trans "Voltar" %}</a>
+            <a href="#" class="button btn2">{% trans "Editar Perfil" %}</a>
             <h1>{% trans "Perfil" %}</h1>
             <div class='profile-details'>
                 <img class="profile-img" src="{{ user.socialaccount_set.all.0.get_avatar_url }}" alt="Foto de perfil do usuário">
-                <h3>{% trans "Bem vindo - " %}
-                {% if user.first_name and user.last_name %}{{ user.first_name }} {{ user.last_name }}
-                {% else %}{{ user.username }}
-                {% endif %}</h3>
+                <div>
+                    <h3>{% trans "Bem vindo - " %}
+                    {% if user.first_name and user.last_name %}{{ user.first_name }} {{ user.last_name }}
+                    {% else %}{{ user.username }}
+                    {% endif %}</h3>
+                    <p>{{email}}</p>
+                </div>
+                
+
                 
             </div>
-
-            <a href="#" onclick="popup()" class="btn3">{% trans "Sair da Conta" %}</a>
+            <a href="#" onclick="popup()" class="button btn3">{% trans "Sair da Conta" %}</a>
             <div onclick="popup()" id="popup_back" >
-                <div onclick="popup()" id="popup_logout">
-                    <p class="exit_sure">{% trans "Tem certeza que deseja sair?" %}</p>
-                    <div class="exit_popup" onclick="popup()">X</div>
-                    <form class="form_logout" method="post" action="{% url 'account_logout' %}">
-                        {% csrf_token %}
-                        {% if redirect_field_value %}
-                        <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}"/>
-                        {% endif %}
-                        <button class="logout btn_style btn3" type="submit">{% trans "Sair da Conta" %}</button>
+                <div class="free_text">
+                    <h1>{% trans "Sign Out" %}</h1>
+                  
+                    <p>{% trans 'Are you sure you want to sign out?' %}</p>
+                  
+                    <form method="post" action="{% url 'account_logout' %}">
+                      {% csrf_token %}
+                      {% if redirect_field_value %}
+                      <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}"/>
+                      {% endif %}
+                      <button class="button" type="submit">{% trans 'Sign Out' %}</button>
                     </form>
-                </div>
+                  </div>
             </div>
         </section>
     </main>
 {% include '../partials/footer.html' %}
 </body>
 </html>
+
+
+<div class="free_text">
+    <h1>{% trans "Sign Out" %}</h1>
+  
+    <p>{% trans 'Are you sure you want to sign out?' %}</p>
+  
+    <form method="post" action="{% url 'account_logout' %}">
+      {% csrf_token %}
+      {% if redirect_field_value %}
+      <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}"/>
+      {% endif %}
+      <button class="button" type="submit">{% trans 'Sign Out' %}</button>
+    </form>
+  </div>

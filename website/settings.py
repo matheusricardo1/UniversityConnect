@@ -38,6 +38,8 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 # Application definition
 
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
 INSTALLED_APPS = [
     "django.contrib.admin",
     "django.contrib.auth",
@@ -50,6 +52,7 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'allauth.socialaccount.providers.google',
+    'crispy_forms',
     "UniversityConnect",
 ]
 
@@ -102,6 +105,17 @@ AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',
     'allauth.account.auth_backends.AuthenticationBackend',
 ]
+
+SOCIALACCOUNT_PROVIDERS = {
+    'google': {
+        'APP': {
+            'client_id': '807809700339-9jl03435v3ep1gdi2r0sig8uno1b9nv4.apps.googleusercontent.com', # Substitua pelo seu Client ID do Google
+            'secret': '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', # Substitua pelo seu Client Secret do Google
+            'key': ''
+        },
+        'SCOPE': ['profile', 'email'],  # Solicite acesso ao perfil e ao e-mail
+    }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators

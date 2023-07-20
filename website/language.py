@@ -16,7 +16,7 @@ def set_language(request, language):
             break
     if view:
         translation.activate(language)
-        if 'HTTP_REFERER' in request.META and 'accounts/' in request.META['HTTP_REFERER']:
+        if 'HTTP_REFERER' in request.META and 'accounts/' in request.META['HTTP_REFERER'] and 'accounts/profile/' not in request.META['HTTP_REFERER']:
             next_url = reverse(view.url_name, args=view.args, kwargs=view.kwargs)
         else:
             next_url = reverse(f'UniversityConnect:{view.url_name}', args=view.args, kwargs=view.kwargs)
