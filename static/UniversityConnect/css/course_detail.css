@@ -27,33 +27,7 @@
     }
 }
 @media only screen and (max-width: 714px) {
-    .sidebar-block{
-        text-decoration: none !important;
-        text-align: center !important;
-        display: block !important;
-        margin: 20px !important;
-        padding: 12px 30px !important;
-        background-color: var(--colorWhite) !important;
-        color: var(--colorBlack) !important;
-    }
-    .sidebar-block:hover{
-        background-color: var(--colorPrimary);
-        color: var(--colorWhite);
-    }
-
-    .main-header{
-        padding: 20px 70px !important;
-    }
-    .home-linkstyle{
-        display: none !important;
-    }
-    #home-linkstyle-menu{
-        display: block !important;
-        border: 1px solid var(--colorBlack)!important;
-    }
-    #home-linkstyle-menu:hover{
-        border: 1px solid var(--colorMidGray)!important;
-    }
+    
     .home1-background{
         min-height: 580px !important;
         max-height: 1000px !important;
@@ -103,9 +77,6 @@
         max-width: 620px !important;
         margin: auto !important;
     }
-    .options-block:hover{
-        border: 1px solid rgba(0, 0, 0, 0.605) !important;
-    }
     .options-block{
         margin: 0px auto 10px auto !important;
         min-width: 230px !important;
@@ -113,7 +84,6 @@
         min-height: 50px !important;
         max-height: 100px !important;
         background-color: var(--colorWhite) !important;
-        padding: 25px !important;
         border: 1px solid rgba(0, 0, 0, 0) !important;
     }
     .options-block > h2, .options-block > p{
