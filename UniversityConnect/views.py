@@ -82,6 +82,9 @@ def cursos_detail(request, id):
 @login_required(login_url='/accounts/login/')
 def profile(request):
     user = request.user
+    user.first_name = user.first_name.title()
+    user.last_name = user.last_name.title()
+    user.save()
     PAGE_NAME = f'Perfil - {user.username}'
     if user.is_authenticated and SocialAccount.objects.filter(user=user, provider='google').exists():
         google_account = SocialAccount.objects.get(user=user, provider='google')

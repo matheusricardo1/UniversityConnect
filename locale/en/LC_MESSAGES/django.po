@@ -117,10 +117,8 @@ msgid "Conecte-se com a gente!"
 msgstr "Connect with us!"
 
 #: .\templates\UniversityConnect\html\pt\cursos.html:12
-#, fuzzy
-#| msgid "Universidade de Cambridge"
 msgid "Cursos de Cambridge"
-msgstr "University of Cambridge"
+msgstr "Cambridge's courses"
 
 #: .\templates\UniversityConnect\html\pt\cursos.html:15
 msgid "Todas as categorias"

@@ -82,6 +82,7 @@ html{
 }
 #sidebar-off{
     display: none;
+    z-index: 100;
     position: fixed;
     background-color: #00000055;
     width: 100%;
