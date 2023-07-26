@@ -11,7 +11,13 @@
             <div class="footer-info-lang-img">
                 <img src="{% static '/UniversityConnect/images/icons/globe.png' %}" alt="logo">
             </div>
-            <button>Português</button>
+            <select id="lang-options-footer" class="footer-lang lang" onchange="updateLanguageURL('lang-link-footer')">
+                <option value="" disabled selected hidden>{% trans "Idioma" %}</option>
+                <option value="pt-br">Português</option>
+                <option value="en">English</option>
+            </select>
+            <a href="{% url 'set-language' 'en' %}" id="lang-link-footer" style="display: none;">Link</a>
+
         </div>
         <div class="footer-info-content">
             <div class="footer-info-content-support">

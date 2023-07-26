@@ -4,12 +4,14 @@
         <a class="home-linkstyle" href="{% if request.path == '/' %}
         {% elif request.path != '/' %}{% url 'UniversityConnect:homepage' %}
         {% endif %}">Home</a>
+
+        <select id="lang-options-1" class="home-linkstyle lang" onchange="updateLanguageURL('lang-link-1')">
+            <option value="" disabled selected hidden>{% trans "Idioma" %}</option>
+            <option value="pt-br">Português</option>
+            <option value="en">English</option>
+        </select>
+        <a href="{% url 'set-language' 'en' %}" id="lang-link-1" style="display: none;">Link</a>
         
-        {% if '/en/' in request.path %}
-            <a class="home-linkstyle" href="{% url 'set-language' 'pt-br' %}">Português</a>
-        {% else %}
-		    <a class="home-linkstyle" href="{% url 'set-language' 'en' %}">English</a>
-        {% endif %}
         {% if user.username %}
             <a class="home-linkstyle" href="{% url 'UniversityConnect:profile' %}">{% trans "Perfil" %}</a>
             <a class="home-linkstyle" href="{% url 'account_logout' %}">{% trans "Sair" %}</a>
