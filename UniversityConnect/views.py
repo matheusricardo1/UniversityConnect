@@ -75,7 +75,7 @@ def cursos_detail(request, id):
         lang = False 
 
     PAGE_NAME = f'{curso.titulo}'
-    context = {'request': request, 'curso': curso, 'outro': outros, 'page_name': PAGE_NAME,'lang':lang,}
+    context = {'request': request, 'curso': curso, 'outro': outros, 'page_name': PAGE_NAME,'lang':lang, 'mensalidade_us': curso.mensalidade/4,}
     return render(request, 'UniversityConnect/html/pt/cursos_detail.html', context=context)
 
 

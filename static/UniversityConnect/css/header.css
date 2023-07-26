@@ -34,7 +34,7 @@
         margin: auto !important;
     }
     .options-block{
-        margin: 0 auto 30px !important;
+        margin: 0 auto 30px auto !important;
         min-width: 320px !important;
         max-width: 100% !important;
        
@@ -141,30 +141,27 @@ html{
     padding: 6px 23px;
 }
 .lang-side-block{
+    border: none;
     padding: 10px !important;
     width: 88% !important;
     font-size: medium;
     text-align: center;
 }
-.lang{
-   
+.lang, #lang-options-1{
+    text-align: center;
     border: none;
-    width: 150px;
+    width: 164px;
     padding: 6px 23px;
 }
-.lang:focus{
+.lang > option{
+    text-align: left !important;
+}
+
+.lang:focus,  .lang-side-block:focus{
     outline: none;
     color: var(--colorBlack) !important;
     background-color: var(--colorWhite) !important;
 }
-.lang > option:hover{
-    
-    padding: 0px !important;
-    color: var(--colorBlack) !important;
-    background-color: var(--colorWhite) !important;
-}
-
-
 
 .main-header-logo{
     position: relative;

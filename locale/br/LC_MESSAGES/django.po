@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-20 15:29-0400\n"
+"POT-Creation-Date: 2023-07-26 13:07-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,60 +30,67 @@ msgstr ""
 msgid "Clique aqui para voltar ao inicio"
 msgstr ""
 
-#: .\templates\UniversityConnect\html\partials\footer.html:18
-msgid "Suporte"
-msgstr ""
-
-#: .\templates\UniversityConnect\html\partials\footer.html:20
-msgid "Telefones"
-msgstr ""
-
-#: .\templates\UniversityConnect\html\partials\footer.html:21
-msgid "Chat"
+#: .\templates\UniversityConnect\html\partials\footer.html:15
+#: .\templates\UniversityConnect\html\partials\headerlink.html:9
+#: .\templates\UniversityConnect\html\partials\sidebar-options.html:17
+#: .\templates\UniversityConnect\html\partials\sidebar-options.html:31
+msgid "Idioma"
 msgstr ""
 
 #: .\templates\UniversityConnect\html\partials\footer.html:24
-msgid "Início"
-msgstr ""
-
-#: .\templates\UniversityConnect\html\partials\footer.html:25
-msgid "Home"
+msgid "Suporte"
 msgstr ""
 
 #: .\templates\UniversityConnect\html\partials\footer.html:26
+msgid "Telefones"
+msgstr ""
+
+#: .\templates\UniversityConnect\html\partials\footer.html:27
+msgid "Chat"
+msgstr ""
+
+#: .\templates\UniversityConnect\html\partials\footer.html:30
+msgid "Início"
+msgstr ""
+
+#: .\templates\UniversityConnect\html\partials\footer.html:31
+msgid "Home"
+msgstr ""
+
+#: .\templates\UniversityConnect\html\partials\footer.html:32
 #: .\templates\UniversityConnect\html\pt\index.html:28
 msgid "Cursos"
 msgstr ""
 
-#: .\templates\UniversityConnect\html\partials\footer.html:27
+#: .\templates\UniversityConnect\html\partials\footer.html:33
 msgid "Notícias"
 msgstr ""
 
-#: .\templates\UniversityConnect\html\partials\footer.html:30
+#: .\templates\UniversityConnect\html\partials\footer.html:36
 msgid "Sobre nós"
 msgstr ""
 
-#: .\templates\UniversityConnect\html\partials\footer.html:31
+#: .\templates\UniversityConnect\html\partials\footer.html:37
 msgid "Informações"
 msgstr ""
 
-#: .\templates\UniversityConnect\html\partials\footer.html:32
+#: .\templates\UniversityConnect\html\partials\footer.html:38
 msgid "Contato"
 msgstr ""
 
-#: .\templates\UniversityConnect\html\partials\footer.html:33
+#: .\templates\UniversityConnect\html\partials\footer.html:39
 msgid "Blog"
 msgstr ""
 
-#: .\templates\UniversityConnect\html\partials\footer.html:49
+#: .\templates\UniversityConnect\html\partials\footer.html:55
 msgid "Siga-nos nas redes sociais!"
 msgstr ""
 
-#: .\templates\UniversityConnect\html\partials\footer.html:56
+#: .\templates\UniversityConnect\html\partials\footer.html:62
 msgid "Termos de Uso * Política de Privacidade"
 msgstr ""
 
-#: .\templates\UniversityConnect\html\partials\footer.html:57
+#: .\templates\UniversityConnect\html\partials\footer.html:63
 msgid "2023 UniversityConnect"
 msgstr ""
 
@@ -91,24 +98,24 @@ msgstr ""
 msgid "Tecnologia"
 msgstr ""
 
-#: .\templates\UniversityConnect\html\partials\headerlink.html:14
+#: .\templates\UniversityConnect\html\partials\headerlink.html:16
 #: .\templates\UniversityConnect\html\partials\sidebar-options.html:11
 #: .\templates\UniversityConnect\html\pt\profile.html:16
 msgid "Perfil"
 msgstr ""
 
-#: .\templates\UniversityConnect\html\partials\headerlink.html:15
-#: .\templates\UniversityConnect\html\partials\sidebar-options.html:21
+#: .\templates\UniversityConnect\html\partials\headerlink.html:17
+#: .\templates\UniversityConnect\html\partials\sidebar-options.html:22
 msgid "Sair"
 msgstr ""
 
-#: .\templates\UniversityConnect\html\partials\headerlink.html:17
-#: .\templates\UniversityConnect\html\partials\sidebar-options.html:24
+#: .\templates\UniversityConnect\html\partials\headerlink.html:19
+#: .\templates\UniversityConnect\html\partials\sidebar-options.html:25
 msgid "Registrar"
 msgstr ""
 
-#: .\templates\UniversityConnect\html\partials\headerlink.html:18
-#: .\templates\UniversityConnect\html\partials\sidebar-options.html:23
+#: .\templates\UniversityConnect\html\partials\headerlink.html:20
+#: .\templates\UniversityConnect\html\partials\sidebar-options.html:24
 msgid "Entrar"
 msgstr ""
 
@@ -237,13 +244,24 @@ msgstr ""
 msgid "Bem vindo - "
 msgstr ""
 
-#: .\templates\UniversityConnect\html\pt\profile.html:30
-#: .\templates\UniversityConnect\html\pt\profile.html:40
+#: .\templates\UniversityConnect\html\pt\profile.html:27
 msgid "Sair da Conta"
 msgstr ""
 
-#: .\templates\UniversityConnect\html\pt\profile.html:33
-msgid "Tem certeza que deseja sair?"
+#: .\templates\UniversityConnect\html\pt\profile.html:30
+#: .\templates\UniversityConnect\html\pt\profile.html:39
+#: .\templates\UniversityConnect\html\pt\profile.html:51
+#: .\templates\UniversityConnect\html\pt\profile.html:60
+#: .\templates\account\login.html:20 .\templates\account\logout.html:6
+#: .\templates\account\logout.html:10 .\templates\account\logout.html:19
+#: .\templates\account\signup.html:15
+msgid "Sign Out"
+msgstr ""
+
+#: .\templates\UniversityConnect\html\pt\profile.html:32
+#: .\templates\UniversityConnect\html\pt\profile.html:53
+#: .\templates\account\logout.html:12
+msgid "Are you sure you want to sign out?"
 msgstr ""
 
 #: .\templates\account\account_inactive.html:5
@@ -425,12 +443,6 @@ msgstr ""
 msgid "Change E-mail"
 msgstr ""
 
-#: .\templates\account\login.html:20 .\templates\account\logout.html:5
-#: .\templates\account\logout.html:8 .\templates\account\logout.html:17
-#: .\templates\account\signup.html:15
-msgid "Sign Out"
-msgstr ""
-
 #: .\templates\account\login.html:22 .\templates\account\signup.html:17
 msgid "Faça parte dessa comunidade!"
 msgstr ""
@@ -461,10 +473,6 @@ msgstr ""
 
 #: .\templates\account\login.html:51 .\templates\account\signup.html:37
 msgid "Ou entre com:"
-msgstr ""
-
-#: .\templates\account\logout.html:10
-msgid "Are you sure you want to sign out?"
 msgstr ""
 
 #: .\templates\account\messages\cannot_delete_primary_email.txt:2
