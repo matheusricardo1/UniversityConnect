@@ -3,7 +3,7 @@
 <div id="sidebar">
     <h1 class="sidebar-h1">UnivesityConnect</h1>
     <p class="sidebar-p">
-        {% if user.username %}{% trans "Olá" %} {{ user.username }}!
+        {% if user.username %}{% trans "Olá" %} {{ user.username|title }}!
         {% else %}{% trans "Conecte-se com a gente!" %}
         {% endif %}
     </p>

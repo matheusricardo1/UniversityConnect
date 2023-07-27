@@ -9,7 +9,7 @@ from .models import Curso, Categoria
 from django.shortcuts import get_object_or_404
 
 def homepage(request):
-    PAGE_NAME = 'Home'
+    PAGE_NAME = 'UniversityConnect'
     user = request.user
     if isinstance(user, AnonymousUser):
         return render(request, 'UniversityConnect/html/pt/index.html', {
@@ -69,10 +69,10 @@ def cursos_detail(request, id):
     curso = get_object_or_404(Curso,id=id,)
     outros = Curso.objects.filter(categoria=curso.categoria).exclude(id=curso.id)
 
+    lang = False 
     if 'en/' in request.path:
         lang = True
-    else:
-        lang = False 
+        
 
     PAGE_NAME = f'{curso.titulo}'
     context = {'request': request, 'curso': curso, 'outro': outros, 'page_name': PAGE_NAME,'lang':lang, 'mensalidade_us': curso.mensalidade/4,}
@@ -82,16 +82,12 @@ def cursos_detail(request, id):
 @login_required(login_url='/accounts/login/')
 def profile(request):
     user = request.user
-    user.first_name = user.first_name.title()
-    user.last_name = user.last_name.title()
-    user.save()
-    PAGE_NAME = f'Perfil - {user.username}'
+    PAGE_NAME = f'Perfil - {user.first_name.title()}'
     if user.is_authenticated and SocialAccount.objects.filter(user=user, provider='google').exists():
         google_account = SocialAccount.objects.get(user=user, provider='google')
         email = google_account.extra_data['email']
     else:
         email = "Email não cadastradado!"
-
 
     context = {'request': request,'page_name': PAGE_NAME, 'user':user, 'email':email,}
 

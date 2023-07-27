@@ -18,7 +18,7 @@
                 <img class="profile-img" src="{{ user.socialaccount_set.all.0.get_avatar_url }}" alt="Foto de perfil do usuário">
                 <div>
                     <h3>{% trans "Bem vindo - " %}
-                    {% if user.first_name and user.last_name %}{{ user.first_name }} {{ user.last_name }}
+                    {% if user.first_name and user.last_name %}{{ user.first_name|title }} {{ user.last_name|title }}
                     {% else %}{{ user.username }}
                     {% endif %}</h3>
                     <p>{{email}}</p>
