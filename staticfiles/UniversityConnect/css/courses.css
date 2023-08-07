@@ -46,7 +46,6 @@
         min-height: 50px !important;
         max-height: 100px !important;
         background-color: var(--colorWhite) !important;
-        padding: 25px !important;
         border: 1px solid rgba(0, 0, 0, 0) !important;
     }
     .options-block > h2, .options-block > p{
@@ -79,7 +78,6 @@
         max-width: 100% !important;
        
         background-color: var(--colorWhite) !important;
-        padding: 25px !important;
         border: 1px solid rgba(0, 0, 0, 0) !important;
     }
 }
@@ -114,7 +112,6 @@
         min-height: 40px !important;
         max-height: 60px !important;
         background-color: var(--colorWhite) !important;
-        padding: 20px !important;
         border: 1px solid rgba(0, 0, 0, 0) !important;
     }
     .options-block > h2, .options-block > p{
@@ -201,20 +198,25 @@ html{
     margin: auto;
 }
 .option-block-link{
+    display: block;
+    background-color: var(--colorWhite);
     
     all: unset;
     cursor: pointer;
+    
 }
 .options-block{
-    
+    position: relative;
+    margin: 0px auto 10px auto !important;
+    padding: 25px !important;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.172) !important;
     min-height: 110px;
-    max-height: 150px;
+    max-height: 300px !important;
     min-width: 230px;
     max-width: 100%;
     background-color: var(--colorWhite);
-    margin: 0px auto 10px auto;
-    padding: 25px;
+   
+    
     border: 1px solid rgba(0, 0, 0, 0);
     overflow: hidden;
 }
@@ -234,14 +236,13 @@ html{
     font-size: var(--fontLargeSize);
 }   
 .options-block > p{
-    overflow: hidden;
     padding-right: 14px;
     font-size: var(--fontMidSize);
 }
 .details-icon{
-    position: relative;
-    bottom: 50px;
-    float: right;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
     width: 20px;
     height: 20px;
 }
