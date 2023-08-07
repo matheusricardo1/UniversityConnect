@@ -31,7 +31,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     "*",
-    ".vercel.app"
 ]
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
