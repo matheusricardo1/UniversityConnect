@@ -1,10 +1,45 @@
+# Arquivos e pastas específicos
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+*.log
+*.csv
+*.swp
 
-venv_if
-.idea
-
-.env
+# Ambiente virtual (se você usar venv ou virtualenv)
 env/
-venv_if/
 ENV/
-env.bak/
+venv/
 venv.bak/
+
+# IDEs e editores
+.idea/
+.vscode/
+
+# Dependências geradas
+node_modules/
+bower_components/
+
+# Arquivos de configuração sensíveis
+*.env
+*.ini
+*.conf
+
+# Arquivos de saída de build
+/build/
+/dist/
+
+# Arquivos gerados por linters e formatters
+.eslintcache/
+.pytest_cache/
+*.pyc
+*.pyo
+*.coverage
+.coverage
+
+# Arquivos de cache do Jupyter Notebook
+.ipynb_checkpoints/
