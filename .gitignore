@@ -1,14 +1,5 @@
 # Arquivos e pastas específicos
 venv/
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-*.db
-*.sqlite3
-*.log
-*.csv
-*.swp
 
 # Ambiente virtual (se você usar venv ou virtualenv)
 env/
