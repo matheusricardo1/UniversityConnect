@@ -68,7 +68,7 @@ MIDDLEWARE = [
     "django.middleware.locale.LocaleMiddleware",
 ]
 
-CSRF_TRUSTED_ORIGINS = ['https://universityconnect-matheusricardo164.b4a.run', '*']
+CSRF_TRUSTED_ORIGINS = ['https://universityconnect-matheusricardo164.b4a.run']
 
 ROOT_URLCONF = "website.urls"
 
