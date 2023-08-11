@@ -94,7 +94,7 @@ WSGI_APPLICATION = "website.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-"""
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -102,17 +102,6 @@ DATABASES = {
     }
 }
 
-"""
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'universityifam1',  # Nome do banco de dados
-        'USER': 'university164',    # Nome de usuário
-        'PASSWORD': 'Mxthxs164#',  # Senha do banco de dados
-        'HOST': 'db4free.net',      # Host do DB4free.net
-        'PORT': '3306',             # Porta padrão do MySQL/MariaDB
-    }
-}
 
 
 AUTHENTICATION_BACKENDS = [
