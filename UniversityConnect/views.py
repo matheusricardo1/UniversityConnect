@@ -48,7 +48,7 @@ def cursos(request):
         Q(categoria__nome__icontains=termo_pesquisa) |
         Q(descricao__icontains=termo_pesquisa)
     )
-        curso = curso.order_by('?')
+        
         context = {'request': request, 'curso': curso, 'pesquisa':termo_pesquisa, 'page_name': PAGE_NAME, 'categoria':categoria, 'lang':lang,}
         return render(request, 'UniversityConnect/html/pt/cursos.html', context=context)
     
@@ -59,7 +59,7 @@ def cursos(request):
         curso = Curso.objects.filter(categoria=categoria_selecionada)
     if len(curso) == 0:
         curso = False
-    curso = curso.order_by('?')
+    
     context = {'request': request, 'curso': curso, 'page_name': PAGE_NAME, 'categoria':categoria, 'lang':lang,}
     return render(request, 'UniversityConnect/html/pt/cursos.html', context=context)
 
