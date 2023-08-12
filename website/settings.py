@@ -30,9 +30,7 @@ SECRET_KEY = "django-insecure-wr1lv02_aosknw3ei6@o(z^%z8cow#ck5vqsv)7hfc0u_%jdwi
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    "https://www.universityconnect.cloud/",
-
-    "127.0.0.1",
+    "*",
 ]
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
