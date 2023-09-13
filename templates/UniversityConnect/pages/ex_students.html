@@ -1,0 +1,23 @@
+{% extends "base_uc.html" %}
+{% load static %}
+{% load i18n %}
+
+{% block extra_style %}
+<link rel="stylesheet" href="{% static '/UniversityConnect/css/courses.css' %}">
+{% endblock extra_style %}
+
+{% block title %}{{page_name}}{% endblock title %}
+
+{% block content_base %} 
+    <main>
+        {% include '../partials/header-pages.html' %}
+        <section class="home2">            
+            <div class="home-options">
+                <div class="home-title">
+                    <h2>{% trans "Cursos de Cambridge" %}</h2>
+                </div>
+                {% include '../partials/courses.html' %}
+            </div>
+        </section>
+    </main>
+{% endblock content_base %}

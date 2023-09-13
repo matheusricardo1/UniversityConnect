@@ -1,0 +1,33 @@
+{% load static %}
+{% load i18n %}
+{% if students %}
+    {% for student in students %}
+        <div class="option-block-link">
+            <div class="options-block">
+                <div class="student-img">{{student.img}}</div>
+                <div class="student-text">
+                    <h2>{{ student.name }}</h2>
+                    {% if lang %}
+                        <p>{{ student.mini_description_en }}</p>
+                    {% else %}
+                        <p>{{ student.mini_description }}</p>
+                    {% endif %}
+                </div>
+                <div class="details-icon">
+                    <img src="{% static "/UniversityConnect/images/icons/enter.png" %}" alt="">
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+
+{% else %}
+    <a class="option-block-link" href="{% url 'UniversityConnect:homepage' %}">
+        <div class="options-block">
+            <h2>{% trans "Nenhum ex-aluno de cambridge foi encontrado!" %}</h2>
+            <p>{% trans "Clique aqui para voltar ao inicio" %}</p>
+            <div class="details-icon">
+                <img src="{% static "/UniversityConnect/images/icons/enter.png" %}" alt="">
+            </div>
+        </div>
+    </a>
+{% endif %}

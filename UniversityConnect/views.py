@@ -87,18 +87,18 @@ def courses(request):
 
 def courses_detail(request, id):
     course = get_object_or_404(Course,id=id,)
-    other_courses = Course.objects.filter(category=course.category).exclude(id=courses.id)
+    other_courses = Course.objects.filter(category=course.category).exclude(id=course.id)[:3]
 
     lang = False 
     if 'en/' in request.path:
         lang = True
         
 
-    PAGE_NAME = f'{courses.titulo}'
+    PAGE_NAME = f'{course.title}'
     context = {
         'request': request,
         'course': course,
-        'outro': outros, 
+        'other_courses': other_courses, 
         'page_name': PAGE_NAME,
         'lang': lang, 
         'monthly_course_fee': course.monthly_course_fee/4,}
@@ -122,3 +122,10 @@ def profile(request):
         'email':email,}
 
     return render(request, 'UniversityConnect/pages/profile.html', context=context)
+
+
+
+def ex_students(request):
+    return render(request, 'UniversityConnect/pages/courses.html', {
+        'page_name': 'História de Cambridge',
+    })

@@ -20,7 +20,7 @@
         <div class="block1">
             <div class="block1-img">
                 {% if course.image %}
-                    <img src="{{curso.image.url}}" alt="curso img">
+                    <img src="{{course.image.url}}" alt="curso img">
                 {% else %} 
                     <div class="no-img"> NO IMG </div>
                 {% endif %}
@@ -39,19 +39,19 @@
         <div class="block2">
             <div class="block2-content">
                 {% if lang %}
-                <p class="content-description">{{ course.categoria.name_en }}</p>
-                <p class="content-description">{{ course.formacao.name_en }}</p>
-                <p class="content-level">{{ course.nivel_curso.name_en }}</p>
+                <p class="content-description">{{ course.category.name_en }}</p>
+                <p class="content-description">{{ course.education.name_en }}</p>
+                <p class="content-level">{{ course.course_level.name_en }}</p>
                 <p class="content-time">{{ course.time_course_en }}</p>
-                <p class="content-hours">{{ course.carga_horaria }} hours</p>
+                <p class="content-hours">{{ course.course_load }} hours</p>
                 <p class="content-pay">US${{ monthly_course_fee }}</p>                 
                 {% else %}
-                <p class="content-description">{{ course.categoria }}</p>
-                <p class="content-description">{{ course.formacao }}</p>
-                <p class="content-level">{{ course.nivel_curso }}</p>
-                <p class="content-time">{{ course.tempo_curso }}</p>
-                <p class="content-hours">{{ course.carga_horaria }} horas</p>
-                <p class="content-pay">R${{ course.mensalidade }}</p>
+                <p class="content-description">{{ course.category }}</p>
+                <p class="content-description">{{ course.education }}</p>
+                <p class="content-level">{{ course.course_level }}</p>
+                <p class="content-time">{{ course.course_time }}</p>
+                <p class="content-hours">{{ course.course_load }} horas</p>
+                <p class="content-pay">R${{ course.monthly_course_fee }}</p>
                 {% endif %}
                
                 <a class="content-course" href="#">{% trans "Cadastrar no Curso!" %}</a>
@@ -64,16 +64,16 @@
                     {% endif %}
                     
                 </p>
-                {% if outro %}
-                    {% for outro in outro %}
-                        <a class="option-block-link" href="{% url 'UniversityConnect:courses_detail' outro.id %}">
+                {% if other_courses %}
+                    {% for course in other_courses %}
+                        <a class="option-block-link" href="{% url 'UniversityConnect:courses_detail' course.id %}">
                             <div class="options-block">
                                 {% if lang %}
-                                <h2>{{ outro.tittle_en }}</h2>
-                                <p>{{ outro.mini_description_en }}</p>
+                                <h2>{{ course.tittle_en }}</h2>
+                                <p>{{ course.mini_description_en }}</p>
                                 {% else %}
-                                <h2>{{ outro.titulo }}</h2>
-                                <p>{{ outro.mini_descricao }}</p>
+                                <h2>{{ course.titulo }}</h2>
+                                <p>{{ course.mini_descricao }}</p>
                                 {% endif %}
                                 <div class="details-icon">
                                     <img src="{% static "/UniversityConnect/images/icons/enter.png" %}" alt="">
