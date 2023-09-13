@@ -1,9 +1,13 @@
+{% extends "base_uc.html" %}
 {% load static %}
 {% load i18n %}
-{% include '../partials/head.html' %}
+
+{% block extra_style %}
 <link rel="stylesheet" href="{% static '/UniversityConnect/css/styles.css' %}">
-</head>
-<body>
+{% endblock extra_style %}
+
+
+{% block content_base %}
     <main>
         <section class="home1">
             {% include '../partials/header.html' %}
@@ -21,7 +25,7 @@
                         </div>
                     </form>
                     <div class="home-contentblock">
-                        <a class="block" href="cursos/">
+                        <a class="block" href="{% url 'UniversityConnect:courses' %}">
                             <div class="block-icon">
                                 <img src="{% static '/UniversityConnect/images/icons/curso.png' %}" alt="Cursos-Icon">
                             </div>
@@ -55,7 +59,7 @@
         <section class="home2">
             <h2>{% trans "Universidade de Cambridge" %}</h2>
             <div class="home-options">
-                <a class="option-block-link" href="{% url 'UniversityConnect:cursos' %}">
+                <a class="option-block-link" href="{% url 'UniversityConnect:courses' %}">
                     <div class="options-block">
                         <h2>{% trans "Cursos da Universidade" %}</h2>
                         <p>{% trans "Descubra a excelência acadêmica de Cambridge." %}</p>
@@ -112,6 +116,4 @@
             </div>
         </section>
     </main>
-    {% include '../partials/footer.html' %}
-</body>
-</html>
+{% endblock content_base %}

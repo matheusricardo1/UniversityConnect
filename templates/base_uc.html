@@ -1,0 +1,41 @@
+{% load static %}
+{% load i18n %}
+<!DOCTYPE html>
+{% if 'en/' in request.path %}<html lang="en">
+{% else %}<html lang="pt-br">
+{% endif %}
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="{% static '/UniversityConnect/js/menu.js' %}"></script>
+    <link rel="shortcut icon" href="{% static '/UniversityConnect/images/logo/favicon4.ico' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static '/UniversityConnect/css/header.css' %}">
+    <link rel="stylesheet" href="{% static '/UniversityConnect/css/footer.css' %}">
+    {% block extra_style %}
+    {% endblock extra_style %}
+    {% block extra_head_base %}
+    {% endblock extra_head_base %}
+   
+
+    <title>{% block title %}{% endblock title %}</title>
+</head>
+<body>
+    {% block content_base %}
+    {% endblock content_base %}
+
+    {% include 'UniversityConnect/partials/footer.html' %}
+
+    {% block scripts_base %}
+    {% endblock scripts_base %}
+</body>
+</html>
+
+
+
+
+
+
+
+

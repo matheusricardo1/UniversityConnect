@@ -13,4 +13,4 @@
     <link rel="shortcut icon" href="{% static '/UniversityConnect/images/logo/favicon4.ico' %}" type="image/x-icon">
     <link rel="stylesheet" href="{% static '/UniversityConnect/css/header.css' %}">
     <link rel="stylesheet" href="{% static '/UniversityConnect/css/footer.css' %}">
-    <title>{{ page_name }}</title>
+    {% block title %}{{ page_name }}{% endblock title %}

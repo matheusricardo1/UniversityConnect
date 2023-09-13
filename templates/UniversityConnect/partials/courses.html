@@ -1,16 +1,15 @@
 {% load static %}
 {% load i18n %}
-{% if curso %}
-
-    {% for curso in curso %}
-        <a class="option-block-link" href="{% url 'UniversityConnect:cursos_detail' curso.id %}">
+{% if courses %}
+    {% for course in courses %}
+        <a class="option-block-link" href="{% url 'UniversityConnect:courses_detail' course.id %}">
             <div class="options-block">
                 {% if lang %}
-                    <h2>{{ curso.tittle_en }}</h2>
-                    <p>{{ curso.mini_description_en }}</p>
+                    <h2>{{ course.tittle_en }}</h2>
+                    <p>{{ course.mini_description_en }}</p>
                 {% else %}
-                    <h2>{{ curso.titulo }}</h2>
-                    <p>{{ curso.mini_descricao }}</p>
+                    <h2>{{ course.title }}</h2>
+                    <p>{{ course.mini_description }}</p>
                 {% endif %}
                 <div class="details-icon">
                     <img src="{% static "/UniversityConnect/images/icons/enter.png" %}" alt="">

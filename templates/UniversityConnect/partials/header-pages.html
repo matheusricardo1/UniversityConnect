@@ -7,7 +7,7 @@
     </div>
     <form class="home-search" action="">
         <input type="search" name="course-searchbar" id="home-searchbar" 
-        {% if pesquisa %}value="{{ pesquisa }}"
+        {% if search_text %}value="{{ search_text }}"
         {% else %}placeholder="{% trans "Tecnologia" %}"
         {% endif %}>
     </form>

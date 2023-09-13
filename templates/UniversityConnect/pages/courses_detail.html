@@ -1,20 +1,25 @@
+{% extends "base_uc.html" %}
 {% load static %}
 {% load i18n %}
-{% include '../partials/head.html' %}
+
+{% block extra_style %}
 <link rel="stylesheet" href="{% static '/UniversityConnect/css/course_detail.css' %}">
-</head>
+{% endblock extra_style %}
+
+{% block content_base %}
+
 {% include '../partials/header.html' %}
 <main>
     <div class="home-title">
         <h2>{% trans "Curso de" %} 
-            {% if lang %}{{ curso.tittle_en }}
-            {% else %}{{ curso.titulo }}
+            {% if lang %}{{ course.tittle_en }}
+            {% else %}{{ course.tittle }}
             {% endif %}</h2>
     </div>
     <section class="home"> 
         <div class="block1">
             <div class="block1-img">
-                {% if curso.image %}
+                {% if course.image %}
                     <img src="{{curso.image.url}}" alt="curso img">
                 {% else %} 
                     <div class="no-img"> NO IMG </div>
@@ -22,11 +27,11 @@
             </div>
             <div class="block1-content">
                 {% if lang %}
-                <h2 class="content-title">{{ curso.tittle_en }}</h2>
-                <p class="content-description">{{ curso.description_en }}</p>
+                <h2 class="content-title">{{ course.tittle_en }}</h2>
+                <p class="content-description">{{ course.description_en }}</p>
                 {% else %}
-                <h2 class="content-title">{{ curso.titulo }}</h2>
-                <p class="content-description">{{ curso.descricao }}</p>
+                <h2 class="content-title">{{ course.tittle }}</h2>
+                <p class="content-description">{{ course.description }}</p>
                 {% endif %}
                 
             </div>
@@ -34,19 +39,19 @@
         <div class="block2">
             <div class="block2-content">
                 {% if lang %}
-                <p class="content-description">{{ curso.categoria.name_en }}</p>
-                <p class="content-description">{{ curso.formacao.name_en }}</p>
-                <p class="content-level">{{ curso.nivel_curso.name_en }}</p>
-                <p class="content-time">{{ curso.time_course_en }}</p>
-                <p class="content-hours">{{ curso.carga_horaria }} hours</p>
-                <p class="content-pay">US${{ mensalidade_us }}</p>                 
+                <p class="content-description">{{ course.categoria.name_en }}</p>
+                <p class="content-description">{{ course.formacao.name_en }}</p>
+                <p class="content-level">{{ course.nivel_curso.name_en }}</p>
+                <p class="content-time">{{ course.time_course_en }}</p>
+                <p class="content-hours">{{ course.carga_horaria }} hours</p>
+                <p class="content-pay">US${{ monthly_course_fee }}</p>                 
                 {% else %}
-                <p class="content-description">{{ curso.categoria }}</p>
-                <p class="content-description">{{ curso.formacao }}</p>
-                <p class="content-level">{{ curso.nivel_curso }}</p>
-                <p class="content-time">{{ curso.tempo_curso }}</p>
-                <p class="content-hours">{{ curso.carga_horaria }} horas</p>
-                <p class="content-pay">R${{ curso.mensalidade }}</p>
+                <p class="content-description">{{ course.categoria }}</p>
+                <p class="content-description">{{ course.formacao }}</p>
+                <p class="content-level">{{ course.nivel_curso }}</p>
+                <p class="content-time">{{ course.tempo_curso }}</p>
+                <p class="content-hours">{{ course.carga_horaria }} horas</p>
+                <p class="content-pay">R${{ course.mensalidade }}</p>
                 {% endif %}
                
                 <a class="content-course" href="#">{% trans "Cadastrar no Curso!" %}</a>
@@ -54,14 +59,14 @@
             <div class="other">
                 <h2>{% trans "Outros Cursos" %}</h2>
                 <p>{% trans "Relacionados com" %} 
-                    {% if lang %}{{ curso.categoria.name_en }}
-                    {% else %}{{ curso.categoria }}
+                    {% if lang %}{{ course.categoria.name_en }}
+                    {% else %}{{ course.categoria }}
                     {% endif %}
                     
                 </p>
                 {% if outro %}
                     {% for outro in outro %}
-                        <a class="option-block-link" href="{% url 'UniversityConnect:cursos_detail' outro.id %}">
+                        <a class="option-block-link" href="{% url 'UniversityConnect:courses_detail' outro.id %}">
                             <div class="options-block">
                                 {% if lang %}
                                 <h2>{{ outro.tittle_en }}</h2>
@@ -91,4 +96,4 @@
         </div>
     </section>
 </main>
-{% include '../partials/footer.html' %}
+{% endblock content_base %}

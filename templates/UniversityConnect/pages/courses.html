@@ -1,16 +1,21 @@
+{% extends "base_uc.html" %}
 {% load static %}
 {% load i18n %}
-{% include '../partials/head.html' %}
+
+{% block extra_style %}
 <link rel="stylesheet" href="{% static '/UniversityConnect/css/courses.css' %}">
-</head>
-<body>
+{% endblock extra_style %}
+
+{% block title %}{{page_name}}{% endblock title %}
+
+{% block content_base %} 
     <main>
         {% include '../partials/header-pages.html' %}
         <section class="home2">            
             <div class="home-options">
                 <div class="home-title">
                     <h2>{% trans "Cursos de Cambridge" %}</h2>
-                    <form method="GET" action="{% url 'UniversityConnect:cursos' %}">
+                    <form method="GET" action="{% url 'UniversityConnect:courses' %}">
                         <select name="categoria">
                             <option value="">{% trans "Todas as categorias" %}</option>
                             {% for categoria in categoria %}
@@ -28,6 +33,4 @@
             </div>
         </section>
     </main>
-    {% include '../partials/footer.html' %}
-</body>
-</html>
+{% endblock content_base %}

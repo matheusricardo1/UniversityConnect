@@ -13,7 +13,6 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 from pathlib import Path
 import os
 from django.utils.translation import gettext_lazy as _
-from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -94,26 +93,26 @@ WSGI_APPLICATION = "website.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-"""
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
-}"""
+}
 # settings.py
-
+"""
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'university0507',
         'USER': 'university0507',
         'PASSWORD': 'Mxthxs164#',
-        'HOST': 'db4free.net',  # Ou o endereço do seu servidor MySQL
-        'PORT': '3306',       # Porta padrão do MySQL
+        'HOST': 'db4free.net', 
+        'PORT': '3306', 
     }
 }
-
+"""
 
 
 AUTHENTICATION_BACKENDS = [
@@ -124,11 +123,11 @@ AUTHENTICATION_BACKENDS = [
 SOCIALACCOUNT_PROVIDERS = {
     'google': {
         'APP': {
-            'client_id': '807809700339-9jl03435v3ep1gdi2r0sig8uno1b9nv4.apps.googleusercontent.com', # Substitua pelo seu Client ID do Google
-            'secret': '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', # Substitua pelo seu Client Secret do Google
+            'client_id': '807809700339-9jl03435v3ep1gdi2r0sig8uno1b9nv4.apps.googleusercontent.com',
+            'secret': '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', 
             'key': ''
         },
-        'SCOPE': ['profile', 'email'],  # Solicite acesso ao perfil e ao e-mail
+        'SCOPE': ['profile', 'email'], 
     }
 }
 

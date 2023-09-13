@@ -35,12 +35,12 @@
       </div>
 		<div class="socialaccount_ballot">
 			<div class="login-or">{% trans 'Ou entre com:' %}</div>
-			<class="socialaccount_providers">
+			<div class="socialaccount_providers">
 				{% include "socialaccount/snippets/provider_list.html" with process="login" %}
-		</div>
-				{% include "socialaccount/snippets/login_extra.html" %}
-		</div>
+			</div>
+					{% include "socialaccount/snippets/login_extra.html" %}
+			</div>
       </form>
-			<br>
 	</div>
+</section>
 {% endblock %}

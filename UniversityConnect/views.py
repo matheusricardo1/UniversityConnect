@@ -5,78 +5,104 @@ from django.contrib.auth.models import User, AnonymousUser
 from allauth.socialaccount.models import SocialAccount
 from django.db.models import Q
 from django.contrib.auth.decorators import login_required
-from .models import Curso, Categoria
+from .models import Course, Category
 from django.shortcuts import get_object_or_404
 
 def homepage(request):
     PAGE_NAME = 'UniversityConnect'
     user = request.user
+    user_social = None
     if isinstance(user, AnonymousUser):
-        return render(request, 'UniversityConnect/html/pt/index.html', {
-            'request': request,'page_name':PAGE_NAME,
+        return render(request, 'UniversityConnect/pages/index.html', {
+            'request': request,
+            'page_name':PAGE_NAME,
             })
     else:
         social_account = user.socialaccount_set.first()
         if social_account:
             user_social = social_account.user
             user_social.username = user_social.username.title()
-            return render(request, 'UniversityConnect/html/pt/index.html', {
+            return render(request, 'UniversityConnect/pages/index.html', {
             'request': request,
             'user': user_social,
             'page_name':PAGE_NAME,
             })
         else:
-            return render(request, 'UniversityConnect/html/pt/index.html', {
+            return render(request, 'UniversityConnect/pages/index.html', {
             'request': request,
+            'page_name':PAGE_NAME,
+            })
+    return render(request, 'UniversityConnect/pages/index.html', {
+            'request': request,
+            'user': user_social,
             'page_name':PAGE_NAME,
             })
 
 @csrf_protect
-def cursos(request):
+def courses(request):
     PAGE_NAME = 'Cursos'
-    curso = Curso.objects.all()
-    categoria = Categoria.objects.all()
+    courses = Course.objects.all()
+    category = Category.objects.all()
     if 'en/' in request.path:
         lang = True
     else:
         lang = False 
     
     if request.GET.get('course-searchbar', ''):
-        termo_pesquisa = request.GET.get('course-searchbar', '')
-        curso = Curso.objects.filter(
-        Q(titulo__icontains=termo_pesquisa) |
-        Q(categoria__nome__icontains=termo_pesquisa) |
-        Q(descricao__icontains=termo_pesquisa)
-    )
+        search_text = request.GET.get('course-searchbar', '')
+        courses = Course.objects.filter(
+            Q(title__icontains=search_text) |
+            Q(category_name__icontains=search_text) |
+            Q(description__icontains=search_text)
+        )
         
-        context = {'request': request, 'curso': curso, 'pesquisa':termo_pesquisa, 'page_name': PAGE_NAME, 'categoria':categoria, 'lang':lang,}
-        return render(request, 'UniversityConnect/html/pt/cursos.html', context=context)
+        context = {
+            'request': request,
+            'courses': courses,
+            'search_text':search_text, 
+            'page_name': PAGE_NAME,
+            'categoria':category, 
+            'lang':lang,
+            }
+        return render(request, 'UniversityConnect/pages/courses.html', context=context)
     
-    categoria_selecionada = request.GET.get('categoria', '')
-    if categoria_selecionada == '':
-        curso = Curso.objects.all()
+    category_selected = request.GET.get('categoria', '')
+    if category_selected == '':
+        courses = Course.objects.all()
     else:
-        curso = Curso.objects.filter(categoria=categoria_selecionada)
-    if len(curso) == 0:
-        curso = False
+        courses = Course.objects.filter(category=category_selected)
+    if len(courses) == 0:
+        courses = False
     
-    context = {'request': request, 'curso': curso, 'page_name': PAGE_NAME, 'categoria':categoria, 'lang':lang,}
-    return render(request, 'UniversityConnect/html/pt/cursos.html', context=context)
+    context = {
+        'request': request, 
+        'courses': courses,
+        'page_name': PAGE_NAME,
+        'categoria':category,
+        'lang':lang,
+        }
+    return render(request, 'UniversityConnect/pages/courses.html', context=context)
 
 
 
-def cursos_detail(request, id):
-    curso = get_object_or_404(Curso,id=id,)
-    outros = Curso.objects.filter(categoria=curso.categoria).exclude(id=curso.id)
+def courses_detail(request, id):
+    course = get_object_or_404(Course,id=id,)
+    other_courses = Course.objects.filter(category=course.category).exclude(id=courses.id)
 
     lang = False 
     if 'en/' in request.path:
         lang = True
         
 
-    PAGE_NAME = f'{curso.titulo}'
-    context = {'request': request, 'curso': curso, 'outro': outros, 'page_name': PAGE_NAME,'lang':lang, 'mensalidade_us': curso.mensalidade/4,}
-    return render(request, 'UniversityConnect/html/pt/cursos_detail.html', context=context)
+    PAGE_NAME = f'{courses.titulo}'
+    context = {
+        'request': request,
+        'course': course,
+        'outro': outros, 
+        'page_name': PAGE_NAME,
+        'lang': lang, 
+        'monthly_course_fee': course.monthly_course_fee/4,}
+    return render(request, 'UniversityConnect/pages/courses_detail.html', context=context)
 
 
 @login_required(login_url='/accounts/login/')
@@ -89,6 +115,10 @@ def profile(request):
     else:
         email = "Email não cadastradado!"
 
-    context = {'request': request,'page_name': PAGE_NAME, 'user':user, 'email':email,}
+    context = {
+        'request': request,
+        'page_name': PAGE_NAME,
+        'user':user, 
+        'email':email,}
 
-    return render(request, 'UniversityConnect/html/pt/profile.html', context=context)
+    return render(request, 'UniversityConnect/pages/profile.html', context=context)

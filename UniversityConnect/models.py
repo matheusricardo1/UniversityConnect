@@ -1,44 +1,44 @@
 from django.db import models
 
-class Categoria(models.Model):
-    nome = models.CharField(max_length=100)
+class Category(models.Model):
+    name = models.CharField(max_length=100)
     name_en = models.CharField(max_length=100, default='English Name')
     
 
     def __str__(self):
-        return self.nome
+        return self.name
 
-class Formacao(models.Model):
-    nome = models.CharField(max_length=100)
+class Education(models.Model):
+    name = models.CharField(max_length=100)
     name_en = models.CharField(max_length=100, default='English Name')
 
     def __str__(self):
-        return self.nome
+        return self.name
 
-class NivelCurso(models.Model):
-    nome = models.CharField(max_length=100)
+class CourseLevel(models.Model):
+    name = models.CharField(max_length=100)
     name_en = models.CharField(max_length=100, default='English Name')
 
     def __str__(self):
-        return self.nome
+        return self.name
 
-class Curso(models.Model):
-    titulo = models.CharField(max_length=100)
+class Course(models.Model):
+    title = models.CharField(max_length=100)
     tittle_en = models.CharField(max_length=100, default='English Name')
-    mini_descricao = models.TextField(max_length=255, default='English Description')
+    mini_description = models.TextField(max_length=255, default='English Description')
     mini_description_en = models.TextField(max_length=255, default='English Description')
-    descricao = models.TextField(max_length=2000)
+    description = models.TextField(max_length=2000)
     description_en = models.TextField(max_length=2000, default='English Description')
-    carga_horaria = models.IntegerField()
-    tempo_curso = models.CharField(max_length=100)
+    course_load = models.IntegerField()
+    course_time = models.CharField(max_length=100)
     time_course_en = models.CharField(max_length=100, default='0 years')
-    mensalidade = models.DecimalField(max_digits=8, decimal_places=2)
-    tipo_aula = models.CharField(max_length=100)
+    monthly_course_fee = models.DecimalField(max_digits=8, decimal_places=2)
+    class_type = models.CharField(max_length=100)
     image = models.ImageField(upload_to='cursos/cover/%Y/%m/%d/', blank=True, default="")
-    categoria = models.ForeignKey(Categoria, on_delete=models.CASCADE)
-    formacao = models.ForeignKey(Formacao, on_delete=models.CASCADE)
-    nivel_curso = models.ForeignKey(NivelCurso, on_delete=models.CASCADE)
-    botao = models.CharField(max_length=100)
+    category = models.ForeignKey(Category, on_delete=models.CASCADE)
+    education = models.ForeignKey(Education, on_delete=models.CASCADE)
+    course_level = models.ForeignKey(CourseLevel, on_delete=models.CASCADE)
+    link = models.CharField(max_length=200, blank=True)
 
     def __str__(self):
-        return self.titulo
+        return self.title

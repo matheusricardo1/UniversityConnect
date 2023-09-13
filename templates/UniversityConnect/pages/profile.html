@@ -1,10 +1,16 @@
+{% extends "base_uc.html" %}
 {% load static %}
 {% load i18n %}
-{% include '../partials/head.html' %}
+
+{% block extra_style %}
 <link rel="stylesheet" href="{% static '/UniversityConnect/css/profile.css' %}">
+{% endblock extra_style %}
+
+{% block scripts_base %}
 <script src="{% static '/UniversityConnect/js/popup.js' %}"></script>
-</head>
-<body>
+{% endblock scripts_base %}
+
+{% block content_base %}
     <main>
         {% include '../partials/header.html' %}
             
@@ -42,21 +48,20 @@
             </div>
         </section>
     </main>
-{% include '../partials/footer.html' %}
-</body>
-</html>
+    <div class="free_text">
+        <h1>{% trans "Sign Out" %}</h1>
+      
+        <p>{% trans 'Are you sure you want to sign out?' %}</p>
+      
+        <form method="post" action="{% url 'account_logout' %}">
+          {% csrf_token %}
+          {% if redirect_field_value %}
+          <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}"/>
+          {% endif %}
+          <button class="button" type="submit">{% trans 'Sign Out' %}</button>
+        </form>
+      </div>
+{% endblock content_base %}
 
 
-<div class="free_text">
-    <h1>{% trans "Sign Out" %}</h1>
-  
-    <p>{% trans 'Are you sure you want to sign out?' %}</p>
-  
-    <form method="post" action="{% url 'account_logout' %}">
-      {% csrf_token %}
-      {% if redirect_field_value %}
-      <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}"/>
-      {% endif %}
-      <button class="button" type="submit">{% trans 'Sign Out' %}</button>
-    </form>
-  </div>
+

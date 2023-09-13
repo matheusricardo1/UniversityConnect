@@ -1,35 +1,23 @@
+{% extends "base_uc.html" %}
+{% load static %}
+{% load i18n %}
+
+{% block extra_style %}
+<link rel="stylesheet" href="{% static '/UniversityConnect/css/auth.css' %}">
+<link rel="stylesheet" href="{% static '/UniversityConnect/css/styles.css' %}">
+{% endblock extra_style %}
+
 {% load i18n %}
 {% load static %}
 {% load crispy_forms_tags %}
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block head_title %}{% endblock %}</title>
-    <link rel="stylesheet" href="{% static '/UniversityConnect/css/auth.css' %}">
-    <link rel="stylesheet" href="{% static '/UniversityConnect/css/styles.css' %}">
-    {% block extra_head %}
-    {% include '../UniversityConnect/html/partials/head.html' %}
-    {% endblock %}
-  </head>
-  <body>
-    
-    {% block body %}
-      {% include '../UniversityConnect/html/partials/header.html' %}
-    <!---
-    {% if messages %}
-    <div>
-      <strong>{% trans "Messages:" %}</strong>
-      <ul>
-        {% for message in messages %}
-        <li>{{message}}</li>
-        {% endfor %}
-      </ul>
-    </div>
-    {% endif %}
-  -->
+    {% block title %}
+      {% block head_title %}
+      {% endblock %}
+    {% endblock title %}
 
+  {% block content_base %}
+    {% block body %}
+      {% include '../UniversityConnect/partials/header.html' %}
 
     {% block content %}
 
@@ -40,7 +28,4 @@
     {% block extra_body %}
     
     {% endblock %}
-   
-  </body>
- 
-</html>
+{% endblock content_base %}

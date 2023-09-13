@@ -1,66 +1,67 @@
 from django.contrib import admin
-from .models import Categoria, Formacao, NivelCurso, Curso
+from .models import Category, Education, CourseLevel, Course
 from googletrans import Translator
 
 
-def traduzir_titulo(modeladmin, request, queryset):
+def translate_course(modeladmin, request, queryset):
     translator = Translator(service_urls=['translate.google.com'])
-    for curso in queryset:
-        curso.tittle_en = (translator.translate(curso.titulo, dest='en').text).title()
-        curso.mini_description_en = translator.translate(curso.mini_descricao, dest='en').text
-        curso.description_en = translator.translate(curso.descricao, dest='en').text
-        curso.time_course_en = (translator.translate(curso.tempo_curso, dest='en').text).title()
-        curso.save()
-traduzir_titulo.short_description = 'Traduzir para inglês'
+    for course in queryset:
+        course.tittle_en = (translator.translate(curso.title, dest='en').text).title()
+        course.mini_description_en = translator.translate(course.mini_description, dest='en').text
+        course.description_en = translator.translate(course.description, dest='en').text
+        course.time_course_en = (translator.translate(course.course_time, dest='en').text).title()
+        course.save()
+translate_course.short_description = 'Traduzir para inglês'
 
-def traduzir_formacao(modeladmin, request, queryset):
+def transalte_education(modeladmin, request, queryset):
     translator = Translator(service_urls=['translate.google.com'])
-    for formacao in queryset:
-        formacao.name_en = (translator.translate(formacao.nome, dest='en').text).title()
-        formacao.save()
-traduzir_formacao.short_description = 'Traduzir para inglês'
+    for education in queryset:
+        education.name_en = (translator.translate(education.name, dest='en').text).title()
+        education.save()
+transalte_education.short_description = 'Traduzir para inglês'
 
-def traduzir_categoria(modeladmin, request, queryset):
+def translate_category(modeladmin, request, queryset):
     translator = Translator(service_urls=['translate.google.com'])
-    for formacao in queryset:
-        formacao.name_en = (translator.translate(formacao.nome, dest='en').text).title()
-        formacao.save()
-traduzir_categoria.short_description = 'Traduzir para inglês'
+    for category in queryset:
+        category.name_en = (translator.translate(category.name, dest='en').text).title()
+        category.save()
+translate_category.short_description = 'Traduzir para inglês'
 
-def traduzir_nivel_curso(modeladmin, request, queryset):
+def translate_course_level(modeladmin, request, queryset):
     translator = Translator(service_urls=['translate.google.com'])
-    for nivelcurso in queryset:
-        nivelcurso.name_en = (translator.translate(nivelcurso.nome, dest='en').text).title()
-        nivelcurso.save()
-traduzir_nivel_curso.short_description = 'Traduzir para inglês'
+    for course_level in queryset:
+        course_level.name_en = (translator.translate(course_level.name, dest='en').text).title()
+        course_level.save()
+translate_course_level.short_description = 'Traduzir para inglês'
 
-@admin.register(NivelCurso)
-class NivelCursoAdmin(admin.ModelAdmin):
-    actions = [traduzir_nivel_curso]
-
-@admin.register(Categoria)
-class CategoriaAdmin(admin.ModelAdmin):
-    actions = [traduzir_categoria]
-
-@admin.register(Formacao)
+@admin.register(Education)
 class FormacaoAdmin(admin.ModelAdmin):
-    actions = [traduzir_formacao]
+    actions = [transalte_education]
+    
+@admin.register(Category)
+class CategoriaAdmin(admin.ModelAdmin):
+    actions = [translate_category]
 
 
-@admin.register(Curso)
+@admin.register(CourseLevel)
+class NivelCursoAdmin(admin.ModelAdmin):
+    actions = [translate_course_level]
+
+
+@admin.register(Course)
 class CursoAdmin(admin.ModelAdmin):
-    actions = [traduzir_titulo]
-    list_display = ['titulo', 'carga_horaria', 'mensalidade']
-    list_filter = ['categoria', 'formacao', 'nivel_curso']
-    search_fields = ['titulo', 'descricao']
+    actions = [translate_course]
+    list_display = ['title', 'course_load', 'monthly_course_fee']
+    list_filter = ['category', 'education', 'course_level']
+    search_fields = ['title', 'description']
     list_per_page = 10
 
     def save_model(self, request, obj, form, change):
         novo_titulo = request.POST.get('novo_titulo')
-        primeiro_curso = Curso.objects.first()
+        primeiro_curso = Course.objects.first()
 
         if novo_titulo and primeiro_curso:
-            primeiro_curso.titulo = novo_titulo
+            primeiro_curso.title = novo_titulo
             primeiro_curso.save()
 
         super().save_model(request, obj, form, change)
