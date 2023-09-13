@@ -18,11 +18,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: .\templates\UniversityConnect\html\partials\courses.html:25
+#: .\templates\UniversityConnect\html\partials\list.html:25
 msgid "Nenhum curso encontrado!"
 msgstr "No course found!"
 
-#: .\templates\UniversityConnect\html\partials\courses.html:26
+#: .\templates\UniversityConnect\html\partials\list.html:26
 msgid "Clique aqui para voltar ao inicio"
 msgstr "Click here to return to the beginning"
 

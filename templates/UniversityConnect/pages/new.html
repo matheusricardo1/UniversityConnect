@@ -1,0 +1,120 @@
+{% extends "base_uc.html" %}
+{% load static %}
+{% load i18n %}
+
+{% block extra_style %}
+<link rel="stylesheet" href="{% static '/UniversityConnect/css/courses.css' %}">
+{% endblock extra_style %}
+
+{% block title %}{{page_name}}{% endblock title %}
+
+{% block content_base %} 
+    <main>
+        {% include '../partials/header-pages.html' %}
+        <section class="home2">            
+            <div class="home-options">
+                <div class="home-title">
+                    <h2>{{new.title}}</h2>
+                </div>
+                <div class="new-main-img">
+                    <img src="{{new.image}}" alt="">
+                </div>
+                <div class="options-block tag-new">
+                    <p>
+                        Fundação e História
+                        A Universidade de Cambridge foi fundada no início do século XIII, em 1209, por um grupo
+                        de
+                        estudiosos fugindo da Universidade de Oxford devido a conflitos internos. Inicialmente, a
+                        universidade não possuía um campus centralizado, e as aulas eram ministradas em locais
+                        diversos pela cidade de Cambridge.
+                        Ao longo dos séculos, Cambridge se desenvolveu como um importante centro de
+                        aprendizado,
+                        atraindo estudantes e acadêmicos de todo o mundo. Muitos avanços notáveis em várias
+                        disciplinas foram alcançados por seus membros, tornando-a um ícone da excelência
+                        acadêmica.
+                        Colégios de Cambridge
+                        Uma característica distintiva da Universidade de Cambridge são seus colégios, instituições
+                        independentes que compõem a universidade como um todo. Atualmente, existem 31
+                        colégios
+                        em Cambridge, cada um com sua própria história e tradições. Esses colégios fornecem
+                        alojamento, supervisão acadêmica e um ambiente comunitário para os estudantes.
+                        Os colégios desempenharam um papel vital na vida acadêmica de Cambridge, cultivando
+                        uma
+                        cultura de aprendizado, oferecendo bolsas e promovendo atividades extracurriculares.
+                        Alguns
+                        dos colégios mais famosos incluem o Trinity College, o St. John’s College e o King’s
+                        College.
+                        Descobertas e Contribuições
+                        A Universidade de Cambridge é reconhecida internacionalmente por suas contribuições
+                        significativas em uma ampla gama de campos acadêmicos. Ao longo dos séculos, seus
+                        membros desempenharam um papel fundamental na evolução do conhecimento humano.
+                        Na área das ciências, Cambridge foi o local onde James Watson e Francis Crick
+                        desvendaram a
+                        estrutura do DNA, uma das descobertas mais importantes da biologia moderna. Além disso,
+                        Isaac Newton, um dos maiores cientistas da história, estudou e ensinou em Cambridge,
+                        revolucionando a física e a matemática.
+                        Na literatura, a universidade também produziu grandes talentos, como John Milton, autor de
+                        “Paraíso Perdido”, e Samuel Taylor Coleridge, um dos principais poetas românticos
+                        ingleses.
+                        Excelência Acadêmica Contemporânea
+                        Até os dias atuais, a Universidade de Cambridge mantém sua reputação como um centro de
+                        excelência acadêmica. Ela continua a atrair estudantes talentosos e acadêmicos de todo o
+                        mundo, oferecendo uma ampla gama de cursos em diversas disciplinas.
+                        Com uma abordagem baseada em supervisões individuais e grupos de estudo, a
+                        universidade
+                        incentiva os alunos a se envolverem ativamente em suas áreas de interesse, promovendo
+                        um
+                        ambiente intelectualmente estimulante.
+                        Curiosidades
+                        • A Biblioteca da Universidade de Cambridge, a Biblioteca da Universidade de
+                        Cambridge, possui uma cópia original da obra “Principia Mathematica” de Newton,
+                        além de uma extensa coleção de manuscritos.
+                        • A Universidade de Cambridge possui uma tradição acadêmica secular, sendo a segunda
+                        universidade mais antiga do mundo de língua inglesa, perdendo apenas para a
+                        Universidade de Oxford.
+                        • O famoso físico Stephen Hawking, autor de “Uma Breve História do Tempo”, foi
+                        professor da Universidade de Cambridge por mais de 30 anos. Sua pesquisa
+                        revolucionou nossa compreensão do universo e seus estudos sobre buracos negros são
+                        amplamente reconhecidos.
+                        • A Universidade de Cambridge é conhecida por seus rituais acadêmicos tradicionais. Um
+                        exemplo é a “Matrícula”, cerimônia em que os novos estudantes são oficialmente
+                        admitidos na universidade, vestindo trajes acadêmicos formais.
+                        • O famoso debate entre as ideias do criacionismo e do evolucionismo, conhecido como
+                        “O Grande Debate”, ocorreu na Universidade de Cambridge em 1860. O debate entre
+                        Thomas Huxley, defensor de Charles Darwin, e Samuel Wilberforce, bispo de Oxford,
+                        gerou grande repercussão na época.
+                        • Muitos líderes e personalidades notáveis passaram pela Universidade de Cambridge.
+                        Entre os ex-alunos estão Isaac Newton, Charles Darwin, Sir Isaac Newton, John
+                        Maynard Keynes, Alan Turing, Sylvia Plath, Prince Charles e muitos outros.
+                        • A Universidade de Cambridge tem uma forte tradição no remo e é conhecida por sua
+                        histórica competição anual contra a Universidade de Oxford, conhecida como “Boat
+                        Race”. A corrida acontece no Rio Tâmisa e atrai um grande número de espectadores.
+                        • A Biblioteca da Universidade de Cambridge é uma das maiores bibliotecas
+                        universitárias do mundo, abrigando uma vasta coleção de mais de 8 milhões de livros,
+                        manuscritos e documentos históricos. Além disso, é um dos seis depósitos legais do
+                        Reino Unido, recebendo uma cópia de cada obra publicada no país.
+                        Essas curiosidades destacam apenas alguns aspectos fascinantes da história e do
+                        prestígio da Universidade de Cambridge. Ela continua sendo um farol de conhecimento
+                        e inovação, desempenhando um papel crucial no avanço acadêmico e na formação de
+                        mentes brilhantes ao redor do mundo.</p>
+                </div>
+                
+            </div>
+            <div class="home-options">
+                
+                
+                
+            
+            </div>
+            <div class="other-news">
+                <a class="other-new">
+                    <h3>{{other_news.title}}</h3>
+                    {% if 'en/' in request.path %}<p>{{other_news.mini_decription_en}}</p>
+                    {% else %}<p>{{other_news.mini_decription}}</p>
+                    {% endif %}
+                    
+                </a>
+            </div>
+        </section>
+    </main>
+{% endblock content_base %}

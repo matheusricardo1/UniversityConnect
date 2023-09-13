@@ -1,12 +1,13 @@
-from django.shortcuts import render
-from django.contrib.staticfiles import finders
-from django.views.decorators.csrf import csrf_protect
-from django.contrib.auth.models import User, AnonymousUser
 from allauth.socialaccount.models import SocialAccount
-from django.db.models import Q
 from django.contrib.auth.decorators import login_required
-from .models import Course, Category
-from django.shortcuts import get_object_or_404
+from django.contrib.auth.models import AnonymousUser, User
+from django.contrib.staticfiles import finders
+from django.db.models import Q
+from django.shortcuts import get_object_or_404, render
+from django.views.decorators.csrf import csrf_protect
+from .models import Category, Course, ExStudent, New
+from django.core.paginator import Paginator
+
 
 def homepage(request):
     PAGE_NAME = 'UniversityConnect'
@@ -42,7 +43,13 @@ def homepage(request):
 def courses(request):
     PAGE_NAME = 'Cursos'
     courses = Course.objects.all()
+    
     category = Category.objects.all()
+    
+    paginator = Paginator(courses, 2)
+    page_number = request.GET.get("page")
+    courses = paginator.get_page(page_number)
+    
     if 'en/' in request.path:
         lang = True
     else:
@@ -50,38 +57,37 @@ def courses(request):
     
     if request.GET.get('course-searchbar', ''):
         search_text = request.GET.get('course-searchbar', '')
-        courses = Course.objects.filter(
+        courses = courses.filter(
             Q(title__icontains=search_text) |
             Q(category_name__icontains=search_text) |
             Q(description__icontains=search_text)
         )
-        
         context = {
             'request': request,
             'courses': courses,
             'search_text':search_text, 
             'page_name': PAGE_NAME,
-            'categoria':category, 
+            'category':category, 
             'lang':lang,
             }
-        return render(request, 'UniversityConnect/pages/courses.html', context=context)
+        return render(request, 'UniversityConnect/pages/list.html', context=context)
     
-    category_selected = request.GET.get('categoria', '')
-    if category_selected == '':
-        courses = Course.objects.all()
-    else:
+    category_selected = request.GET.get('category', '')
+    if category_selected != '':
         courses = Course.objects.filter(category=category_selected)
+        paginator = Paginator(courses, 2)
+        page_number = request.GET.get("page")
+        courses = paginator.get_page(page_number)
     if len(courses) == 0:
         courses = False
-    
-    context = {
+
+    return render(request, 'UniversityConnect/pages/list.html', {
         'request': request, 
         'courses': courses,
         'page_name': PAGE_NAME,
-        'categoria':category,
+        'category':category,
         'lang':lang,
-        }
-    return render(request, 'UniversityConnect/pages/courses.html', context=context)
+        })
 
 
 
@@ -125,7 +131,20 @@ def profile(request):
 
 
 
-def ex_students(request):
-    return render(request, 'UniversityConnect/pages/courses.html', {
+def history(request):
+    new = New.objects.first()
+
+    return render(request, 'UniversityConnect/pages/new.html', {
         'page_name': 'História de Cambridge',
+        'new': new,
+    })
+
+def ex_students(request):
+    students = ExStudent.objects.all()
+    paginator = Paginator(students, 2)
+    page_number = request.GET.get("page")
+    students = paginator.get_page(page_number)
+    return render(request, 'UniversityConnect/pages/list.html', {
+        'page_name': 'História de Cambridge',
+        'students': students,
     })

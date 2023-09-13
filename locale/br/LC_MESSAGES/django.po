@@ -22,11 +22,11 @@ msgstr ""
 "19) && (n%100 < 70 || n%100 > 79) && (n%100 < 90 || n%100 > 99) ? 2 :(n != 0 "
 "&& n % 1000000 == 0) ? 3 : 4);\n"
 
-#: .\templates\UniversityConnect\html\partials\courses.html:25
+#: .\templates\UniversityConnect\html\partials\list.html:25
 msgid "Nenhum curso encontrado!"
 msgstr ""
 
-#: .\templates\UniversityConnect\html\partials\courses.html:26
+#: .\templates\UniversityConnect\html\partials\list.html:26
 msgid "Clique aqui para voltar ao inicio"
 msgstr ""
 

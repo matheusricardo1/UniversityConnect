@@ -1,6 +1,7 @@
 from django.contrib import admin
-from .models import Category, Education, CourseLevel, Course
 from googletrans import Translator
+
+from .models import Category, Course, CourseLevel, Education, ExStudent, New
 
 
 def translate_course(modeladmin, request, queryset):
@@ -33,6 +34,22 @@ def translate_course_level(modeladmin, request, queryset):
         course_level.name_en = (translator.translate(course_level.name, dest='en').text).title()
         course_level.save()
 translate_course_level.short_description = 'Traduzir para inglês'
+
+def translate_ex_student(modeladmin, request, queryset):
+    translator = Translator(service_urls=['translate.google.com'])
+    for ex_stundent in queryset:
+        ex_stundent.biography_en = (translator.translate(ex_stundent.biography, dest='en').text)
+        ex_stundent.save()
+translate_ex_student.short_description = 'Traduzir para inglês'
+
+def translate_new(modeladmin, request, queryset):
+    translator = Translator(service_urls=['translate.google.com'])
+    for new in queryset:
+        new.mini_decription_en = (translator.translate(new.mini_decription, dest='en').text)
+        new.text_en = (translator.translate(new.text, dest='en').text)
+        new.save()
+translate_new.short_description = 'Traduzir para inglês'
+
 
 @admin.register(Education)
 class FormacaoAdmin(admin.ModelAdmin):
@@ -67,4 +84,10 @@ class CursoAdmin(admin.ModelAdmin):
         super().save_model(request, obj, form, change)
 
 
-
+@admin.register(ExStudent)
+class ExStudentAdmin(admin.ModelAdmin):
+    actions = [translate_ex_student]
+    
+@admin.register(New)
+class NewAdmin(admin.ModelAdmin):
+    actions = [translate_new]

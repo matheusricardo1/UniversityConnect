@@ -29,3 +29,20 @@
         </div>
     </a>
 {% endif %}
+<div class="pagination">
+    <span class="step-links">
+        <span class="current">
+            {% trans "Página" %} {{ courses.number }} {% trans "de" %} {{ courses.paginator.num_pages }}.
+        </span>
+        <div class="pagination-button">
+        {% if courses.has_previous %}
+            <a href="?page=1">{% trans "Página 1" %}</a>
+            <a href="?page={{ courses.previous_page_number }}">{% trans "Retornar" %}</a>
+        {% endif %}
+        {% if courses.has_next %}
+            <a class="pagination-next" href="?page={{ courses.next_page_number }}">{% trans "Avançar" %}</a>
+            <a class="pagination-back" href="?page={{ courses.paginator.num_pages }}">{% trans "Página" %} {{ courses.paginator.num_pages }}</a>
+        {% endif %}
+     </div>
+    </span>
+</div>

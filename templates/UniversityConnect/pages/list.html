@@ -18,12 +18,12 @@
                     <div class="home-title">
                         <h2>{% trans "Cursos de Cambridge" %}</h2>
                         <form method="GET" action="{% url 'UniversityConnect:courses' %}">
-                            <select name="categoria">
+                            <select name="category">
                                 <option value="">{% trans "Todas as categorias" %}</option>
-                                {% for categoria in categoria %}
-                                    <option value="{{ categoria.id }}">
-                                        {% if lang %}{{ categoria.name_en }}
-                                        {% else %}{{ categoria.nome }}
+                                {% for category in category %}
+                                    <option value="{{ category.id }}">
+                                        {% if 'en/' in request.path %}{{ category.name_en }}
+                                        {% else %}{{ category.name }}
                                         {% endif %}
                                     </option>
                                 {% endfor %}
@@ -33,14 +33,19 @@
                     </div>
                     {% include '../partials/courses.html' %}
                     
-                {% elif 'history' in request.path %}
-                    <div class="home-title">
-                        <h2>{% trans "História de Cambridge" %}</h2>
+
+                {% elif 'ex_students/' in request.path %}
+                    <div class="home-title options-block">
+                        <h2>{% trans "Ex alunos notáveis de Cambridge" %}</h2>
+                        <p class="subtext">{% trans "A Universidade de Cambridge é uma das instituições acadêmicas mais antigas e prestigiadas do mundo, conhecida por sua excelência em ensino e pesquisa. Com uma história que remonta a mais de 800 anos, a universidade tem formado alguns dos indivíduos mais brilhantes e influentes ao longo dos séculos. Seus ex-alunos notáveis têm deixado um impacto significativo em uma variedade de áreas, incluindo ciência, literatura, política, artes e muito mais.Aqui estão alguns exemplos de ex-alunos famosos da Universidade de Cambridge:" %}</p>
                     </div>
                     {% include '../partials/students.html' %}
-                {% endif %}
 
+                    
+                {% endif %}
+                
             </div>
+            
         </section>
     </main>
 {% endblock content_base %}

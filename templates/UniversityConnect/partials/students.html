@@ -3,18 +3,17 @@
 {% if students %}
     {% for student in students %}
         <div class="option-block-link">
-            <div class="options-block">
-                <div class="student-img">{{student.img}}</div>
-                <div class="student-text">
+            <div class="options-block-student">
+                <div class="student-img ">{{student.img}}</div>
+                <div class="options-block tag-student">
                     <h2>{{ student.name }}</h2>
-                    {% if lang %}
-                        <p>{{ student.mini_description_en }}</p>
+                    {% if 'en/' in request.path %}
+                        <p>{{ student.biography_en }}</p>
                     {% else %}
-                        <p>{{ student.mini_description }}</p>
+                        <p>{{ student.biography }}</p>
                     {% endif %}
-                </div>
-                <div class="details-icon">
-                    <img src="{% static "/UniversityConnect/images/icons/enter.png" %}" alt="">
+                    
+                    
                 </div>
             </div>
         </div>
@@ -31,3 +30,20 @@
         </div>
     </a>
 {% endif %}
+<div class="pagination">
+    <span class="step-links">
+        <span class="current">
+            {% trans "Página" %} {{ students.number }} {% trans "de" %} {{ students.paginator.num_pages }}.
+        </span>
+        <div class="pagination-button">
+        {% if students.has_previous %}
+            <a href="?page=1">{% trans "Página 1" %}</a>
+            <a href="?page={{ students.previous_page_number }}">{% trans "Retornar" %}</a>
+        {% endif %}
+        {% if students.has_next %}
+            <a class="pagination-next" href="?page={{ students.next_page_number }}">{% trans "Avançar" %}</a>
+            <a class="pagination-back" href="?page={{ students.paginator.num_pages }}">{% trans "Página" %} {{ students.paginator.num_pages }}</a>
+        {% endif %}
+     </div>
+    </span>
+</div>

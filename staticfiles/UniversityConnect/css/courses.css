@@ -214,9 +214,7 @@ html{
     max-height: 300px !important;
     min-width: 230px;
     max-width: 100%;
-    background-color: var(--colorWhite);
-   
-    
+    background-color: var(--colorWhite);    
     border: 1px solid rgba(0, 0, 0, 0);
     overflow: hidden;
 }
@@ -224,7 +222,7 @@ html{
 .options-block:hover{
     border: 1px solid rgba(0, 0, 0, 0.605);
 }
-.options-block > h2, .options-block > p{
+.options-block > h2, .options-block > p, .subtext{
     overflow: hidden !important;
     margin: 7px 0;
     font-family: var(--fontPrimary);
@@ -235,9 +233,9 @@ html{
     color: var(--colorPrimary);
     font-size: var(--fontLargeSize);
 }   
-.options-block > p{
-    padding-right: 14px;
-    font-size: var(--fontMidSize);
+.options-block > p, .options-block > .student-text > p{
+    padding-right: 14px ;  
+    font-size: var(--fontMidSize) ;
 }
 .details-icon{
     position: absolute;
