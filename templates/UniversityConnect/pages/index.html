@@ -6,6 +6,7 @@
 <link rel="stylesheet" href="{% static '/UniversityConnect/css/styles.css' %}">
 {% endblock extra_style %}
 
+{% block title %}{{page_name}}{% endblock title %}
 
 {% block content_base %}
     <main>
@@ -107,7 +108,7 @@
                         </div>
                     </div>
                 </a>
-                 <a class="option-block-link "  href="#">
+                 <a class="option-block-link "  href="{% url 'UniversityConnect:history' %}">
                     <div class="options-block">
                         <h2>{% trans "História da Universidade" %}</h2>
                         <p>{% trans "Descubra a grandeza da história de Cambridge." %}</p>

@@ -40,8 +40,13 @@
                         <p class="subtext">{% trans "A Universidade de Cambridge é uma das instituições acadêmicas mais antigas e prestigiadas do mundo, conhecida por sua excelência em ensino e pesquisa. Com uma história que remonta a mais de 800 anos, a universidade tem formado alguns dos indivíduos mais brilhantes e influentes ao longo dos séculos. Seus ex-alunos notáveis têm deixado um impacto significativo em uma variedade de áreas, incluindo ciência, literatura, política, artes e muito mais.Aqui estão alguns exemplos de ex-alunos famosos da Universidade de Cambridge:" %}</p>
                     </div>
                     {% include '../partials/students.html' %}
-
-                    
+                {% elif 'places/' in request.path %}
+                <div class="home-title options-block">
+                    <h2>{% trans "Moradias perto de Cambridge" %}</h2>
+                    <p class="subtext">{% trans "" %}</p>
+                </div>
+                {% include '../partials/places.html' %}
+                
                 {% endif %}
                 
             </div>

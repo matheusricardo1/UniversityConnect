@@ -6,14 +6,16 @@
 <link rel="stylesheet" href="{% static '/UniversityConnect/css/course_detail.css' %}">
 {% endblock extra_style %}
 
+{% block title %}{{page_name}}{% endblock title %}
+
 {% block content_base %}
 
 {% include '../partials/header.html' %}
 <main>
     <div class="home-title">
         <h2>{% trans "Curso de" %} 
-            {% if lang %}{{ course.tittle_en }}
-            {% else %}{{ course.tittle }}
+            {% if lang %}{{ course.title_en }}
+            {% else %}{{ course.title }}
             {% endif %}</h2>
     </div>
     <section class="home"> 
@@ -59,8 +61,8 @@
             <div class="other">
                 <h2>{% trans "Outros Cursos" %}</h2>
                 <p>{% trans "Relacionados com" %} 
-                    {% if lang %}{{ course.categoria.name_en }}
-                    {% else %}{{ course.categoria }}
+                    {% if lang %}{{ course.category.name_en }}
+                    {% else %}{{ course.category }}
                     {% endif %}
                     
                 </p>
@@ -69,11 +71,11 @@
                         <a class="option-block-link" href="{% url 'UniversityConnect:courses_detail' course.id %}">
                             <div class="options-block">
                                 {% if lang %}
-                                <h2>{{ course.tittle_en }}</h2>
+                                <h2>{{ course.title_en }}</h2>
                                 <p>{{ course.mini_description_en }}</p>
                                 {% else %}
-                                <h2>{{ course.titulo }}</h2>
-                                <p>{{ course.mini_descricao }}</p>
+                                <h2>{{ course.title }}</h2>
+                                <p>{{ course.mini_description }}</p>
                                 {% endif %}
                                 <div class="details-icon">
                                     <img src="{% static "/UniversityConnect/images/icons/enter.png" %}" alt="">

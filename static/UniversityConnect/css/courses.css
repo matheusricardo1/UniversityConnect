@@ -135,7 +135,7 @@
     }
     .options-block{
         font-size: smaller !important;
-        display: block;
+        display: block !important;
         margin: 0 auto 10px auto !important;
         min-width: 160px !important;
         max-width: 400px !important;
@@ -157,9 +157,7 @@
     }
     
     .details-icon{
-        position: relative !important;
-        bottom: 60px !important;
-        float: right;
+        bottom: 14px !important;
         width: 20px !important;
         height: 20px !important
     }
@@ -220,6 +218,7 @@ html{
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.172) !important;
 }
 .home-options{
+    padding: 0 20px;
     display: block;
     margin: auto;
 }
@@ -233,9 +232,8 @@ html{
     
 }
 
-
 .options-block{
-    margin: 10px auto 10px auto !important;
+    margin: 15px auto !important;
     position: relative;
     padding: 25px !important;
     min-height: 110px;
@@ -256,7 +254,6 @@ html{
 }
 
 .tag-new{
-    max-height: none !important;
     line-height: 1.5;
     text-align: justify;
 }
@@ -294,7 +291,7 @@ html{
 .options-block:hover{
     border: 1px solid rgba(0, 0, 0, 0.605);
 }
-.options-block > h2, .options-block > p, .subtext{
+.options-block > h2, .options-block > p .subtext{
     overflow: hidden !important;
     margin: 7px 0;
     font-family: var(--fontPrimary);
@@ -305,18 +302,26 @@ html{
     color: var(--colorPrimary);
     font-size: var(--fontLargeSize);
 }   
-.options-block > p{
+.options-block > p, .tag-new p{
+    font-family: var(--fontPrimary);
     padding-right: 14px ;  
     font-size: var(--fontMidSize) ;
 }
+.options-block > ul{
+    padding: 10px 0;
+}
+.options-block > ul > li, .options-block > ul > p{
+    font-family: var(--fontPrimary);
+    font-size: var(--fontMidSize) ;
+}
 .tag-student > p{
+    font-family: var(--fontPrimary);
     padding-right: 0 !important ;  
     font-size: var(--fontMidSize) ;
 }
 .details-icon{
     position: absolute;
-    bottom: 20px;
-    right: 20px;
+    right: 14px;
     width: 20px;
     height: 20px;
 }
@@ -325,6 +330,26 @@ html{
     height: 100%;
 }
 
+
+@media (min-width: 1000px){
+    .new-main-img{
+        height: 550px !important;
+    }
+    .new-main-img img{
+        width: 80% !important;
+    }
+}
+.new-main-img{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+}
+.new-main-img img{
+    width: 100%;
+}
 
 .pagination{
     text-align: center;
@@ -341,4 +366,12 @@ html{
 }
 .pagination-button > a:hover{
     text-decoration: underline;
+}
+
+.tag-new{
+    max-height: none !important
+}
+.tag-new h3{
+    padding: 10px 0px;
+    font-family: var(--fontPrimary);
 }

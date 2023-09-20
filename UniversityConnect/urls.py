@@ -11,6 +11,7 @@ urlpatterns = [
    path('accounts/profile/', views.profile, name='profile'),
    path('history/', views.history, name="history"),
    path('history/ex_students/', views.ex_students, name="ex_students"),
+   path('places/', views.places, name="places"),
 ]
 
 

@@ -1,0 +1,48 @@
+{% load static %}
+{% load i18n %}
+{% if places %}
+    {% for place in places %}
+        <a class="option-block-link" href="{% url 'UniversityConnect:courses_detail' place.id %}">
+            <div class="options-block">
+                {% if lang %}
+                    <h2>{{ place.tittle_en }}</h2>
+                    <p>{{ place.mini_description_en }}</p>
+                {% else %}
+                    <h2>{{ place.title }}</h2>
+                    <p>{{ place.mini_description }}</p>
+                {% endif %}
+                <div class="details-icon">
+                    <img src="{% static "/UniversityConnect/images/icons/enter.png" %}" alt="">
+                </div>
+            </div>
+        </a>
+    {% endfor %}
+
+{% else %}
+    <a class="option-block-link" href="{% url 'UniversityConnect:homepage' %}">
+        <div class="options-block">
+            <h2>{% trans "Nenhum curso encontrado!" %}</h2>
+            <p>{% trans "Clique aqui para voltar ao inicio" %}</p>
+            <div class="details-icon">
+                <img src="{% static "/UniversityConnect/images/icons/enter.png" %}" alt="">
+            </div>
+        </div>
+    </a>
+{% endif %}
+<div class="pagination">
+    <span class="step-links">
+        <span class="current">
+            {% trans "Página" %} {{ places.number }} {% trans "de" %} {{ places.paginator.num_pages }}.
+        </span>
+        <div class="pagination-button">
+        {% if places.has_previous %}
+            <a href="?page=1">{% trans "Página 1" %}</a>
+            <a href="?page={{ places.previous_page_number }}">{% trans "Retornar" %}</a>
+        {% endif %}
+        {% if places.has_next %}
+            <a class="pagination-next" href="?page={{ places.next_page_number }}">{% trans "Avançar" %}</a>
+            <a class="pagination-back" href="?page={{ places.paginator.num_pages }}">{% trans "Página" %} {{ places.paginator.num_pages }}</a>
+        {% endif %}
+     </div>
+    </span>
+</div>

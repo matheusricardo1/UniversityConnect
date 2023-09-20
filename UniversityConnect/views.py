@@ -46,7 +46,7 @@ def courses(request):
     
     category = Category.objects.all()
     
-    paginator = Paginator(courses, 2)
+    paginator = Paginator(courses, 8)
     page_number = request.GET.get("page")
     courses = paginator.get_page(page_number)
     
@@ -75,7 +75,7 @@ def courses(request):
     category_selected = request.GET.get('category', '')
     if category_selected != '':
         courses = Course.objects.filter(category=category_selected)
-        paginator = Paginator(courses, 2)
+        paginator = Paginator(courses, 8)
         page_number = request.GET.get("page")
         courses = paginator.get_page(page_number)
     if len(courses) == 0:
@@ -93,7 +93,7 @@ def courses(request):
 
 def courses_detail(request, id):
     course = get_object_or_404(Course,id=id,)
-    other_courses = Course.objects.filter(category=course.category).exclude(id=course.id)[:3]
+    other_courses = Course.objects.filter(category=course.category).exclude(id=course.id)[:2]
 
     lang = False 
     if 'en/' in request.path:
@@ -134,17 +134,30 @@ def profile(request):
 def history(request):
     new = New.objects.first()
 
-    return render(request, 'UniversityConnect/pages/new.html', {
+    return render(request, 'UniversityConnect/pages/history.html', {
         'page_name': 'História de Cambridge',
         'new': new,
     })
 
 def ex_students(request):
     students = ExStudent.objects.all()
-    paginator = Paginator(students, 2)
+    paginator = Paginator(students, 6)
     page_number = request.GET.get("page")
     students = paginator.get_page(page_number)
     return render(request, 'UniversityConnect/pages/list.html', {
         'page_name': 'História de Cambridge',
         'students': students,
     })
+    
+    
+def places(request):
+    
+    places = Places.objects.all()
+    paginator = Paginator(places, 5)
+    page_number = request.GET.get("page")
+    places = paginator.get_page(page_number)
+    return render(request, 'UniversityConnect/pages/list.html', {
+        'page_name': 'Moradias',
+        'places': places,
+    })
+    

@@ -26,7 +26,7 @@
         right: 0; 
     }
 }
-@media only screen and (max-width: 714px) {
+@media only screen and (max-width: 900px) {
     
     .home1-background{
         min-height: 580px !important;
@@ -81,8 +81,7 @@
         margin: 0px auto 10px auto !important;
         min-width: 230px !important;
         max-width: 400px !important;
-        min-height: 50px !important;
-        max-height: 100px !important;
+
         background-color: var(--colorWhite) !important;
         border: 1px solid rgba(0, 0, 0, 0) !important;
     }
@@ -96,6 +95,11 @@
     }   
     .options-block > p{
         font-size: 90% !important;
+    }
+    .tag-new > ul > li, .tag-new > ul > p{
+        margin: 15px 0 !important;
+        font-size: 90% !important;
+    
     }
 
 
@@ -270,6 +274,7 @@ html{
     transition: 0.4s;
 }
 
+
 .option-block-link:hover{
     box-shadow: 0px 0px 15px rgba(187, 187, 187, 0.172) !important;
 
@@ -285,9 +290,10 @@ html{
     font-size: large !important;
 }   
 .options-block > p{
-    padding-right: 40px !important;
-    font-size: medium !important;
+    padding-right: 40px ;
 }
+
+
 
 .profile a{
     position: absolute;
@@ -386,7 +392,7 @@ html{
     line-height: 27px;
     
 }
-@media only screen and (max-width: 714px) {
+@media only screen and (max-width: 900px) {
     .home{
         display: block !important;
         min-width: 230px !important;
@@ -407,7 +413,7 @@ html{
         height: 220px !important;
     }
     .content-description{
-        padding: 10px 0;
+        padding: 10px 0 !important;
     }
     .block2{
         font-size: medium;
@@ -416,7 +422,12 @@ html{
         padding: 0px !important;
     }
 }
-
+@media (max-width: 360px){
+    .content-description {
+        font-size: 10px !important;
+        line-height: 18px !important;
+    }
+}
 .other{
     margin-top: 10px;
     padding: 0px 7px 4px 7px;
@@ -433,4 +444,72 @@ html{
 }
 .options-block-link{
     margin: 0px 20px;
+}
+
+.tag-new{
+    line-height: 1.5 !important;
+    min-width: none !important;
+    max-height: none !important;
+    padding-right: 0 !important;
+}
+.tag-new > h3{
+    text-indent: 35px  !important;
+    text-align: justify;
+    padding: 10px 0px;
+    font-family: var(--fontPrimary);
+}
+.tag-new > h2, .tag-new > p .subtext{
+    overflow: hidden !important;
+    margin: 7px 0;
+    font-family: var(--fontPrimary);
+    text-decoration: none !important;
+}
+
+.tag-new > h2, .home-title > h2{
+    color: var(--colorPrimary);
+    font-size: var(--fontLargeSize) !important;
+}   
+.tag-new > p{
+    text-indent: 35px  !important;
+    font-family: var(--fontPrimary);
+    font-size: var(--fontMidSize);
+    text-align: justify;
+    margin-right: 10px !important;
+    padding-right: 10px !important;
+}
+.tag-new > ul{
+    margin-left: 18px;
+    padding: 10px 0;
+}
+.tag-new > ul > li, .tag-new > ul > p{
+    margin: 15px 0 !important;
+    font-size: var(--fontMidSize);
+
+}
+.tag-new-more-news{
+    position: sticky;
+    top: 90px;
+}
+.tag-new-more-news h2{
+   color: var(--colorPrimary);
+}
+.tag-new-background{
+    background-color: var(--colorWhite) !important;
+}
+@media (max-width: 420px){
+    .tag-new > h3{
+        text-align: justify;
+        padding: 10px 0px;
+        font-size: 16px !important ;
+    }
+    .tag-new > h2, .tag-new > p .subtext{
+        font-size: 13px !important ;
+    }
+    .tag-new > p{
+        font-size: 13px !important ;
+        padding: 0 20px !important;
+    }
+    .tag-new > ul > li, .tag-new > ul > p{
+        font-size: 13px !important ;
+    }
 }

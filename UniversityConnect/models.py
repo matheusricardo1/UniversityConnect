@@ -24,11 +24,11 @@ class CourseLevel(models.Model):
 
 class Course(models.Model):
     title = models.CharField(max_length=100)
-    tittle_en = models.CharField(max_length=100, default='English Name')
+    title_en = models.CharField(max_length=100, default='English Name')
     mini_description = models.TextField(max_length=255, default='English Description')
     mini_description_en = models.TextField(max_length=255, default='English Description')
-    description = models.TextField(max_length=2000)
-    description_en = models.TextField(max_length=2000, default='English Description')
+    description = models.TextField()
+    description_en = models.TextField(default='English Description')
     course_load = models.IntegerField()
     course_time = models.CharField(max_length=100)
     time_course_en = models.CharField(max_length=100, default='0 years')
@@ -68,4 +68,14 @@ class New(models.Model):
         return self.title
     
     
+class Places(models.Model):
+    title = models.CharField(max_length=100)
+    tittle_en = models.CharField(max_length=100, default='English Name')
+    mini_description = models.TextField(max_length=255, default='English Description')
+    mini_description_en = models.TextField(max_length=255, default='English Description')
     
+    iframe_link = models.CharField(max_length=500)
+    link = models.CharField(max_length=500)
+
+    def __str__(self):
+        return self.title
