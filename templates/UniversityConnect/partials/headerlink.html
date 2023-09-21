@@ -11,12 +11,10 @@
             <option value="en">English</option>
         </select>
         <a href="{% url 'set-language' 'en' %}" id="lang-link-1" style="display: none;">Link</a>
-        
+        <a class="home-linkstyle" href="{% url 'UniversityConnect:about' %}">{% trans "Quem Somos" %}</a>
         {% if user.username %}
             <a class="home-linkstyle" href="{% url 'UniversityConnect:profile' %}">{% trans "Perfil" %}</a>
-            <a class="home-linkstyle" href="{% url 'account_logout' %}">{% trans "Sair" %}</a>
         {% else %}
-            <a class="home-linkstyle" href="{% url 'account_signup' %}">{% trans "Registrar" %}</a>
             <a class="home-linkstyle" href="{% url 'account_login' %}">{% trans "Entrar" %}</a>
         {% endif %}
         <input id="home-linkstyle-menu" type="button" value="Menu" onclick="entrar()">

@@ -1,7 +1,7 @@
 from django.contrib import admin
 from googletrans import Translator
 
-from .models import Category, Course, CourseLevel, Education, ExStudent, New
+from .models import Category, Course, CourseLevel, Education, ExStudent, New, Places
 
 
 def translate_course(modeladmin, request, queryset):
@@ -51,6 +51,16 @@ def translate_new(modeladmin, request, queryset):
 translate_new.short_description = 'Traduzir para inglês'
 
 
+def translate_places(modeladmin, request, queryset):
+    translator = Translator(service_urls=['translate.google.com'])
+    for places in queryset:
+        places.mini_decription_en = (translator.translate(places.mini_decription, dest='en').text)
+        places.title_en = (translator.translate(places.title, dest='en').text)
+        places.save()
+translate_places.short_description = 'Traduzir para inglês'
+
+
+
 @admin.register(Education)
 class FormacaoAdmin(admin.ModelAdmin):
     actions = [transalte_education]
@@ -91,3 +101,8 @@ class ExStudentAdmin(admin.ModelAdmin):
 @admin.register(New)
 class NewAdmin(admin.ModelAdmin):
     actions = [translate_new]
+    
+
+@admin.register(Places)
+class PlacesAdmin(admin.ModelAdmin):
+    actions = [translate_places]

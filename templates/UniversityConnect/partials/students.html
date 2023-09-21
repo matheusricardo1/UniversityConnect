@@ -4,16 +4,18 @@
     {% for student in students %}
         <div class="option-block-link">
             <div class="options-block-student">
-                <div class="student-img ">{{student.img.url}}</div>
+                <div class="student-img">
+                    <img src="{{student.image.url}}" alt="">
+                </div>
                 <div class="options-block tag-student">
-                    <h2>{{ student.name }}</h2>
+                    <h2>{{ student.name }} - ({{student.birth_date}}-
+                        {% if student.death_date %}
+                        {{ student.death_date }}{% endif %})</h2>
                     {% if 'en/' in request.path %}
                         <p>{{ student.biography_en }}</p>
                     {% else %}
                         <p>{{ student.biography }}</p>
                     {% endif %}
-                    
-                    
                 </div>
             </div>
         </div>

@@ -107,16 +107,22 @@ footer{
     width: 130px;
 }
 .footer-info-content > div > h2, .footer-info-content > div > h3{
-    font-family: var(--fontPrimary);
+    font-family: var(--fontPrimary) !important;
 }
+.footer-info-content > div > h2 > a:-webkit-any-link {
+    color: var(--colorPrimary) ; /* Altere a cor para a cor desejada */
+    cursor: auto; /* Altere o cursor para o estilo desejado, como 'auto' para o cursor padrão */
+    text-decoration: none; /* Remova o sublinhado */
+}
+
 .footer-info-content > div > h2{
-    color: var(--colorPrimary);
-    font-size: larger;
+    color: var(--colorPrimary) !important;
+    font-size: larger ;
 }
 .footer-info-content > div > h3{
     font-weight: 600;
     font-size: medium;
-    color: var(--colorWhite);
+    color: var(--colorWhite) !important;
 }
 .footer-info-media{
     padding-top: 15px;

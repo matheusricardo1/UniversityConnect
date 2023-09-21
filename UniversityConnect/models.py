@@ -1,4 +1,6 @@
 from django.db import models
+from django.core.validators import MinValueValidator, MaxValueValidator
+
 
 class Category(models.Model):
     name = models.CharField(max_length=100)
@@ -47,10 +49,22 @@ class Course(models.Model):
 class ExStudent(models.Model):
     image = models.ImageField(upload_to='ExStudents/cover/%Y/%m/%d/', blank=True)
     name = models.CharField(max_length=140)
-    biography = models.CharField(max_length=800)
-    biography_en = models.CharField(max_length=400)
+    biography = models.TextField()
+    biography_en = models.TextField()
     birth_date = models.PositiveIntegerField()
-    death_date = models.PositiveIntegerField(blank=True, default=None)
+    
+    birth_date = models.PositiveIntegerField(
+        validators=[
+            MinValueValidator(1000),
+            MaxValueValidator(9999)
+        ]
+    )
+    
+    death_date = models.PositiveIntegerField(
+        validators=[
+            MinValueValidator(1000),
+            MaxValueValidator(9999)
+        ],blank=True, default=None)
     
     def __str__(self):
         return self.name
@@ -79,3 +93,6 @@ class Places(models.Model):
 
     def __str__(self):
         return self.title
+    
+    class Meta:
+        verbose_name_plural = 'Places'

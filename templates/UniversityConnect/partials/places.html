@@ -2,26 +2,29 @@
 {% load i18n %}
 {% if places %}
     {% for place in places %}
-        <a class="option-block-link" href="{% url 'UniversityConnect:courses_detail' place.id %}">
-            <div class="options-block">
-                {% if lang %}
-                    <h2>{{ place.tittle_en }}</h2>
-                    <p>{{ place.mini_description_en }}</p>
-                {% else %}
-                    <h2>{{ place.title }}</h2>
-                    <p>{{ place.mini_description }}</p>
-                {% endif %}
-                <div class="details-icon">
-                    <img src="{% static "/UniversityConnect/images/icons/enter.png" %}" alt="">
+        <div class="option-block-link">
+            <div class="options-block-student">
+                <div class="student-img tag-place">
+                    {{place.iframe_link|safe}}
                 </div>
+                <div class="options-block tag-student">
+                    {% if 'en/' in request.path %}
+                        <h2>{{ place.tittle_en }}</h2>
+                        <p>{{ place.mini_description_en }}</p>
+                    {% else %}
+                        <h2>{{ place.title }}</h2>
+                        <p>{{ place.mini_description }}</p>
+                    {% endif %}
+                </div>
+               
             </div>
-        </a>
+        </div>
     {% endfor %}
 
 {% else %}
     <a class="option-block-link" href="{% url 'UniversityConnect:homepage' %}">
         <div class="options-block">
-            <h2>{% trans "Nenhum curso encontrado!" %}</h2>
+            <h2>{% trans "Não foi possível encontrar os locais!" %}</h2>
             <p>{% trans "Clique aqui para voltar ao inicio" %}</p>
             <div class="details-icon">
                 <img src="{% static "/UniversityConnect/images/icons/enter.png" %}" alt="">

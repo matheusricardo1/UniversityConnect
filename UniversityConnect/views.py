@@ -5,7 +5,7 @@ from django.contrib.staticfiles import finders
 from django.db.models import Q
 from django.shortcuts import get_object_or_404, render
 from django.views.decorators.csrf import csrf_protect
-from .models import Category, Course, ExStudent, New
+from .models import Category, Course, ExStudent, New, Places
 from django.core.paginator import Paginator
 
 
@@ -151,13 +151,19 @@ def ex_students(request):
     
     
 def places(request):
-    
-    places = Places.objects.all()
-    paginator = Paginator(places, 5)
+    all_places = Places.objects.all()
+    paginator = Paginator(all_places, 5)
     page_number = request.GET.get("page")
-    places = paginator.get_page(page_number)
+    paginated_places = paginator.get_page(page_number)
     return render(request, 'UniversityConnect/pages/list.html', {
         'page_name': 'Moradias',
-        'places': places,
+        'places': paginated_places,
+    })
+    
+    
+    
+def about(request):
+    return render(request, 'UniversityConnect/pages/team.html', {
+        'page_name': 'Quem somos',
     })
     

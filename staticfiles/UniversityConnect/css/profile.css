@@ -250,7 +250,7 @@ html{
     height: 100%;
     right:0;
     top: 0;
-    z-index: 20;
+    z-index: 999;
 }
 .popup_show{
     display: block !important;

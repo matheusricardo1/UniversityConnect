@@ -44,7 +44,7 @@
                             </div>
                             <h2 class="block-text"> {% trans 'História' %}</h2>
                         </a>
-                        <a class="block" href="#">
+                        <a class="block" href="{% url "UniversityConnect:places" %}">
                             <div class="block-icon">
                                 <img src="{% static '/UniversityConnect/images/icons/local.png' %}" alt="Cursos-Icon">
                             </div>
@@ -121,3 +121,5 @@
         </section>
     </main>
 {% endblock content_base %}
+
+

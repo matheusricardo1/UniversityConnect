@@ -72,6 +72,7 @@
     }
    
 }
+
 @media only screen and (min-width: 684px) and (max-width: 1260px){
     .home-options{
         display: block !important;
@@ -105,7 +106,7 @@
         max-width: 100% !important;
     }
     .student-img{
-        margin: 10px auto 0 auto;
+        margin: 10px auto 0 auto !important; 
     }
     .options-block-student{
         display: block !important;
@@ -247,8 +248,10 @@ html{
 .tag-student{
     margin: 0px auto !important;
     max-width: 78%;
+    text-align: left !important;
 }
 .tag-student:hover{
+    cursor: default;
     border: 1px solid transparent !important;
     max-width: 78%;
 }
@@ -272,8 +275,11 @@ html{
     width: 100%;
     background-color: var(--colorWhite);    
     overflow: hidden;
-}
 
+}
+.middle{
+    width: 100% !important; 
+}
 .student-img{
     display: flex;
     justify-content: space-evenly;
@@ -282,11 +288,19 @@ html{
     height: 150px;
     overflow: hidden;
     background-color: #353539;
+    margin-left: 5%;
 }
 .student-img img{
     height: 100%;
 }
-
+.student-img > iframe{
+    height: 100%;
+    width: 100%;
+}
+.tag-place{
+    width: 200px;
+    height: 150px;
+}
 
 .options-block:hover{
     border: 1px solid rgba(0, 0, 0, 0.605);
@@ -314,7 +328,13 @@ html{
     font-family: var(--fontPrimary);
     font-size: var(--fontMidSize) ;
 }
+.tag-student > h2{
+    width: 100%;
+    text-align: left !important;
+}
 .tag-student > p{
+    width: 100%;
+    text-align: left !important;
     font-family: var(--fontPrimary);
     padding-right: 0 !important ;  
     font-size: var(--fontMidSize) ;
