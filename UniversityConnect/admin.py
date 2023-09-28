@@ -7,7 +7,7 @@ from .models import Category, Course, CourseLevel, Education, ExStudent, New, Pl
 def translate_course(modeladmin, request, queryset):
     translator = Translator(service_urls=['translate.google.com'])
     for course in queryset:
-        course.tittle_en = (translator.translate(curso.title, dest='en').text).title()
+        course.tittle_en = (translator.translate(course.title, dest='en').text).title()
         course.mini_description_en = translator.translate(course.mini_description, dest='en').text
         course.description_en = translator.translate(course.description, dest='en').text
         course.time_course_en = (translator.translate(course.course_time, dest='en').text).title()

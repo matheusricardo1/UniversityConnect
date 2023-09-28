@@ -111,8 +111,8 @@ footer{
 }
 .footer-info-content > div > h2 > a:-webkit-any-link {
     color: var(--colorPrimary) ; /* Altere a cor para a cor desejada */
-    cursor: auto; /* Altere o cursor para o estilo desejado, como 'auto' para o cursor padrão */
-    text-decoration: none; /* Remova o sublinhado */
+    cursor: auto; 
+    text-decoration: none; 
 }
 
 .footer-info-content > div > h2{
