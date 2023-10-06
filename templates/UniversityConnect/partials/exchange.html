@@ -1,0 +1,51 @@
+{% load static %}
+{% load i18n %}
+{% if exchanges %}
+    {% for exchange in exchanges %}
+        <div class="option-block-link">
+            <div class="options-block-student">
+                <div class="exchange-img">
+                    <img src="{{exchange.image.url}}" alt="">
+                </div>
+                <div class="options-block tag-exchange">
+                    <h2>{{ exchange.name }} - ({{exchange.birth_date}}-
+                        {% if exchange.death_date %}
+                        {{ exchange.death_date }}{% endif %})</h2>
+                    {% if 'en/' in request.path %}
+                        <p>{{ exchange.biography_en }}</p>
+                    {% else %}
+                        <p>{{ exchange.biography }}</p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+
+{% else %}
+    <a class="option-block-link" href="{% url 'UniversityConnect:homepage' %}">
+        <div class="options-block">
+            <h2>{% trans "Nenhum ex-aluno de cambridge foi encontrado!" %}</h2>
+            <p>{% trans "Clique aqui para voltar ao inicio" %}</p>
+            <div class="details-icon">
+                <img src="{% static "/UniversityConnect/images/icons/enter.png" %}" alt="">
+            </div>
+        </div>
+    </a>
+{% endif %}
+<div class="pagination">
+    <span class="step-links">
+        <span class="current">
+            {% trans "Página" %} {{ exchanges.number }} {% trans "de" %} {{ exchanges.paginator.num_pages }}.
+        </span>
+        <div class="pagination-button">
+        {% if exchanges.has_previous %}
+            <a href="?page=1">{% trans "Página 1" %}</a>
+            <a href="?page={{ exchanges.previous_page_number }}">{% trans "Retornar" %}</a>
+        {% endif %}
+        {% if exchanges.has_next %}
+            <a class="pagination-next" href="?page={{ exchanges.next_page_number }}">{% trans "Avançar" %}</a>
+            <a class="pagination-back" href="?page={{ exchanges.paginator.num_pages }}">{% trans "Página" %} {{ exchanges.paginator.num_pages }}</a>
+        {% endif %}
+     </div>
+    </span>
+</div>

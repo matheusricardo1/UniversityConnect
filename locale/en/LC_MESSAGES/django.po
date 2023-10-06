@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-20 09:26-0400\n"
+"POT-Creation-Date: 2023-10-05 10:12-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,796 +18,611 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: .\templates\UniversityConnect\html\partials\list.html:25
-msgid "Nenhum curso encontrado!"
-msgstr "No course found!"
-
-#: .\templates\UniversityConnect\html\partials\list.html:26
-msgid "Clique aqui para voltar ao inicio"
-msgstr "Click here to return to the beginning"
-
-#: .\templates\UniversityConnect\html\partials\footer.html:15
-#: .\templates\UniversityConnect\html\partials\headerlink.html:9
-#: .\templates\UniversityConnect\html\partials\sidebar-options.html:17
-#: .\templates\UniversityConnect\html\partials\sidebar-options.html:31
-msgid "Idioma"
-msgstr "Language"
-
-#: .\templates\UniversityConnect\html\partials\footer.html:24
-msgid "Suporte"
-msgstr "Support"
-
-#: .\templates\UniversityConnect\html\partials\footer.html:26
-msgid "Telefones"
-msgstr "Phones"
-
-#: .\templates\UniversityConnect\html\partials\footer.html:27
-msgid "Chat"
-msgstr "Chat"
-
-#: .\templates\UniversityConnect\html\partials\footer.html:30
-msgid "Início"
-msgstr "Start"
-
-#: .\templates\UniversityConnect\html\partials\footer.html:31
-msgid "Home"
-msgstr "Home"
-
-#: .\templates\UniversityConnect\html\partials\footer.html:32
-#: .\templates\UniversityConnect\html\pt\index.html:28
+#: .\UniversityConnect\views.py:45
+#: .\templates\UniversityConnect\pages\index.html:33
+#: .\templates\UniversityConnect\partials\footer.html:32
 msgid "Cursos"
 msgstr "Courses"
 
-#: .\templates\UniversityConnect\html\partials\footer.html:33
-msgid "Notícias"
-msgstr "News"
-
-#: .\templates\UniversityConnect\html\partials\footer.html:36
-msgid "Sobre nós"
-msgstr "About Us"
-
-#: .\templates\UniversityConnect\html\partials\footer.html:37
-msgid "Informações"
-msgstr "Information"
-
-#: .\templates\UniversityConnect\html\partials\footer.html:38
-msgid "Contato"
-msgstr "Contact"
-
-#: .\templates\UniversityConnect\html\partials\footer.html:39
-msgid "Blog"
-msgstr "Blog"
-
-#: .\templates\UniversityConnect\html\partials\footer.html:55
-msgid "Siga-nos nas redes sociais!"
-msgstr "Follow us on social networks!"
-
-#: .\templates\UniversityConnect\html\partials\footer.html:62
-msgid "Termos de Uso * Política de Privacidade"
-msgstr "Terms of Use * Privacy Policy"
-
-#: .\templates\UniversityConnect\html\partials\footer.html:63
-msgid "2023 UniversityConnect"
-msgstr "2023 UniversityConnect"
-
-#: .\templates\UniversityConnect\html\partials\header-pages.html:11
-msgid "Tecnologia"
-msgstr "Technology"
-
-#: .\templates\UniversityConnect\html\partials\headerlink.html:16
-#: .\templates\UniversityConnect\html\partials\sidebar-options.html:11
-#: .\templates\UniversityConnect\html\pt\profile.html:16
-msgid "Perfil"
+#: .\UniversityConnect\views.py:118
+#, fuzzy
+#| msgid "Perfil"
+msgid "Perfil "
 msgstr "Profile"
 
-#: .\templates\UniversityConnect\html\partials\headerlink.html:17
-#: .\templates\UniversityConnect\html\partials\sidebar-options.html:22
-msgid "Sair"
-msgstr "Logout"
+#: .\UniversityConnect\views.py:140
+#, fuzzy
+#| msgid "Universidade de Cambridge"
+msgid "História de Cambridge"
+msgstr "University of Cambridge"
 
-#: .\templates\UniversityConnect\html\partials\headerlink.html:19
-#: .\templates\UniversityConnect\html\partials\sidebar-options.html:25
-msgid "Registrar"
-msgstr "Signup"
-
-#: .\templates\UniversityConnect\html\partials\headerlink.html:20
-#: .\templates\UniversityConnect\html\partials\sidebar-options.html:24
-msgid "Entrar"
-msgstr "Login"
-
-#: .\templates\UniversityConnect\html\partials\sidebar-options.html:6
-msgid "Olá"
-msgstr "Hello"
-
-#: .\templates\UniversityConnect\html\partials\sidebar-options.html:7
-msgid "Conecte-se com a gente!"
-msgstr "Connect with us!"
-
-#: .\templates\UniversityConnect\html\pt\cursos.html:12
-msgid "Cursos de Cambridge"
+#: .\UniversityConnect\views.py:150
+#, fuzzy
+#| msgid "Cursos de Cambridge"
+msgid "Ex alunos de Cambridge"
 msgstr "Cambridge's courses"
 
-#: .\templates\UniversityConnect\html\pt\cursos.html:15
-msgid "Todas as categorias"
-msgstr "All categories"
+#: .\UniversityConnect\views.py:161
+msgid "Moradias"
+msgstr "Homes"
 
-#: .\templates\UniversityConnect\html\pt\cursos.html:24
-msgid "Filtrar"
-msgstr "Filter"
+#: .\UniversityConnect\views.py:169
+msgid "Quem somos"
+msgstr "Who we are"
 
-#: .\templates\UniversityConnect\html\pt\cursos_detail.html:9
+#: .\UniversityConnect\views.py:179
+#, fuzzy
+#| msgid "Cursos de Cambridge"
+msgid "Intercambios para Cambridge"
+msgstr "Cambridge's courses"
+
+#: .\templates\UniversityConnect\pages\courses_detail.html:16
 msgid "Curso de"
 msgstr "Course of"
 
-#: .\templates\UniversityConnect\html\pt\cursos_detail.html:52
+#: .\templates\UniversityConnect\pages\courses_detail.html:59
 msgid "Cadastrar no Curso!"
 msgstr "Register in the course!"
 
-#: .\templates\UniversityConnect\html\pt\cursos_detail.html:55
+#: .\templates\UniversityConnect\pages\courses_detail.html:62
 msgid "Outros Cursos"
 msgstr "Other Courses"
 
-#: .\templates\UniversityConnect\html\pt\cursos_detail.html:56
+#: .\templates\UniversityConnect\pages\courses_detail.html:63
 msgid "Relacionados com"
 msgstr "Related to"
 
-#: .\templates\UniversityConnect\html\pt\cursos_detail.html:82
+#: .\templates\UniversityConnect\pages\courses_detail.html:89
 msgid "Não há cursos"
 msgstr "There are no courses"
 
-#: .\templates\UniversityConnect\html\pt\cursos_detail.html:83
+#: .\templates\UniversityConnect\pages\courses_detail.html:90
 msgid "Não há mais cursos cadastrados com essa categoria."
 msgstr "There are no more courses registered with this category."
 
-#: .\templates\UniversityConnect\html\pt\index.html:13
-#: .\templates\UniversityConnect\html\pt\index.html:56
+#: .\templates\UniversityConnect\pages\ex_students.html:17
+#: .\templates\UniversityConnect\pages\list.html:19
+msgid "Cursos de Cambridge"
+msgstr "Cambridge's courses"
+
+#: .\templates\UniversityConnect\pages\history.html:16
+#: .\templates\UniversityConnect\pages\new.html:17
+#, fuzzy
+#| msgid "Conheça a universidade de Isaac Newton"
+msgid "Cambridge: A Universidade de Issac Newtoon e Charles Dawin"
+msgstr "Discover the University of Isaac Newton"
+
+#: .\templates\UniversityConnect\pages\history.html:124
+msgid "Veja mais nótícias"
+msgstr "See more nodes"
+
+#: .\templates\UniversityConnect\pages\history.html:145
+#, fuzzy
+#| msgid "Não há cursos"
+msgid "Não há noticias"
+msgstr "There are no courses"
+
+#: .\templates\UniversityConnect\pages\history.html:146
+msgid "Não foi possivel encontrar mais notícias!"
+msgstr "It was not possible to find more news!"
+
+#: .\templates\UniversityConnect\pages\index.html:18
+#: .\templates\UniversityConnect\pages\index.html:61
 msgid "Universidade de Cambridge"
 msgstr "University of Cambridge"
 
-#: .\templates\UniversityConnect\html\pt\index.html:14
+#: .\templates\UniversityConnect\pages\index.html:19
 msgid "Conheça a universidade de Isaac Newton"
 msgstr "Discover the University of Isaac Newton"
 
-#: .\templates\UniversityConnect\html\pt\index.html:34
+#: .\templates\UniversityConnect\pages\index.html:39
 msgid "Intercâmbio"
 msgstr "Exchange"
 
-#: .\templates\UniversityConnect\html\pt\index.html:40
+#: .\templates\UniversityConnect\pages\index.html:45
 msgid "História"
 msgstr "History"
 
-#: .\templates\UniversityConnect\html\pt\index.html:46
+#: .\templates\UniversityConnect\pages\index.html:51
 msgid "Local"
 msgstr "Local"
 
-#: .\templates\UniversityConnect\html\pt\index.html:60
+#: .\templates\UniversityConnect\pages\index.html:65
 msgid "Cursos da Universidade"
 msgstr "University courses"
 
-#: .\templates\UniversityConnect\html\pt\index.html:61
+#: .\templates\UniversityConnect\pages\index.html:66
 msgid "Descubra a excelência acadêmica de Cambridge."
 msgstr "Discover Cambridge's academic excellence."
 
-#: .\templates\UniversityConnect\html\pt\index.html:69
+#: .\templates\UniversityConnect\pages\index.html:74
 msgid "Programas de Intercâmbio"
 msgstr "Exchange Programs"
 
-#: .\templates\UniversityConnect\html\pt\index.html:70
+#: .\templates\UniversityConnect\pages\index.html:75
 msgid "Descubra Cambridge em um intercâmbio transformador."
 msgstr "Discover Cambridge in a transforming exchange."
 
-#: .\templates\UniversityConnect\html\pt\index.html:78
+#: .\templates\UniversityConnect\pages\index.html:84
 msgid "História Local"
 msgstr "Local History"
 
-#: .\templates\UniversityConnect\html\pt\index.html:79
+#: .\templates\UniversityConnect\pages\index.html:85
 msgid "Descubra a essência histórica de Cambridge."
 msgstr "Discover the historical essence of Cambridge."
 
-#: .\templates\UniversityConnect\html\pt\index.html:87
+#: .\templates\UniversityConnect\pages\index.html:94
 msgid "Moradia para Universitários"
 msgstr "Housing for university students"
 
-#: .\templates\UniversityConnect\html\pt\index.html:88
+#: .\templates\UniversityConnect\pages\index.html:95
 msgid "Descubra o lar acadêmico perfeito em Cambridge."
 msgstr "Find out the perfect academic home in Cambridge."
 
-#: .\templates\UniversityConnect\html\pt\index.html:96
-msgid "Principais Personalidades"
-msgstr "Main personalities"
+#: .\templates\UniversityConnect\pages\index.html:104
+msgid "Ex-Alunos famosos!"
+msgstr "Famous ex-students!"
 
-#: .\templates\UniversityConnect\html\pt\index.html:97
+#: .\templates\UniversityConnect\pages\index.html:105
 msgid "Descubra as mentes brilhantes de Cambridge."
 msgstr "Discover the bright minds of Cambridge."
 
-#: .\templates\UniversityConnect\html\pt\index.html:105
+#: .\templates\UniversityConnect\pages\index.html:113
 msgid "História da Universidade"
 msgstr "University History"
 
-#: .\templates\UniversityConnect\html\pt\index.html:106
+#: .\templates\UniversityConnect\pages\index.html:114
 msgid "Descubra a grandeza da história de Cambridge."
 msgstr "Discover the greatness of the history of Cambridge."
 
-#: .\templates\UniversityConnect\html\pt\profile.html:14
+#: .\templates\UniversityConnect\pages\list.html:22
+msgid "Todas as categorias"
+msgstr "All categories"
+
+#: .\templates\UniversityConnect\pages\list.html:31
+msgid "Filtrar"
+msgstr "Filter"
+
+#: .\templates\UniversityConnect\pages\list.html:39
+#, fuzzy
+#| msgid "Cursos de Cambridge"
+msgid "Ex alunos notáveis de Cambridge"
+msgstr "Cambridge's courses"
+
+#: .\templates\UniversityConnect\pages\list.html:40
+msgid ""
+"A Universidade de Cambridge é uma das instituições acadêmicas mais antigas e"
+" prestigiadas do mundo, conhecida por sua excelência em ensino e pesquisa. "
+"Com uma história que remonta a mais de 800 anos, a universidade tem formado "
+"alguns dos indivíduos mais brilhantes e influentes ao longo dos séculos. "
+"Seus ex-alunos notáveis têm deixado um impacto significativo em uma "
+"variedade de áreas, incluindo ciência, literatura, política, artes e muito "
+"mais.Aqui estão alguns exemplos de ex-alunos famosos da Universidade de "
+"Cambridge:"
+msgstr ""
+"The University of Cambridge is one of the oldest and most prestigious "
+"academic institutions in the world, known for its excellence in teaching and"
+" research.With a story that dates back to over 800 years, the university has"
+" formed some of the brightest and most influential individuals over the "
+"centuries.Their notable alumni have left a significant impact on a variety "
+"of areas, including science, literature, politics, arts, and more. Here are "
+"some examples of famous alumni at Cambridge University:"
+
+#: .\templates\UniversityConnect\pages\list.html:46
+#, fuzzy
+#| msgid "Cursos de Cambridge"
+msgid "Moradias perto de Cambridge"
+msgstr "Cambridge's courses"
+
+#: .\templates\UniversityConnect\pages\new.html:23
+#, fuzzy
+#| msgid "Fundação e História"
+msgid "Fundação e História<"
+msgstr "Foundation and History "
+
+#: .\templates\UniversityConnect\pages\new.html:24
+msgid ""
+"A Universidade de Cambridge foi fundada no início do século XIII, em 1209, "
+"por um grupo de estudiosos fugindo da Universidade de Oxford devido a "
+"conflitos internos. Inicialmente, a universidade não possuía um campus "
+"centralizado, e as aulas eram ministradas em locais diversos pela cidade de "
+"Cambridge. Ao longo dos séculos, Cambridge se desenvolveu como um importante"
+" centro de aprendizado, atraindo estudantes e acadêmicos de todo o mundo. "
+"Muitos avanços notáveis em várias                       disciplinas foram "
+"alcançados por seus membros, tornando-a um ícone da excelência acadêmica"
+msgstr ""
+"The University of Cambridge was founded in the early 13th century in 1209 by"
+" a group of scholars running away from Oxford University due to internal "
+"conflicts.Initially, the university did not have a centralized campus, and "
+"classes were taught in various places by the city of Cambridge.Over the "
+"centuries, Cambridge has developed as an important learning center, "
+"attracting students and academics from around the world.Many remarkable "
+"advances in various disciplines have been achieved by its members, making it"
+" an icon of academic excellence"
+
+#: .\templates\UniversityConnect\pages\new.html:25
+#, fuzzy
+#| msgid "Cursos de Cambridge"
+msgid "Colégios de Cambridge"
+msgstr "Cambridge's courses"
+
+#: .\templates\UniversityConnect\pages\new.html:26
+msgid ""
+"Uma característica distintiva da Universidade de Cambridge são seus "
+"colégios, instituições independentes que compõem a universidade como um "
+"todo. Atualmente, existem 31 colégios em Cambridge, cada um com sua própria "
+"história e tradições. Esses colégios fornecem alojamento, supervisão "
+"acadêmica e um ambiente comunitário para os estudantes. Os colégios "
+"desempenharam um papel vital na vida acadêmica de Cambridge, cultivando uma "
+"cultura de aprendizado, oferecendo bolsas e promovendo atividades "
+"extracurriculares. Alguns dos colégios mais famosos incluem o Trinity "
+"College, o St. John’s College e o King’s College. "
+msgstr ""
+"A distinctive feature of Cambridge University is its colleges, independent "
+"institutions that make up the university as a whole.There are currently 31 "
+"colleges in Cambridge, each with its own history and traditions.These "
+"colleges provide accommodation, academic supervision and a community "
+"environment for students.The colleges played a vital role in Cambridge's "
+"academic life, cultivating a culture of learning, offering bags and "
+"promoting extracurricular activities.Some of the most famous colleges "
+"include Trinity College, St. John's College and King's College."
+
+#: .\templates\UniversityConnect\pages\new.html:27
+msgid "Descobertas e Contribuições"
+msgstr "Discoveries and contributions"
+
+#: .\templates\UniversityConnect\pages\new.html:28
+msgid ""
+"A Universidade de Cambridge é reconhecida internacionalmente por suas "
+"contribuições significativas em uma ampla gama de campos acadêmicos. Ao "
+"longo dos séculos, seus membros desempenharam um papel fundamental na "
+"evolução do conhecimento humano. Na área das ciências, Cambridge foi o local"
+" onde James Watson e Francis Crick desvendaram a estrutura do DNA, uma das "
+"descobertas mais importantes da biologia moderna. Além disso, Isaac Newton, "
+"um dos maiores cientistas da história, estudou e ensinou em Cambridge, "
+"revolucionando a física e a matemática. Na literatura, a universidade também"
+" produziu grandes talentos, como John Milton, autor de “Paraíso Perdido”, e "
+"Samuel Taylor Coleridge, um dos principais poetas românticos ingleses."
+msgstr ""
+"Cambridge University is internationally recognized for its significant "
+"contributions in a wide range of academic fields.Over the centuries, its "
+"members played a fundamental role in the evolution of human knowledge.In the"
+" science area, Cambridge was the place where James Watson and Francis Crick "
+"unveiled the structure of DNA, one of the most important discoveries of "
+"modern biology.In addition, Isaac Newton, one of the greatest scientists in "
+"history, studied and taught in Cambridge, revolutionizing physics and "
+"mathematics.In literature, the university also produced great talents, such "
+"as John Milton, author of “Paradise Lost”, and Samuel Taylor Coleidge, one "
+"of the main English romantic poets."
+
+#: .\templates\UniversityConnect\pages\new.html:30
+msgid "Excelência Acadêmica Contemporânea"
+msgstr "Contemporary academic excellence"
+
+#: .\templates\UniversityConnect\pages\new.html:31
+msgid ""
+"Até os dias atuais, a Universidade de Cambridge mantém sua reputação como um"
+" centro de excelência acadêmica. Ela continua a atrair estudantes talentosos"
+" e acadêmicos de todo o mundo, oferecendo uma ampla gama de cursos em "
+"diversas disciplinas. Com uma abordagem baseada em supervisões individuais e"
+" grupos de estudo, a universidade incentiva os alunos a se envolverem "
+"ativamente em suas áreas de interesse, promovendo um ambiente "
+"intelectualmente estimulante. "
+msgstr ""
+"To the present day, the University of Cambridge maintains its reputation as "
+"a center of academic excellence.She continues to attract talented and "
+"academics from around the world, offering a wide range of courses in various"
+" subjects.With an approach based on individual supervision and study groups,"
+" the university encourages students to actively engage in their areas of "
+"interest, promoting an intellectually stimulating environment."
+
+#: .\templates\UniversityConnect\pages\new.html:32
+msgid "Curiosidades"
+msgstr "Curiosities"
+
+#: .\templates\UniversityConnect\pages\new.html:35
+msgid ""
+"A Biblioteca da Universidade de Cambridge, a Biblioteca da Universidade de "
+"Cambridge, possui uma cópia original da “Principia Mathematica” de Newton, "
+"além de uma extensa coleção de manuscritos."
+msgstr ""
+"The University of Cambridge Library, the Cambridge University Library, has "
+"an original copy of Newton's “Principia Mathematica”, as well as an "
+"extensive collection of manuscripts."
+
+#: .\templates\UniversityConnect\pages\new.html:36
+msgid ""
+"A Universidade de Cambridge possui uma tradição acadêmica secular, sendo a "
+"segunda universidade mais antiga do mundo de língua inglesa, perdendo apenas"
+" para a Universidade de Oxford. "
+msgstr ""
+"The University of Cambridge has a secular academic tradition, being the "
+"second oldest university in the world of English, losing only to Oxford "
+"University."
+
+#: .\templates\UniversityConnect\pages\new.html:37
+msgid ""
+"O famoso físico Stephen Hawking, autor de “Uma Breve História do Tempo”, foi"
+" professor da Universidade de Cambridge por mais de 30 anos. Sua pesquisa "
+"revolucionou nossa compreensão do universo e seus estudos sobre buracos "
+"negros são amplamente reconhecidos. "
+msgstr ""
+"Famous physicist Stephen Hawking, author of \"A Brief History of Time,\" was"
+" a professor at Cambridge University for over 30 years.His research has "
+"revolutionized our understanding of the universe and his studies on black "
+"holes are widely recognized."
+
+#: .\templates\UniversityConnect\pages\new.html:38
+msgid ""
+"A Universidade de Cambridge é conhecida por seus rituais acadêmicos "
+"tradicionais. Um exemplo é a “Matrícula”, cerimônia em que os novos "
+"estudantes são oficialmente admitidos na universidade, vestindo trajes "
+"acadêmicos formais. "
+msgstr ""
+"Cambridge University is known for its traditional academic rituals.An "
+"example is “enrollment”, a ceremony in which new students are officially "
+"admitted to the university, wearing formal academic attire."
+
+#: .\templates\UniversityConnect\pages\new.html:39
+msgid ""
+"O famoso debate entre as ideias do criacionismo e do evolucionismo, "
+"conhecido como “O Grande Debate”, ocorreu na Universidade de Cambridge em "
+"1860. O debate entre Thomas Huxley, defensor de Charles Darwin, e Samuel "
+"Wilberforce, bispo de Oxford, gerou grande repercussão na época. "
+msgstr ""
+"The famous debate between the ideas of creationism and evolutionism, known "
+"as “The Great Debate”, took place at the University of Cambridge in 1860. "
+"The debate between Thomas Huxley, defender of Charles Darwin, and Samuel "
+"Wilberforce, bishop of Oxford, generated great repercussionin season."
+
+#: .\templates\UniversityConnect\pages\new.html:40
+msgid ""
+"Muitos líderes e personalidades notáveis passaram pela Universidade de "
+"Cambridge. Entre os ex-alunos estão Isaac Newton, Charles Darwin, Sir Isaac "
+"Newton, John Maynard Keynes, Alan Turing, Sylvia Plath, Prince Charles e "
+"muitos outros."
+msgstr ""
+"Many notable leaders and personalities passed the University of "
+"Cambridge.Alumni include Isaac Newton, Charles Darwin, Sir Isaac Newton, "
+"John Maynard Keynes, Alan Turing, Sylvia Plath, Prince Charles and many "
+"others."
+
+#: .\templates\UniversityConnect\pages\new.html:41
+msgid ""
+"A Universidade de Cambridge tem uma forte tradição no remo e é conhecida por"
+" sua histórica competição anual contra a Universidade de Oxford, conhecida "
+"como “Boat Race”. A corrida acontece no Rio Tâmisa e atrai um grande número "
+"de espectadores."
+msgstr ""
+"The University of Cambridge has a strong tradition in Remo and is known for "
+"its historic annual competition against Oxford University, known as \"Boat "
+"Race\".The race takes place on the Thames River and attracts a large number "
+"of spectators."
+
+#: .\templates\UniversityConnect\pages\new.html:42
+msgid ""
+"A Biblioteca da Universidade de Cambridge é uma das maiores bibliotecas "
+"universitárias do mundo, abrigando uma vasta coleção de mais de 8 milhões de"
+" livros, manuscritos e documentos históricos. Além disso, é um dos seis "
+"depósitos legais do Reino Unido, recebendo uma cópia de cada obra publicada "
+"no país. "
+msgstr ""
+"The University of Cambridge library is one of the largest university "
+"libraries in the world, housing a vast collection of over 8 million books, "
+"manuscripts and historical documents.In addition, it is one of six UK legal "
+"deposits, receiving a copy of each work published in the country."
+
+#: .\templates\UniversityConnect\pages\new.html:44
+msgid ""
+"Essas curiosidades destacam apenas alguns aspectos fascinantes da história e"
+" do prestígio da Universidade de Cambridge. Ela continua sendo um farol de "
+"conhecimento e inovação, desempenhando um papel crucial no avanço acadêmico "
+"e na formação de mentes brilhantes ao redor do mundo."
+msgstr ""
+"These curiosities highlight only some fascinating aspects of the history and"
+" prestige of the University of Cambridge.It remains a lighthouse of "
+"knowledge and innovation, playing a crucial role in academic advancement and"
+" the formation of bright minds around the world."
+
+#: .\templates\UniversityConnect\pages\profile.html:20
 msgid "Voltar"
 msgstr "Back"
 
-#: .\templates\UniversityConnect\html\pt\profile.html:15
+#: .\templates\UniversityConnect\pages\profile.html:21
 msgid "Editar Perfil"
 msgstr "Edit Profile"
 
-#: .\templates\UniversityConnect\html\pt\profile.html:20
+#: .\templates\UniversityConnect\pages\profile.html:22
+#: .\templates\UniversityConnect\partials\headerlink.html:16
+#: .\templates\UniversityConnect\partials\sidebar-options.html:11
+msgid "Perfil"
+msgstr "Profile"
+
+#: .\templates\UniversityConnect\pages\profile.html:26
 msgid "Bem vindo - "
 msgstr "Welcome -"
 
-#: .\templates\UniversityConnect\html\pt\profile.html:27
+#: .\templates\UniversityConnect\pages\profile.html:33
 msgid "Sair da Conta"
 msgstr "Logout"
 
-#: .\templates\UniversityConnect\html\pt\profile.html:30
-#: .\templates\UniversityConnect\html\pt\profile.html:39
-#: .\templates\UniversityConnect\html\pt\profile.html:51
-#: .\templates\UniversityConnect\html\pt\profile.html:60
-#: .\templates\account\login.html:20 .\templates\account\logout.html:6
-#: .\templates\account\logout.html:10 .\templates\account\logout.html:19
-#: .\templates\account\signup.html:15
+#: .\templates\UniversityConnect\pages\profile.html:36
+#: .\templates\UniversityConnect\pages\profile.html:45
 msgid "Sign Out"
 msgstr "Sign Out"
 
-#: .\templates\UniversityConnect\html\pt\profile.html:32
-#: .\templates\UniversityConnect\html\pt\profile.html:53
-#: .\templates\account\logout.html:12
+#: .\templates\UniversityConnect\pages\profile.html:38
 msgid "Are you sure you want to sign out?"
 msgstr "Are you sure you want to sign out?"
 
-#: .\templates\account\account_inactive.html:5
-#: .\templates\account\account_inactive.html:8
-msgid "Account Inactive"
-msgstr "Account Inactive"
+#: .\templates\UniversityConnect\pages\team.html:21
+msgid "Designer, CEO e Programador"
+msgstr "Designer, CEO and programmer"
 
-#: .\templates\account\account_inactive.html:10
-msgid "This account is inactive."
-msgstr "This account is inactive."
+#: .\templates\UniversityConnect\pages\team.html:30
+msgid "Designer e Pesquisadora"
+msgstr "Designer and Researcher"
 
-#: .\templates\account\base.html:23
-msgid "Messages:"
-msgstr "Messages:"
+#: .\templates\UniversityConnect\pages\team.html:39
+msgid "Pesquisadora"
+msgstr "Researcher"
 
-#: .\templates\account\email.html:5 .\templates\account\email.html:8
-msgid "E-mail Addresses"
-msgstr "E-mail Addresses"
+#: .\templates\UniversityConnect\pages\team.html:51
+msgid "Pesquisadora e Designer"
+msgstr "Researcher and Designer"
 
-#: .\templates\account\email.html:10
-msgid "The following e-mail addresses are associated with your account:"
-msgstr "The following e-mail addresses are associated with your account:"
+#: .\templates\UniversityConnect\pages\team.html:60
+msgid "Pesquisador"
+msgstr "Researcher"
 
-#: .\templates\account\email.html:24
-msgid "Verified"
-msgstr "Verified"
+#: .\templates\UniversityConnect\partials\courses.html:24
+msgid "Nenhum curso encontrado!"
+msgstr "No course found!"
 
-#: .\templates\account\email.html:26
-msgid "Unverified"
-msgstr "Unverified"
+#: .\templates\UniversityConnect\partials\courses.html:25
+#: .\templates\UniversityConnect\partials\exchange.html:28
+#: .\templates\UniversityConnect\partials\places.html:28
+#: .\templates\UniversityConnect\partials\students.html:28
+msgid "Clique aqui para voltar ao inicio"
+msgstr "Click here to return to the beginning"
 
-#: .\templates\account\email.html:28
-msgid "Primary"
-msgstr "Primary"
+#: .\templates\UniversityConnect\partials\courses.html:35
+#: .\templates\UniversityConnect\partials\courses.html:44
+#: .\templates\UniversityConnect\partials\exchange.html:38
+#: .\templates\UniversityConnect\partials\exchange.html:47
+#: .\templates\UniversityConnect\partials\places.html:38
+#: .\templates\UniversityConnect\partials\places.html:47
+#: .\templates\UniversityConnect\partials\students.html:38
+#: .\templates\UniversityConnect\partials\students.html:47
+msgid "Página"
+msgstr "Page"
 
-#: .\templates\account\email.html:34
-msgid "Make Primary"
-msgstr "Make Primary"
+#: .\templates\UniversityConnect\partials\courses.html:35
+#: .\templates\UniversityConnect\partials\exchange.html:38
+#: .\templates\UniversityConnect\partials\places.html:38
+#: .\templates\UniversityConnect\partials\students.html:38
+msgid "de"
+msgstr "in"
 
-#: .\templates\account\email.html:35
-msgid "Re-send Verification"
-msgstr "Re-send Verification"
+#: .\templates\UniversityConnect\partials\courses.html:39
+#: .\templates\UniversityConnect\partials\exchange.html:42
+#: .\templates\UniversityConnect\partials\places.html:42
+#: .\templates\UniversityConnect\partials\students.html:42
+msgid "Página 1"
+msgstr "Page 1"
 
-#: .\templates\account\email.html:36
-#: .\templates\socialaccount\connections.html:35
-msgid "Remove"
-msgstr "Remove"
+#: .\templates\UniversityConnect\partials\courses.html:40
+#: .\templates\UniversityConnect\partials\exchange.html:43
+#: .\templates\UniversityConnect\partials\places.html:43
+#: .\templates\UniversityConnect\partials\students.html:43
+msgid "Retornar"
+msgstr "Turn back"
 
-#: .\templates\account\email.html:43
-msgid "Warning:"
-msgstr "Warning:"
+#: .\templates\UniversityConnect\partials\courses.html:43
+#: .\templates\UniversityConnect\partials\exchange.html:46
+#: .\templates\UniversityConnect\partials\places.html:46
+#: .\templates\UniversityConnect\partials\students.html:46
+msgid "Avançar"
+msgstr "Advance"
 
-#: .\templates\account\email.html:43
-msgid ""
-"You currently do not have any e-mail address set up. You should really add "
-"an e-mail address so you can receive notifications, reset your password, etc."
-msgstr ""
-"You currently do not have any e-mail address set up. You should really add "
-"an e-mail address so you can receive notifications, reset your password, etc."
+#: .\templates\UniversityConnect\partials\exchange.html:27
+#: .\templates\UniversityConnect\partials\students.html:27
+#, fuzzy
+#| msgid "Nenhum curso encontrado!"
+msgid "Nenhum ex-aluno de cambridge foi encontrado!"
+msgstr "No course found!"
 
-#: .\templates\account\email.html:48
-msgid "Add E-mail Address"
-msgstr "Add E-mail Address"
+#: .\templates\UniversityConnect\partials\footer.html:15
+#: .\templates\UniversityConnect\partials\headerlink.html:9
+#: .\templates\UniversityConnect\partials\sidebar-options.html:17
+#: .\templates\UniversityConnect\partials\sidebar-options.html:31
+msgid "Idioma"
+msgstr "Language"
 
-#: .\templates\account\email.html:53
-msgid "Add E-mail"
-msgstr "Add E-mail"
+#: .\templates\UniversityConnect\partials\footer.html:24
+msgid "Suporte"
+msgstr "Support"
 
-#: .\templates\account\email.html:63
-msgid "Do you really want to remove the selected e-mail address?"
-msgstr "Do you really want to remove the selected e-mail address?"
+#: .\templates\UniversityConnect\partials\footer.html:26
+msgid "Telefones"
+msgstr "Phones"
 
-#: .\templates\account\email\account_already_exists_message.txt:4
-#, python-format
-msgid ""
-"You are receiving this e-mail because you or someone else tried to signup "
-"for an\n"
-"account using e-mail address:\n"
-"\n"
-"%(email)s\n"
-"\n"
-"However, an account using that e-mail address already exists.  In case you "
-"have\n"
-"forgotten about this, please use the password forgotten procedure to "
-"recover\n"
-"your account:\n"
-"\n"
-"%(password_reset_url)s"
-msgstr ""
-"You are receiving this e-mail because you or someone else tried to signup "
-"for an\n"
-"account using e-mail address:\n"
-"\n"
-"%(email)s\n"
-"\n"
-"However, an account using that e-mail address already exists.  In case you "
-"have\n"
-"forgotten about this, please use the password forgotten procedure to "
-"recover\n"
-"your account:\n"
-"\n"
-"%(password_reset_url)s"
+#: .\templates\UniversityConnect\partials\footer.html:27
+msgid "Chat"
+msgstr "Chat"
 
-#: .\templates\account\email\account_already_exists_subject.txt:3
-msgid "Account Already Exists"
-msgstr "Account Already Exists"
+#: .\templates\UniversityConnect\partials\footer.html:30
+msgid "Início"
+msgstr "Start"
 
-#: .\templates\account\email\base_message.txt:1
-#, python-format
-msgid "Hello from %(site_name)s!"
-msgstr "Hello from %(site_name)s!"
+#: .\templates\UniversityConnect\partials\footer.html:31
+msgid "Home"
+msgstr "Home"
 
-#: .\templates\account\email\base_message.txt:5
-#, python-format
-msgid ""
-"Thank you for using %(site_name)s!\n"
-"%(site_domain)s"
-msgstr ""
-"Thank you for using %(site_name)s!\n"
-"%(site_domain)s"
+#: .\templates\UniversityConnect\partials\footer.html:33
+msgid "Notícias"
+msgstr "News"
 
-#: .\templates\account\email\email_confirmation_message.txt:5
-#, python-format
-msgid ""
-"You're receiving this e-mail because user %(user_display)s has given your e-"
-"mail address to register an account on %(site_domain)s.\n"
-"\n"
-"To confirm this is correct, go to %(activate_url)s"
-msgstr ""
-"You're receiving this e-mail because user %(user_display)s has given your e-"
-"mail address to register an account on %(site_domain)s.\n"
-"\n"
-"To confirm this is correct, go to %(activate_url)s"
+#: .\templates\UniversityConnect\partials\footer.html:36
+msgid "Sobre nós"
+msgstr "About Us"
 
-#: .\templates\account\email\email_confirmation_subject.txt:3
-msgid "Please Confirm Your E-mail Address"
-msgstr "Please Confirm Your E-mail Address"
+#: .\templates\UniversityConnect\partials\footer.html:37
+msgid "Informações"
+msgstr "Information"
 
-#: .\templates\account\email\password_reset_key_message.txt:4
-msgid ""
-"You're receiving this e-mail because you or someone else has requested a "
-"password for your user account.\n"
-"It can be safely ignored if you did not request a password reset. Click the "
-"link below to reset your password."
-msgstr ""
-"You're receiving this e-mail because you or someone else has requested a "
-"password for your user account.\n"
-"It can be safely ignored if you did not request a password reset. Click the "
-"link below to reset your password."
+#: .\templates\UniversityConnect\partials\footer.html:38
+msgid "Contato"
+msgstr "Contact"
 
-#: .\templates\account\email\password_reset_key_message.txt:9
-#, python-format
-msgid "In case you forgot, your username is %(username)s."
-msgstr "In case you forgot, your username is %(username)s."
+#: .\templates\UniversityConnect\partials\footer.html:39
+msgid "Blog"
+msgstr "Blog"
 
-#: .\templates\account\email\password_reset_key_subject.txt:3
-#: .\templates\account\email\unknown_account_subject.txt:3
-msgid "Password Reset E-mail"
-msgstr "Password Reset E-mail"
+#: .\templates\UniversityConnect\partials\footer.html:55
+msgid "Siga-nos nas redes sociais!"
+msgstr "Follow us on social networks!"
 
-#: .\templates\account\email\unknown_account_message.txt:4
-#, python-format
-msgid ""
-"You are receiving this e-mail because you or someone else has requested a\n"
-"password for your user account. However, we do not have any record of a "
-"user\n"
-"with email %(email)s in our database.\n"
-"\n"
-"This mail can be safely ignored if you did not request a password reset.\n"
-"\n"
-"If it was you, you can sign up for an account using the link below."
-msgstr ""
-"You are receiving this e-mail because you or someone else has requested a\n"
-"password for your user account. However, we do not have any record of a "
-"user\n"
-"with email %(email)s in our database.\n"
-"\n"
-"This mail can be safely ignored if you did not request a password reset.\n"
-"\n"
-"If it was you, you can sign up for an account using the link below."
+#: .\templates\UniversityConnect\partials\footer.html:62
+msgid "Termos de Uso * Política de Privacidade"
+msgstr "Terms of Use * Privacy Policy"
 
-#: .\templates\account\email_confirm.html:6
-#: .\templates\account\email_confirm.html:10
-msgid "Confirm E-mail Address"
-msgstr "Confirm E-mail Address"
+#: .\templates\UniversityConnect\partials\footer.html:63
+msgid "2023 UniversityConnect"
+msgstr "2023 UniversityConnect"
 
-#: .\templates\account\email_confirm.html:16
-#, python-format
-msgid ""
-"Please confirm that <a href=\"mailto:%(email)s\">%(email)s</a> is an e-mail "
-"address for user %(user_display)s."
-msgstr ""
-"Please confirm that <a href=\"mailto:%(email)s\">%(email)s</a> is an e-mail "
-"address for user %(user_display)s."
+#: .\templates\UniversityConnect\partials\header-pages.html:11
+msgid "Tecnologia"
+msgstr "Technology"
 
-#: .\templates\account\email_confirm.html:20
-msgid "Confirm"
-msgstr "Confirm"
+#: .\templates\UniversityConnect\partials\headerlink.html:14
+msgid "Quem Somos"
+msgstr "Who we are"
 
-#: .\templates\account\email_confirm.html:27
-#, python-format
-msgid ""
-"This e-mail confirmation link expired or is invalid. Please <a href="
-"\"%(email_url)s\">issue a new e-mail confirmation request</a>."
-msgstr ""
-"This e-mail confirmation link expired or is invalid. Please <a href="
-"\"%(email_url)s\">issue a new e-mail confirmation request</a>."
+#: .\templates\UniversityConnect\partials\headerlink.html:18
+#: .\templates\UniversityConnect\partials\sidebar-options.html:24
+msgid "Entrar"
+msgstr "Login"
 
-#: .\templates\account\login.html:7 .\templates\account\login.html:24
-#: .\templates\account\login.html:39 .\templates\account\signup.html:19
-#: .\templates\socialaccount\login.html:4
-msgid "Sign In"
-msgstr "Sign In"
+#: .\templates\UniversityConnect\partials\places.html:27
+msgid "Não foi possível encontrar os locais!"
+msgstr "It was not possible to find the places!"
 
-#: .\templates\account\login.html:19 .\templates\account\signup.html:14
-msgid "Change E-mail"
-msgstr "Change E-mail"
+#: .\templates\UniversityConnect\partials\sidebar-options.html:6
+msgid "Olá"
+msgstr "Hello"
 
-#: .\templates\account\login.html:22 .\templates\account\signup.html:17
-msgid "Faça parte dessa comunidade!"
-msgstr "Be part of this community!"
+#: .\templates\UniversityConnect\partials\sidebar-options.html:7
+msgid "Conecte-se com a gente!"
+msgstr "Connect with us!"
 
-#: .\templates\account\login.html:23 .\templates\account\signup.html:18
-msgid ""
-"Junte-se e fique ligado com as atualizações e informações da Universidade de "
-"Cambridge"
-msgstr ""
-"Join and stay connected with updates and information from the University of "
-"Cambridge"
+#: .\templates\UniversityConnect\partials\sidebar-options.html:22
+msgid "Sair"
+msgstr "Logout"
 
-#: .\templates\account\login.html:25 .\templates\account\signup.html:20
-#: .\templates\account\signup.html:33 .\templates\socialaccount\signup.html:29
-msgid "Sign Up"
-msgstr "Sign Up"
-
-#: .\templates\account\login.html:41
-#: .\templates\account\password_change.html:14
-msgid "Forgot Password?"
-msgstr "Forgot Password?"
-
-#: .\templates\account\login.html:42
-msgid "Ainda não tem conta?"
-msgstr "Don't have an account yet?"
-
-#: .\templates\account\login.html:43
-msgid "Cadastre-se"
-msgstr "Sign in"
-
-#: .\templates\account\login.html:51 .\templates\account\signup.html:37
-msgid "Ou entre com:"
-msgstr "Or login with: "
-
-#: .\templates\account\messages\cannot_delete_primary_email.txt:2
-#, python-format
-msgid "You cannot remove your primary e-mail address (%(email)s)."
-msgstr "You cannot remove your primary e-mail address (%(email)s)."
-
-#: .\templates\account\messages\email_confirmation_sent.txt:2
-#, python-format
-msgid "Confirmation e-mail sent to %(email)s."
-msgstr "Confirmation e-mail sent to %(email)s."
-
-#: .\templates\account\messages\email_confirmed.txt:2
-#, python-format
-msgid "You have confirmed %(email)s."
-msgstr "You have confirmed %(email)s."
-
-#: .\templates\account\messages\email_deleted.txt:2
-#, python-format
-msgid "Removed e-mail address %(email)s."
-msgstr "Removed e-mail address %(email)s."
-
-#: .\templates\account\messages\logged_in.txt:4
-#, python-format
-msgid "Successfully signed in as %(name)s."
-msgstr "Successfully signed in as %(name)s."
-
-#: .\templates\account\messages\logged_out.txt:2
-msgid "You have signed out."
-msgstr "You have signed out."
-
-#: .\templates\account\messages\password_changed.txt:2
-msgid "Password successfully changed."
-msgstr "Password successfully changed."
-
-#: .\templates\account\messages\password_set.txt:2
-msgid "Password successfully set."
-msgstr "Password successfully set."
-
-#: .\templates\account\messages\primary_email_set.txt:2
-msgid "Primary e-mail address set."
-msgstr "Primary e-mail address set."
-
-#: .\templates\account\messages\unverified_primary_email.txt:2
-msgid "Your primary e-mail address must be verified."
-msgstr "Your primary e-mail address must be verified."
-
-#: .\templates\account\password_change.html:5
-#: .\templates\account\password_change.html:8
-#: .\templates\account\password_change.html:13
-#: .\templates\account\password_reset_from_key.html:4
-#: .\templates\account\password_reset_from_key.html:7
-#: .\templates\account\password_reset_from_key_done.html:4
-#: .\templates\account\password_reset_from_key_done.html:7
-msgid "Change Password"
-msgstr "Change Password"
-
-#: .\templates\account\password_reset.html:6
-#: .\templates\account\password_reset.html:10
-#: .\templates\account\password_reset_done.html:6
-#: .\templates\account\password_reset_done.html:9
-msgid "Password Reset"
-msgstr "Password Reset"
-
-#: .\templates\account\password_reset.html:15
-msgid ""
-"Forgotten your password? Enter your e-mail address below, and we'll send you "
-"an e-mail allowing you to reset it."
-msgstr ""
-"Forgotten your password? Enter your e-mail address below, and we'll send you "
-"an e-mail allowing you to reset it."
-
-#: .\templates\account\password_reset.html:20
-msgid "Reset My Password"
-msgstr "Reset My Password"
-
-#: .\templates\account\password_reset.html:23
-msgid "Please contact us if you have any trouble resetting your password."
-msgstr "Please contact us if you have any trouble resetting your password."
-
-#: .\templates\account\password_reset_done.html:15
-msgid ""
-"We have sent you an e-mail. If you have not received it please check your "
-"spam folder. Otherwise contact us if you do not receive it in a few minutes."
-msgstr ""
-"We have sent you an e-mail. If you have not received it please check your "
-"spam folder. Otherwise contact us if you do not receive it in a few minutes."
-
-#: .\templates\account\password_reset_from_key.html:7
-msgid "Bad Token"
-msgstr "Bad Token"
-
-#: .\templates\account\password_reset_from_key.html:11
-#, python-format
-msgid ""
-"The password reset link was invalid, possibly because it has already been "
-"used.  Please request a <a href=\"%(passwd_reset_url)s\">new password reset</"
-"a>."
-msgstr ""
-"The password reset link was invalid, possibly because it has already been "
-"used.  Please request a <a href=\"%(passwd_reset_url)s\">new password reset</"
-"a>."
-
-#: .\templates\account\password_reset_from_key.html:16
-msgid "change password"
-msgstr "change password"
-
-#: .\templates\account\password_reset_from_key_done.html:8
-msgid "Your password is now changed."
-msgstr "Your password is now changed."
-
-#: .\templates\account\password_set.html:5
-#: .\templates\account\password_set.html:8
-#: .\templates\account\password_set.html:13
-msgid "Set Password"
-msgstr "Set Password"
-
-#: .\templates\account\signup.html:6 .\templates\socialaccount\signup.html:6
-msgid "Signup"
+#: .\templates\UniversityConnect\partials\sidebar-options.html:25
+msgid "Registrar"
 msgstr "Signup"
-
-#: .\templates\account\signup.html:34
-#, python-format
-msgid ""
-"Already have an account? Then please <a href=\"%(login_url)s\">sign in</a>."
-msgstr ""
-"Already have an account? Then please <a href=\"%(login_url)s\">sign in</a>."
-
-#: .\templates\account\signup_closed.html:5
-#: .\templates\account\signup_closed.html:8
-msgid "Sign Up Closed"
-msgstr "Sign Up Closed"
-
-#: .\templates\account\signup_closed.html:10
-msgid "We are sorry, but the sign up is currently closed."
-msgstr "We are sorry, but the sign up is currently closed."
-
-#: .\templates\account\snippets\already_logged_in.html:5
-msgid "Note"
-msgstr "Note"
-
-#: .\templates\account\snippets\already_logged_in.html:5
-#, python-format
-msgid "you are already logged in as %(user_display)s."
-msgstr "you are already logged in as %(user_display)s."
-
-#: .\templates\account\verification_sent.html:5
-#: .\templates\account\verification_sent.html:8
-#: .\templates\account\verified_email_required.html:5
-#: .\templates\account\verified_email_required.html:8
-msgid "Verify Your E-mail Address"
-msgstr "Verify Your E-mail Address"
-
-#: .\templates\account\verification_sent.html:10
-msgid ""
-"We have sent an e-mail to you for verification. Follow the link provided to "
-"finalize the signup process. If you do not see the verification e-mail in "
-"your main inbox, check your spam folder. Please contact us if you do not "
-"receive the verification e-mail within a few minutes."
-msgstr ""
-"We have sent an e-mail to you for verification. Follow the link provided to "
-"finalize the signup process. If you do not see the verification e-mail in "
-"your main inbox, check your spam folder. Please contact us if you do not "
-"receive the verification e-mail within a few minutes."
-
-#: .\templates\account\verified_email_required.html:12
-msgid ""
-"This part of the site requires us to verify that\n"
-"you are who you claim to be. For this purpose, we require that you\n"
-"verify ownership of your e-mail address. "
-msgstr ""
-"This part of the site requires us to verify that\n"
-"you are who you claim to be. For this purpose, we require that you\n"
-"verify ownership of your e-mail address."
-
-#: .\templates\account\verified_email_required.html:16
-msgid ""
-"We have sent an e-mail to you for\n"
-"verification. Please click on the link inside that e-mail. If you do not see "
-"the verification e-mail in your main inbox, check your spam folder. "
-"Otherwise\n"
-"contact us if you do not receive it within a few minutes."
-msgstr ""
-"We have sent an e-mail to you for\n"
-"verification. Please click on the link inside that e-mail. If you do not see "
-"the verification e-mail in your main inbox, check your spam folder. "
-"Otherwise\n"
-"contact us if you do not receive it within a few minutes."
-
-#: .\templates\account\verified_email_required.html:20
-#, python-format
-msgid ""
-"<strong>Note:</strong> you can still <a href=\"%(email_url)s\">change your e-"
-"mail address</a>."
-msgstr ""
-"<strong>Note:</strong> you can still <a href=\"%(email_url)s\">change your e-"
-"mail address</a>."
-
-#: .\templates\openid\login.html:9
-msgid "OpenID Sign In"
-msgstr "OpenID Sign In"
-
-#: .\templates\socialaccount\authentication_error.html:5
-#: .\templates\socialaccount\authentication_error.html:8
-msgid "Social Network Login Failure"
-msgstr "Social Network Login Failure"
-
-#: .\templates\socialaccount\authentication_error.html:10
-msgid ""
-"An error occurred while attempting to login via your social network account."
-msgstr ""
-"An error occurred while attempting to login via your social network account."
-
-#: .\templates\socialaccount\connections.html:5
-#: .\templates\socialaccount\connections.html:8
-msgid "Account Connections"
-msgstr "Account Connections"
-
-#: .\templates\socialaccount\connections.html:11
-msgid ""
-"You can sign in to your account using any of the following third party "
-"accounts:"
-msgstr ""
-"You can sign in to your account using any of the following third party "
-"accounts:"
-
-#: .\templates\socialaccount\connections.html:43
-msgid ""
-"You currently have no social network accounts connected to this account."
-msgstr ""
-"You currently have no social network accounts connected to this account."
-
-#: .\templates\socialaccount\connections.html:46
-msgid "Add a 3rd Party Account"
-msgstr "Add a 3rd Party Account"
-
-#: .\templates\socialaccount\login.html:10
-#, python-format
-msgid "Connect %(provider)s"
-msgstr "Connect %(provider)s"
-
-#: .\templates\socialaccount\login.html:12
-#, python-format
-msgid "You are about to connect a new third party account from %(provider)s."
-msgstr "You are about to connect a new third party account from %(provider)s."
-
-#: .\templates\socialaccount\login.html:14
-#, python-format
-msgid "Entrar com %(provider)s"
-msgstr "Sign With %(provider)s"
-
-#: .\templates\socialaccount\login.html:16
-#, python-format
-msgid "You are about to sign in using a third party account from %(provider)s."
-msgstr ""
-"You are about to sign in using a third party account from %(provider)s."
-
-#: .\templates\socialaccount\login.html:21
-msgid "Continue"
-msgstr "Continue"
-
-#: .\templates\socialaccount\login_cancelled.html:5
-#: .\templates\socialaccount\login_cancelled.html:9
-msgid "Login Cancelled"
-msgstr "Login Cancelled"
-
-#: .\templates\socialaccount\login_cancelled.html:13
-#, python-format
-msgid ""
-"You decided to cancel logging in to our site using one of your existing "
-"accounts. If this was a mistake, please proceed to <a href=\"%(login_url)s"
-"\">sign in</a>."
-msgstr ""
-"You decided to cancel logging in to our site using one of your existing "
-"accounts. If this was a mistake, please proceed to <a href=\"%(login_url)s"
-"\">sign in</a>."
-
-#: .\templates\socialaccount\messages\account_connected.txt:2
-msgid "The social account has been connected."
-msgstr "The social account has been connected."
-
-#: .\templates\socialaccount\messages\account_connected_other.txt:2
-msgid "The social account is already connected to a different account."
-msgstr "The social account is already connected to a different account."
-
-#: .\templates\socialaccount\messages\account_disconnected.txt:2
-msgid "The social account has been disconnected."
-msgstr "The social account has been disconnected."
-
-#: .\templates\socialaccount\signup.html:15
-msgid "Quase lá!"
-msgstr ""
-
-#: .\templates\socialaccount\signup.html:16
-msgid "Coloque seu nome de usuário e seu email para concluir o cadastro!"
-msgstr ""
-
-#: .\templates\socialaccount\signup.html:17
-msgid "Voltar ao início"
-msgstr ""
 
 #: .\venv\Lib\site-packages\django\contrib\messages\apps.py:15
 #, fuzzy
@@ -817,46 +632,46 @@ msgstr "Messages:"
 
 #: .\venv\Lib\site-packages\django\contrib\sitemaps\apps.py:8
 msgid "Site Maps"
-msgstr ""
+msgstr "Maps website"
 
 #: .\venv\Lib\site-packages\django\contrib\staticfiles\apps.py:9
 msgid "Static Files"
-msgstr ""
+msgstr "STATIC FILES"
 
 #: .\venv\Lib\site-packages\django\contrib\syndication\apps.py:7
 msgid "Syndication"
-msgstr ""
+msgstr "Syndication"
 
 #. Translators: String used to replace omitted page numbers in elided page
 #. range generated by paginators, e.g. [1, 2, '…', 5, 6, 7, '…', 9, 10].
 #: .\venv\Lib\site-packages\django\core\paginator.py:30
 msgid "…"
-msgstr ""
+msgstr "..."
 
 #: .\venv\Lib\site-packages\django\core\paginator.py:50
 msgid "That page number is not an integer"
-msgstr ""
+msgstr "That page number is not an integer"
 
 #: .\venv\Lib\site-packages\django\core\paginator.py:52
 msgid "That page number is less than 1"
-msgstr ""
+msgstr "That page number is less than 1"
 
 #: .\venv\Lib\site-packages\django\core\paginator.py:54
 msgid "That page contains no results"
-msgstr ""
+msgstr "That Page Contains No Results"
 
 #: .\venv\Lib\site-packages\django\core\validators.py:22
 msgid "Enter a valid value."
-msgstr ""
+msgstr "Enter Valid Value."
 
 #: .\venv\Lib\site-packages\django\core\validators.py:104
 #: .\venv\Lib\site-packages\django\forms\fields.py:749
 msgid "Enter a valid URL."
-msgstr ""
+msgstr "Enter the Valid URL."
 
 #: .\venv\Lib\site-packages\django\core\validators.py:164
 msgid "Enter a valid integer."
-msgstr ""
+msgstr "Enter Valid Integer."
 
 #: .\venv\Lib\site-packages\django\core\validators.py:175
 #, fuzzy
@@ -869,52 +684,55 @@ msgstr "Primary e-mail address set."
 msgid ""
 "Enter a valid “slug” consisting of letters, numbers, underscores or hyphens."
 msgstr ""
+"Enter Valid “Slug” Consisting of Letters, Numbers, Underscores or Hyphens."
 
 #: .\venv\Lib\site-packages\django\core\validators.py:264
 msgid ""
-"Enter a valid “slug” consisting of Unicode letters, numbers, underscores, or "
-"hyphens."
+"Enter a valid “slug” consisting of Unicode letters, numbers, underscores, or"
+" hyphens."
 msgstr ""
+"ENTER VALID “SLUG” CONSISTAN OF UNICODE LETTERS, NUMBERS, UNDERSCORES, OR "
+"HYPHENS."
 
 #: .\venv\Lib\site-packages\django\core\validators.py:276
 #: .\venv\Lib\site-packages\django\core\validators.py:284
 #: .\venv\Lib\site-packages\django\core\validators.py:313
 msgid "Enter a valid IPv4 address."
-msgstr ""
+msgstr "Enter Valid IPv4 Address."
 
 #: .\venv\Lib\site-packages\django\core\validators.py:293
 #: .\venv\Lib\site-packages\django\core\validators.py:314
 msgid "Enter a valid IPv6 address."
-msgstr ""
+msgstr "Enter Valid IPv6 Address."
 
 #: .\venv\Lib\site-packages\django\core\validators.py:305
 #: .\venv\Lib\site-packages\django\core\validators.py:312
 msgid "Enter a valid IPv4 or IPv6 address."
-msgstr ""
+msgstr "ENTER VALID IPV4 OR IPV6 Address."
 
 #: .\venv\Lib\site-packages\django\core\validators.py:348
 msgid "Enter only digits separated by commas."
-msgstr ""
+msgstr "ENTER ONLY DIGITS SEPARATED BY COMMAMS."
 
 #: .\venv\Lib\site-packages\django\core\validators.py:354
 #, python-format
 msgid "Ensure this value is %(limit_value)s (it is %(show_value)s)."
-msgstr ""
+msgstr "Ensure this value is %(Limit_value) S (it is %(show_value) s)."
 
 #: .\venv\Lib\site-packages\django\core\validators.py:389
 #, python-format
 msgid "Ensure this value is less than or equal to %(limit_value)s."
-msgstr ""
+msgstr "Ensure this value is less Than or equal to %(Limit_Value) s."
 
 #: .\venv\Lib\site-packages\django\core\validators.py:398
 #, python-format
 msgid "Ensure this value is greater than or equal to %(limit_value)s."
-msgstr ""
+msgstr "Ensure this Value is Greater Than or Equal to %(Limit_Value) s."
 
 #: .\venv\Lib\site-packages\django\core\validators.py:407
 #, python-format
 msgid "Ensure this value is a multiple of step size %(limit_value)s."
-msgstr ""
+msgstr "Ensure this value is a multiple of step size %(Limit_Value) s."
 
 #: .\venv\Lib\site-packages\django\core\validators.py:417
 #, python-format
@@ -942,7 +760,7 @@ msgstr[1] ""
 #: .\venv\Lib\site-packages\django\forms\fields.py:347
 #: .\venv\Lib\site-packages\django\forms\fields.py:386
 msgid "Enter a number."
-msgstr ""
+msgstr "Enter the number."
 
 #: .\venv\Lib\site-packages\django\core\validators.py:460
 #, python-format
@@ -973,43 +791,45 @@ msgid ""
 "File extension “%(extension)s” is not allowed. Allowed extensions are: "
 "%(allowed_extensions)s."
 msgstr ""
+"File Extension “%(Extension) S” is not alllowed.ALLOWED EXTENSIONS ARE: "
+"%(ALLOWED_EXtensions) s."
 
 #: .\venv\Lib\site-packages\django\core\validators.py:602
 msgid "Null characters are not allowed."
-msgstr ""
+msgstr "Null Characters are not alllowed."
 
 #: .\venv\Lib\site-packages\django\db\models\base.py:1423
 #: .\venv\Lib\site-packages\django\forms\models.py:893
 msgid "and"
-msgstr ""
+msgstr "and"
 
 #: .\venv\Lib\site-packages\django\db\models\base.py:1425
 #, python-format
 msgid "%(model_name)s with this %(field_labels)s already exists."
-msgstr ""
+msgstr "%(model_name) s with this %(Field_labs) s already exists."
 
 #: .\venv\Lib\site-packages\django\db\models\constraints.py:17
 #, python-format
 msgid "Constraint “%(name)s” is violated."
-msgstr ""
+msgstr "Constraint “%(name) s” is violated."
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:128
 #, python-format
 msgid "Value %(value)r is not a valid choice."
-msgstr ""
+msgstr "VALUE %(VALUE) R IS NOT A VALID CHOICE."
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:129
 msgid "This field cannot be null."
-msgstr ""
+msgstr "This Field Cannot Be null."
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:130
 msgid "This field cannot be blank."
-msgstr ""
+msgstr "This Field Cannot Be Blank."
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:131
 #, python-format
 msgid "%(model_name)s with this %(field_label)s already exists."
-msgstr ""
+msgstr "%(model_name) S with this %(Field_Label) S already exists."
 
 #. Translators: The 'lookup_type' is one of 'date', 'year' or
 #. 'month'. Eg: "Title must be unique for pub_date year"
@@ -1018,38 +838,39 @@ msgstr ""
 msgid ""
 "%(field_label)s must be unique for %(date_field_label)s %(lookup_type)s."
 msgstr ""
+"%(Field_Label) s must be unique for %(date_field_label) s %(lookup_thpe) s."
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:173
 #, python-format
 msgid "Field of type: %(field_type)s"
-msgstr ""
+msgstr "FIELD OF TYPE: %(Field_Type) S"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1094
 #, python-format
 msgid "“%(value)s” value must be either True or False."
-msgstr ""
+msgstr "“%(Value) S” Value must be either True or False."
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1095
 #, python-format
 msgid "“%(value)s” value must be either True, False, or None."
-msgstr ""
+msgstr "“%(Value) S” Value must be either True, False, or None."
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1097
 msgid "Boolean (Either True or False)"
-msgstr ""
+msgstr "Boolean (Either True or False)"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1147
 #, python-format
 msgid "String (up to %(max_length)s)"
-msgstr ""
+msgstr "String (up to %(max_length) s)"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1149
 msgid "String (unlimited)"
-msgstr ""
+msgstr "String (Unlimited)"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1253
 msgid "Comma-separated integers"
-msgstr ""
+msgstr "COMMA-SEPARATED INTERGERS"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1354
 #, python-format
@@ -1057,6 +878,8 @@ msgid ""
 "“%(value)s” value has an invalid date format. It must be in YYYY-MM-DD "
 "format."
 msgstr ""
+"“%(Value) S” Value has an invalid date format.It must be in yyyy-mm-dd "
+"format."
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1358
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1493
@@ -1065,48 +888,56 @@ msgid ""
 "“%(value)s” value has the correct format (YYYY-MM-DD) but it is an invalid "
 "date."
 msgstr ""
+"“%(Value) S” Value has the correct format (yyyy-mm-dd) but it is an invalid "
+"date."
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1362
 msgid "Date (without time)"
-msgstr ""
+msgstr "Date (Without Time)"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1489
 #, python-format
 msgid ""
-"“%(value)s” value has an invalid format. It must be in YYYY-MM-DD HH:MM[:ss[."
-"uuuuuu]][TZ] format."
+"“%(value)s” value has an invalid format. It must be in YYYY-MM-DD "
+"HH:MM[:ss[.uuuuuu]][TZ] format."
 msgstr ""
+"“%(Value) S” Value has an invalid format.It must be in yyyy-mm-dd hh: mm [: "
+"ss [.uuuuuuu]] [tz] format."
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1497
 #, python-format
 msgid ""
-"“%(value)s” value has the correct format (YYYY-MM-DD HH:MM[:ss[.uuuuuu]]"
-"[TZ]) but it is an invalid date/time."
+"“%(value)s” value has the correct format (YYYY-MM-DD "
+"HH:MM[:ss[.uuuuuu]][TZ]) but it is an invalid date/time."
 msgstr ""
+"“%(Value) S” Value has the correct format (yyyy-mm-dd hh: mm [: ss "
+"[.uuuuuuuu]] [tz]) but it is an invalid date/time."
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1502
 msgid "Date (with time)"
-msgstr ""
+msgstr "Date (with time)"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1626
 #, python-format
 msgid "“%(value)s” value must be a decimal number."
-msgstr ""
+msgstr "“%(VALUE) S” VALUE MUST BE A DECIMAL NUMBER."
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1628
 msgid "Decimal number"
-msgstr ""
+msgstr "Decimal number"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1789
 #, python-format
 msgid ""
-"“%(value)s” value has an invalid format. It must be in [DD] [[HH:]MM:]ss[."
-"uuuuuu] format."
+"“%(value)s” value has an invalid format. It must be in [DD] "
+"[[HH:]MM:]ss[.uuuuuu] format."
 msgstr ""
+"“%(Value) S” Value has an invalid format.It must be in [dd] [[hh:] mm:] ss "
+"[.uuuuuuu] format."
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1793
 msgid "Duration"
-msgstr ""
+msgstr "Duration"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1845
 #, fuzzy
@@ -1116,72 +947,72 @@ msgstr "E-mail Addresses"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1870
 msgid "File path"
-msgstr ""
+msgstr "File Path"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1948
 #, python-format
 msgid "“%(value)s” value must be a float."
-msgstr ""
+msgstr "“%(Value) S” Value must be a float."
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1950
 msgid "Floating point number"
-msgstr ""
+msgstr "Floating Point Number"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1990
 #, python-format
 msgid "“%(value)s” value must be an integer."
-msgstr ""
+msgstr "“%(Value) S” Value must be an Integer."
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1992
 msgid "Integer"
-msgstr ""
+msgstr "Integer"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2088
 msgid "Big (8 byte) integer"
-msgstr ""
+msgstr "Big (8 byte) Integer"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2105
 msgid "Small integer"
-msgstr ""
+msgstr "Small Integer"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2113
 msgid "IPv4 address"
-msgstr ""
+msgstr "IPv4 Address"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2144
 msgid "IP address"
-msgstr ""
+msgstr "IP Address"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2237
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2238
 #, python-format
 msgid "“%(value)s” value must be either None, True or False."
-msgstr ""
+msgstr "“%(Value) S” Value must be either none, True or False."
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2240
 msgid "Boolean (Either True, False or None)"
-msgstr ""
+msgstr "Boolean (Either True, False or None)"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2291
 msgid "Positive big integer"
-msgstr ""
+msgstr "Big Integer Positive"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2306
 msgid "Positive integer"
-msgstr ""
+msgstr "Positive Integer"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2321
 msgid "Positive small integer"
-msgstr ""
+msgstr "Positive Small Integer"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2337
 #, python-format
 msgid "Slug (up to %(max_length)s)"
-msgstr ""
+msgstr "Slug (up to %(max_length) s)"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2373
 msgid "Text"
-msgstr ""
+msgstr "Text"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2448
 #, python-format
@@ -1189,6 +1020,8 @@ msgid ""
 "“%(value)s” value has an invalid format. It must be in HH:MM[:ss[.uuuuuu]] "
 "format."
 msgstr ""
+"“%(Value) S” Value has an invalid format.It must be in hh: mm [: ss "
+"[.uuuuuuu]] format."
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2452
 #, python-format
@@ -1196,123 +1029,127 @@ msgid ""
 "“%(value)s” value has the correct format (HH:MM[:ss[.uuuuuu]]) but it is an "
 "invalid time."
 msgstr ""
+"“%(Value) S” Value has the correct format (hh: mm [: ss [.uuuuuuuuuuuu]) but"
+" an is an invalid time."
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2456
 msgid "Time"
-msgstr ""
+msgstr "Team"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2564
 msgid "URL"
-msgstr ""
+msgstr "URL"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2588
 msgid "Raw binary data"
-msgstr ""
+msgstr "RAW BINARY DATA"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2653
 #, python-format
 msgid "“%(value)s” is not a valid UUID."
-msgstr ""
+msgstr "“%(Value) s” is not a valid uuid."
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2655
 msgid "Universally unique identifier"
-msgstr ""
+msgstr "Universally Unique Identifier"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\files.py:232
 msgid "File"
-msgstr ""
+msgstr "Filet"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\files.py:393
 msgid "Image"
-msgstr ""
+msgstr "Image"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\json.py:26
 msgid "A JSON object"
-msgstr ""
+msgstr "JSON OBJECT"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\json.py:28
 msgid "Value must be valid JSON."
-msgstr ""
+msgstr "VALUE MUST BE VALID JSON."
 
 #: .\venv\Lib\site-packages\django\db\models\fields\related.py:919
 #, python-format
 msgid "%(model)s instance with %(field)s %(value)r does not exist."
-msgstr ""
+msgstr "%(model) S Instance with %(Field) S %(VALUE) R DOES NOT EXIST."
 
 #: .\venv\Lib\site-packages\django\db\models\fields\related.py:921
 msgid "Foreign Key (type determined by related field)"
-msgstr ""
+msgstr "Foreign Key (Type Deterned by Related Field)"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\related.py:1212
 msgid "One-to-one relationship"
-msgstr ""
+msgstr "One-to-One Relationship"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\related.py:1269
 #, python-format
 msgid "%(from)s-%(to)s relationship"
-msgstr ""
+msgstr "%(from) s-%(to) s relationship"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\related.py:1271
 #, python-format
 msgid "%(from)s-%(to)s relationships"
-msgstr ""
+msgstr "%(from) s-%(to) s relationships"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\related.py:1319
 msgid "Many-to-many relationship"
-msgstr ""
+msgstr "Many-to-Monny Relationship"
 
 #. Translators: If found as last label character, these punctuation
-#. characters will prevent the default label_suffix to be appended to the label
+#. characters will prevent the default label_suffix to be appended to the
+#. label
 #: .\venv\Lib\site-packages\django\forms\boundfield.py:184
 msgid ":?.!"
-msgstr ""
+msgstr ":?.!"
 
 #: .\venv\Lib\site-packages\django\forms\fields.py:91
 msgid "This field is required."
-msgstr ""
+msgstr "This Field is Required."
 
 #: .\venv\Lib\site-packages\django\forms\fields.py:298
 msgid "Enter a whole number."
-msgstr ""
+msgstr "ENTER WHOLE NUMBER."
 
 #: .\venv\Lib\site-packages\django\forms\fields.py:467
 #: .\venv\Lib\site-packages\django\forms\fields.py:1238
 msgid "Enter a valid date."
-msgstr ""
+msgstr "Enter Valid Date."
 
 #: .\venv\Lib\site-packages\django\forms\fields.py:490
 #: .\venv\Lib\site-packages\django\forms\fields.py:1239
 msgid "Enter a valid time."
-msgstr ""
+msgstr "Enter Valid Time."
 
 #: .\venv\Lib\site-packages\django\forms\fields.py:517
 msgid "Enter a valid date/time."
-msgstr ""
+msgstr "Enter Valid Date/Time."
 
 #: .\venv\Lib\site-packages\django\forms\fields.py:551
 msgid "Enter a valid duration."
-msgstr ""
+msgstr "Enter Valid Duration."
 
 #: .\venv\Lib\site-packages\django\forms\fields.py:552
 #, python-brace-format
 msgid "The number of days must be between {min_days} and {max_days}."
-msgstr ""
+msgstr "The Number of Days Must Be Between {min_days} and {max_days}."
 
 #: .\venv\Lib\site-packages\django\forms\fields.py:618
 msgid "No file was submitted. Check the encoding type on the form."
-msgstr ""
+msgstr "In the file was submitted.CHECK THE ENDING TYPE ON THE FORM."
 
 #: .\venv\Lib\site-packages\django\forms\fields.py:619
 msgid "No file was submitted."
-msgstr ""
+msgstr "In the file was submitted."
 
 #: .\venv\Lib\site-packages\django\forms\fields.py:620
 msgid "The submitted file is empty."
-msgstr ""
+msgstr "The Submitted File is empty."
 
 #: .\venv\Lib\site-packages\django\forms\fields.py:622
 #, python-format
-msgid "Ensure this filename has at most %(max)d character (it has %(length)d)."
+msgid ""
+"Ensure this filename has at most %(max)d character (it has %(length)d)."
 msgid_plural ""
 "Ensure this filename has at most %(max)d characters (it has %(length)d)."
 msgstr[0] ""
@@ -1320,49 +1157,51 @@ msgstr[1] ""
 
 #: .\venv\Lib\site-packages\django\forms\fields.py:627
 msgid "Please either submit a file or check the clear checkbox, not both."
-msgstr ""
+msgstr "Please either submit a file or check the clear checkbox, not Both."
 
 #: .\venv\Lib\site-packages\django\forms\fields.py:691
 msgid ""
 "Upload a valid image. The file you uploaded was either not an image or a "
 "corrupted image."
 msgstr ""
+"Upload to Valid Image.The File You uploaded was either not an image or the "
+"corrupt image."
 
 #: .\venv\Lib\site-packages\django\forms\fields.py:854
 #: .\venv\Lib\site-packages\django\forms\fields.py:946
 #: .\venv\Lib\site-packages\django\forms\models.py:1566
 #, python-format
 msgid "Select a valid choice. %(value)s is not one of the available choices."
-msgstr ""
+msgstr "Select Valid Choice.%(Value) S is not one of the Available Choices."
 
 #: .\venv\Lib\site-packages\django\forms\fields.py:948
 #: .\venv\Lib\site-packages\django\forms\fields.py:1067
 #: .\venv\Lib\site-packages\django\forms\models.py:1564
 msgid "Enter a list of values."
-msgstr ""
+msgstr "Enter the list of values."
 
 #: .\venv\Lib\site-packages\django\forms\fields.py:1068
 msgid "Enter a complete value."
-msgstr ""
+msgstr "Enter the Complete Value."
 
 #: .\venv\Lib\site-packages\django\forms\fields.py:1307
 msgid "Enter a valid UUID."
-msgstr ""
+msgstr "Enter Valid Uuid."
 
 #: .\venv\Lib\site-packages\django\forms\fields.py:1337
 msgid "Enter a valid JSON."
-msgstr ""
+msgstr "Enter Valid Json."
 
 #. Translators: This is the default suffix added to form field labels
 #: .\venv\Lib\site-packages\django\forms\forms.py:98
 msgid ":"
-msgstr ""
+msgstr ":"
 
 #: .\venv\Lib\site-packages\django\forms\forms.py:244
 #: .\venv\Lib\site-packages\django\forms\forms.py:328
 #, python-format
 msgid "(Hidden field %(name)s) %(error)s"
-msgstr ""
+msgstr "(Hidden Field %(Name) S) %(Error) S"
 
 #: .\venv\Lib\site-packages\django\forms\formsets.py:63
 #, python-format
@@ -1370,6 +1209,8 @@ msgid ""
 "ManagementForm data is missing or has been tampered with. Missing fields: "
 "%(field_names)s. You may need to file a bug report if the issue persists."
 msgstr ""
+"Managementform Data is missing or has ben tampered with.Missing Fields: "
+"%(Field_Names) s.You May Need to File a Bug Report if the Issue Persiss."
 
 #: .\venv\Lib\site-packages\django\forms\formsets.py:67
 #, python-format
@@ -1388,21 +1229,22 @@ msgstr[1] ""
 #: .\venv\Lib\site-packages\django\forms\formsets.py:484
 #: .\venv\Lib\site-packages\django\forms\formsets.py:491
 msgid "Order"
-msgstr ""
+msgstr "Order"
 
 #: .\venv\Lib\site-packages\django\forms\formsets.py:499
 msgid "Delete"
-msgstr ""
+msgstr "Delete"
 
 #: .\venv\Lib\site-packages\django\forms\models.py:886
 #, python-format
 msgid "Please correct the duplicate data for %(field)s."
-msgstr ""
+msgstr "Please correct the duplicate date for %(field) s."
 
 #: .\venv\Lib\site-packages\django\forms\models.py:891
 #, python-format
 msgid "Please correct the duplicate data for %(field)s, which must be unique."
 msgstr ""
+"PERASE CORRECT THE DUPLICATE DATE FOR %(FIELD) S, WHICH MUST BE UNique."
 
 #: .\venv\Lib\site-packages\django\forms\models.py:898
 #, python-format
@@ -1410,23 +1252,26 @@ msgid ""
 "Please correct the duplicate data for %(field_name)s which must be unique "
 "for the %(lookup)s in %(date_field)s."
 msgstr ""
+"Please correct the duplicate date for %(field_name) s Which must be unique "
+"for the %(lookup) s in %(date_field) s."
 
 #: .\venv\Lib\site-packages\django\forms\models.py:907
 msgid "Please correct the duplicate values below."
-msgstr ""
+msgstr "Please Correct The Duplicate Values Below."
 
 #: .\venv\Lib\site-packages\django\forms\models.py:1338
 msgid "The inline value did not match the parent instance."
-msgstr ""
+msgstr "The Inline Value Did Not Match The Parent Instance."
 
 #: .\venv\Lib\site-packages\django\forms\models.py:1429
-msgid "Select a valid choice. That choice is not one of the available choices."
-msgstr ""
+msgid ""
+"Select a valid choice. That choice is not one of the available choices."
+msgstr "Select Valid Choice.That Choice is not one of the Available Choices."
 
 #: .\venv\Lib\site-packages\django\forms\models.py:1568
 #, python-format
 msgid "“%(pk)s” is not a valid value."
-msgstr ""
+msgstr "“%(Pk) s” is not a valid value."
 
 #: .\venv\Lib\site-packages\django\forms\utils.py:226
 #, python-format
@@ -1434,14 +1279,16 @@ msgid ""
 "%(datetime)s couldn’t be interpreted in time zone %(current_timezone)s; it "
 "may be ambiguous or it may not exist."
 msgstr ""
+"%(datetime) s couldn´t be be interpreted in time zone %(current_timezone) "
+"s;IT May Be Ambiguous or It May Not Exist."
 
 #: .\venv\Lib\site-packages\django\forms\widgets.py:463
 msgid "Clear"
-msgstr ""
+msgstr "Clear"
 
 #: .\venv\Lib\site-packages\django\forms\widgets.py:464
 msgid "Currently"
-msgstr ""
+msgstr "Currently"
 
 #: .\venv\Lib\site-packages\django\forms\widgets.py:465
 #, fuzzy
@@ -1451,11 +1298,11 @@ msgstr "Change E-mail"
 
 #: .\venv\Lib\site-packages\django\forms\widgets.py:794
 msgid "Unknown"
-msgstr ""
+msgstr "Unknown"
 
 #: .\venv\Lib\site-packages\django\forms\widgets.py:795
 msgid "Yes"
-msgstr ""
+msgstr "Yes"
 
 #: .\venv\Lib\site-packages\django\forms\widgets.py:796
 #, fuzzy
@@ -1466,7 +1313,7 @@ msgstr "Note"
 #. Translators: Please do not add spaces around commas.
 #: .\venv\Lib\site-packages\django\template\defaultfilters.py:861
 msgid "yes,no,maybe"
-msgstr ""
+msgstr "yes, no, Maybe"
 
 #: .\venv\Lib\site-packages\django\template\defaultfilters.py:891
 #: .\venv\Lib\site-packages\django\template\defaultfilters.py:908
@@ -1479,163 +1326,163 @@ msgstr[1] ""
 #: .\venv\Lib\site-packages\django\template\defaultfilters.py:910
 #, python-format
 msgid "%s KB"
-msgstr ""
+msgstr "%s kb"
 
 #: .\venv\Lib\site-packages\django\template\defaultfilters.py:912
 #, python-format
 msgid "%s MB"
-msgstr ""
+msgstr "%S MB"
 
 #: .\venv\Lib\site-packages\django\template\defaultfilters.py:914
 #, python-format
 msgid "%s GB"
-msgstr ""
+msgstr "%s gb"
 
 #: .\venv\Lib\site-packages\django\template\defaultfilters.py:916
 #, python-format
 msgid "%s TB"
-msgstr ""
+msgstr "%s tb"
 
 #: .\venv\Lib\site-packages\django\template\defaultfilters.py:918
 #, python-format
 msgid "%s PB"
-msgstr ""
+msgstr "%S PB"
 
 #: .\venv\Lib\site-packages\django\utils\dateformat.py:73
 msgid "p.m."
-msgstr ""
+msgstr "P.M."
 
 #: .\venv\Lib\site-packages\django\utils\dateformat.py:74
 msgid "a.m."
-msgstr ""
+msgstr "A.M."
 
 #: .\venv\Lib\site-packages\django\utils\dateformat.py:79
 msgid "PM"
-msgstr ""
+msgstr "PM"
 
 #: .\venv\Lib\site-packages\django\utils\dateformat.py:80
 msgid "AM"
-msgstr ""
+msgstr "AM"
 
 #: .\venv\Lib\site-packages\django\utils\dateformat.py:152
 msgid "midnight"
-msgstr ""
+msgstr "midnight"
 
 #: .\venv\Lib\site-packages\django\utils\dateformat.py:154
 msgid "noon"
-msgstr ""
+msgstr "noon"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:7
 msgid "Monday"
-msgstr ""
+msgstr "Monday"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:8
 msgid "Tuesday"
-msgstr ""
+msgstr "Tuesday"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:9
 msgid "Wednesday"
-msgstr ""
+msgstr "Wednesday"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:10
 msgid "Thursday"
-msgstr ""
+msgstr "Thursday"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:11
 msgid "Friday"
-msgstr ""
+msgstr "Friday"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:12
 msgid "Saturday"
-msgstr ""
+msgstr "Saturday"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:13
 msgid "Sunday"
-msgstr ""
+msgstr "Sunday"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:16
 msgid "Mon"
-msgstr ""
+msgstr "Mon"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:17
 msgid "Tue"
-msgstr ""
+msgstr "You are"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:18
 msgid "Wed"
-msgstr ""
+msgstr "WED"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:19
 msgid "Thu"
-msgstr ""
+msgstr "Thu"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:20
 msgid "Fri"
-msgstr ""
+msgstr "Fri"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:21
 msgid "Sat"
-msgstr ""
+msgstr "Sat"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:22
 msgid "Sun"
-msgstr ""
+msgstr "Sun"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:25
 msgid "January"
-msgstr ""
+msgstr "January"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:26
 msgid "February"
-msgstr ""
+msgstr "Februry"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:27
 msgid "March"
-msgstr ""
+msgstr "March"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:28
 msgid "April"
-msgstr ""
+msgstr "April"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:29
 msgid "May"
-msgstr ""
+msgstr "May"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:30
 msgid "June"
-msgstr ""
+msgstr "June"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:31
 msgid "July"
-msgstr ""
+msgstr "July"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:32
 msgid "August"
-msgstr ""
+msgstr "August"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:33
 msgid "September"
-msgstr ""
+msgstr "September"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:34
 msgid "October"
-msgstr ""
+msgstr "Octber"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:35
 msgid "November"
-msgstr ""
+msgstr "November"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:36
 msgid "December"
-msgstr ""
+msgstr "December"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:39
 msgid "jan"
-msgstr ""
+msgstr "jan"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:40
 msgid "feb"
-msgstr ""
+msgstr "FEB"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:41
 #, fuzzy
@@ -1645,7 +1492,7 @@ msgstr "Primary"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:42
 msgid "apr"
-msgstr ""
+msgstr "APR"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:43
 #, fuzzy
@@ -1655,161 +1502,161 @@ msgstr "Primary"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:44
 msgid "jun"
-msgstr ""
+msgstr "jun"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:45
 msgid "jul"
-msgstr ""
+msgstr "Jul"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:46
 msgid "aug"
-msgstr ""
+msgstr "aug"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:47
 msgid "sep"
-msgstr ""
+msgstr "SEP"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:48
 msgid "oct"
-msgstr ""
+msgstr "oct"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:49
 msgid "nov"
-msgstr ""
+msgstr "nov"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:50
 msgid "dec"
-msgstr ""
+msgstr "Dec"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:53
 msgctxt "abbrev. month"
 msgid "Jan."
-msgstr ""
+msgstr "Jan."
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:54
 msgctxt "abbrev. month"
 msgid "Feb."
-msgstr ""
+msgstr "FEB."
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:55
 msgctxt "abbrev. month"
 msgid "March"
-msgstr ""
+msgstr "March"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:56
 msgctxt "abbrev. month"
 msgid "April"
-msgstr ""
+msgstr "April"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:57
 msgctxt "abbrev. month"
 msgid "May"
-msgstr ""
+msgstr "May"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:58
 msgctxt "abbrev. month"
 msgid "June"
-msgstr ""
+msgstr "June"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:59
 msgctxt "abbrev. month"
 msgid "July"
-msgstr ""
+msgstr "July"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:60
 msgctxt "abbrev. month"
 msgid "Aug."
-msgstr ""
+msgstr "AUG."
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:61
 msgctxt "abbrev. month"
 msgid "Sept."
-msgstr ""
+msgstr "Sept."
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:62
 msgctxt "abbrev. month"
 msgid "Oct."
-msgstr ""
+msgstr "Oct."
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:63
 msgctxt "abbrev. month"
 msgid "Nov."
-msgstr ""
+msgstr "Nov."
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:64
 msgctxt "abbrev. month"
 msgid "Dec."
-msgstr ""
+msgstr "Dec."
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:67
 msgctxt "alt. month"
 msgid "January"
-msgstr ""
+msgstr "January"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:68
 msgctxt "alt. month"
 msgid "February"
-msgstr ""
+msgstr "Februry"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:69
 msgctxt "alt. month"
 msgid "March"
-msgstr ""
+msgstr "March"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:70
 msgctxt "alt. month"
 msgid "April"
-msgstr ""
+msgstr "April"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:71
 msgctxt "alt. month"
 msgid "May"
-msgstr ""
+msgstr "May"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:72
 msgctxt "alt. month"
 msgid "June"
-msgstr ""
+msgstr "June"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:73
 msgctxt "alt. month"
 msgid "July"
-msgstr ""
+msgstr "July"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:74
 msgctxt "alt. month"
 msgid "August"
-msgstr ""
+msgstr "August"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:75
 msgctxt "alt. month"
 msgid "September"
-msgstr ""
+msgstr "September"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:76
 msgctxt "alt. month"
 msgid "October"
-msgstr ""
+msgstr "Octber"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:77
 msgctxt "alt. month"
 msgid "November"
-msgstr ""
+msgstr "November"
 
 #: .\venv\Lib\site-packages\django\utils\dates.py:78
 msgctxt "alt. month"
 msgid "December"
-msgstr ""
+msgstr "December"
 
 #: .\venv\Lib\site-packages\django\utils\ipv6.py:8
 msgid "This is not a valid IPv6 address."
-msgstr ""
+msgstr "This is not a valid IPv6 address."
 
 #: .\venv\Lib\site-packages\django\utils\text.py:78
 #, python-format
 msgctxt "String to return when truncating text"
 msgid "%(truncated_text)s…"
-msgstr ""
+msgstr "%(truncated_text) S…"
 
 #: .\venv\Lib\site-packages\django\utils\text.py:254
 msgid "or"
@@ -1819,7 +1666,7 @@ msgstr "or"
 #: .\venv\Lib\site-packages\django\utils\text.py:273
 #: .\venv\Lib\site-packages\django\utils\timesince.py:135
 msgid ", "
-msgstr ""
+msgstr ","
 
 #: .\venv\Lib\site-packages\django\utils\timesince.py:8
 #, python-format
@@ -1865,11 +1712,11 @@ msgstr[1] ""
 
 #: .\venv\Lib\site-packages\django\views\csrf.py:111
 msgid "Forbidden"
-msgstr ""
+msgstr "Forbidden"
 
 #: .\venv\Lib\site-packages\django\views\csrf.py:112
 msgid "CSRF verification failed. Request aborted."
-msgstr ""
+msgstr "CSRF Verification Failed.Request Aborted."
 
 #: .\venv\Lib\site-packages\django\views\csrf.py:116
 msgid ""
@@ -1878,6 +1725,10 @@ msgid ""
 "required for security reasons, to ensure that your browser is not being "
 "hijacked by third parties."
 msgstr ""
+"You are Seeing This Message BECAUSE THIS HTTPS Website Requires A “Referent "
+"Header” To Be Sent By Your Web Browser, But None Was Sent.This Header is "
+"Required for Security Reasons, to Ensure That Your Browser is Not Being "
+"Hijacked by Third Parties."
 
 #: .\venv\Lib\site-packages\django\views\csrf.py:122
 msgid ""
@@ -1885,15 +1736,23 @@ msgid ""
 "enable them, at least for this site, or for HTTPS connections, or for “same-"
 "origin” requests."
 msgstr ""
+"If you have configured your browser to disable “referent” headers, please "
+"re-enable them, at least for this site, or for https connections, or for "
+"“same-orrigin” reflects."
 
 #: .\venv\Lib\site-packages\django\views\csrf.py:127
 msgid ""
-"If you are using the <meta name=\"referrer\" content=\"no-referrer\"> tag or "
-"including the “Referrer-Policy: no-referrer” header, please remove them. The "
-"CSRF protection requires the “Referer” header to do strict referer checking. "
-"If you’re concerned about privacy, use alternatives like <a rel=\"noreferrer"
-"\" …> for links to third-party sites."
+"If you are using the <meta name=\"referrer\" content=\"no-referrer\"> tag or"
+" including the “Referrer-Policy: no-referrer” header, please remove them. "
+"The CSRF protection requires the “Referer” header to do strict referer "
+"checking. If you’re concerned about privacy, use alternatives like <a "
+"rel=\"noreferrer\" …> for links to third-party sites."
 msgstr ""
+"If you are Using the <meta name = \"Referrer\" content = \"no-referrer\"> "
+"tag or including the \"referrer-political: no-referrer\" Header, please "
+"remove them.The CSRF Protection Requires the “Referent” Header to the "
+"Stricth Referent Checking.If you're Concerned About Privacy, use "
+"alternatives like <a rel=\"noreferrer\" …> For links to third-party sites."
 
 #: .\venv\Lib\site-packages\django\views\csrf.py:136
 msgid ""
@@ -1901,134 +1760,145 @@ msgid ""
 "submitting forms. This cookie is required for security reasons, to ensure "
 "that your browser is not being hijacked by third parties."
 msgstr ""
+"You are seeing this Message Because This site Requires A CSRF Cookie when "
+"submitting forms.This cookie is Required for Security Reasons, to Ensure "
+"That Your Browser is Not Being Hijacked by Third Parties."
 
 #: .\venv\Lib\site-packages\django\views\csrf.py:142
 msgid ""
 "If you have configured your browser to disable cookies, please re-enable "
 "them, at least for this site, or for “same-origin” requests."
 msgstr ""
+"If you have configured your browser to disable cookies, please re-enable "
+"them, at least for this site, or for “same-orrigin” reflects."
 
 #: .\venv\Lib\site-packages\django\views\csrf.py:148
 msgid "More information is available with DEBUG=True."
-msgstr ""
+msgstr "More information is available with debug = true."
 
 #: .\venv\Lib\site-packages\django\views\generic\dates.py:44
 msgid "No year specified"
-msgstr ""
+msgstr "No Year Specified"
 
 #: .\venv\Lib\site-packages\django\views\generic\dates.py:64
 #: .\venv\Lib\site-packages\django\views\generic\dates.py:115
 #: .\venv\Lib\site-packages\django\views\generic\dates.py:214
 msgid "Date out of range"
-msgstr ""
+msgstr "DATE OUT OF RANGE"
 
 #: .\venv\Lib\site-packages\django\views\generic\dates.py:94
 msgid "No month specified"
-msgstr ""
+msgstr "No Month Specified"
 
 #: .\venv\Lib\site-packages\django\views\generic\dates.py:147
 msgid "No day specified"
-msgstr ""
+msgstr "At Day Specified"
 
 #: .\venv\Lib\site-packages\django\views\generic\dates.py:194
 msgid "No week specified"
-msgstr ""
+msgstr "No Week Specified"
 
 #: .\venv\Lib\site-packages\django\views\generic\dates.py:349
 #: .\venv\Lib\site-packages\django\views\generic\dates.py:380
 #, python-format
 msgid "No %(verbose_name_plural)s available"
-msgstr ""
+msgstr "In %(verbose_name_plural) s available"
 
 #: .\venv\Lib\site-packages\django\views\generic\dates.py:652
 #, python-format
 msgid ""
-"Future %(verbose_name_plural)s not available because %(class_name)s."
-"allow_future is False."
+"Future %(verbose_name_plural)s not available because "
+"%(class_name)s.allow_future is False."
 msgstr ""
+"Future %(verbose_name_plural) S not available bocause %(class_name) "
+"s.allow_future is false."
 
 #: .\venv\Lib\site-packages\django\views\generic\dates.py:692
 #, python-format
 msgid "Invalid date string “%(datestr)s” given format “%(format)s”"
-msgstr ""
+msgstr "Inalid Date String “%(Datestr) S” Given Format “%(Format) S”"
 
 #: .\venv\Lib\site-packages\django\views\generic\detail.py:56
 #, python-format
 msgid "No %(verbose_name)s found matching the query"
-msgstr ""
+msgstr "NO %(verbose_name) S Found Matching The Query"
 
 #: .\venv\Lib\site-packages\django\views\generic\list.py:70
 msgid "Page is not “last”, nor can it be converted to an int."
-msgstr ""
+msgstr "Page is not “Last”, nor can it be converted to an int."
 
 #: .\venv\Lib\site-packages\django\views\generic\list.py:77
 #, python-format
 msgid "Invalid page (%(page_number)s): %(message)s"
-msgstr ""
+msgstr "Invalid page ( %(page_number) s): %(message) s"
 
 #: .\venv\Lib\site-packages\django\views\generic\list.py:169
 #, python-format
 msgid "Empty list and “%(class_name)s.allow_empty” is False."
-msgstr ""
+msgstr "Empty list and “%(class_name) s.allow_empty” is false."
 
 #: .\venv\Lib\site-packages\django\views\static.py:38
 msgid "Directory indexes are not allowed here."
-msgstr ""
+msgstr "Directory Indexes are not alllowed here."
 
 #: .\venv\Lib\site-packages\django\views\static.py:40
 #, python-format
 msgid "“%(path)s” does not exist"
-msgstr ""
+msgstr "“%(Path) S” does not exist"
 
 #: .\venv\Lib\site-packages\django\views\static.py:79
 #, python-format
 msgid "Index of %(directory)s"
-msgstr ""
+msgstr "Index of %(Directory) S"
 
 #: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:7
 #: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:220
 msgid "The install worked successfully! Congratulations!"
-msgstr ""
+msgstr "The Install Worked Successfully!Congratulations!"
 
 #: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:206
 #, python-format
 msgid ""
 "View <a href=\"https://docs.djangoproject.com/en/%(version)s/releases/\" "
 "target=\"_blank\" rel=\"noopener\">release notes</a> for Django %(version)s"
-msgstr ""
+msgstr "View <a href=\"https://docs.djangoproproject.com/en/%(Verversion)s"
 
 #: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:221
 #, python-format
 msgid ""
-"You are seeing this page because <a href=\"https://docs.djangoproject.com/en/"
-"%(version)s/ref/settings/#debug\" target=\"_blank\" rel=\"noopener"
-"\">DEBUG=True</a> is in your settings file and you have not configured any "
-"URLs."
+"You are seeing this page because <a "
+"href=\"https://docs.djangoproject.com/en/%(version)s/ref/settings/#debug\" "
+"target=\"_blank\" rel=\"noopener\">DEBUG=True</a> is in your settings file "
+"and you have not configured any URLs."
 msgstr ""
+"You are seeing this page BECAUSE <a "
+"href=\"https://docs.djangoproject.com/en/%(VERSION)s/ref/settings/#debug\" "
+"target=\"_blank\" rel=\"noopener\"> Debug = True</a> is in your settings "
+"file and you have not configured any urls."
 
 #: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:229
 msgid "Django Documentation"
-msgstr ""
+msgstr "Django Documentation"
 
 #: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:230
 msgid "Topics, references, &amp; how-to’s"
-msgstr ""
+msgstr "TOPICS, REFERENCES, & AMP;How-to's"
 
 #: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:238
 msgid "Tutorial: A Polling App"
-msgstr ""
+msgstr "Tutorial: The Polling App"
 
 #: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:239
 msgid "Get started with Django"
-msgstr ""
+msgstr "Get Started with Django"
 
 #: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:247
 msgid "Django Community"
-msgstr ""
+msgstr "Django Community"
 
 #: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:248
 msgid "Connect, get help, or contribute"
-msgstr ""
+msgstr "CONNECT, GET HELP, or Contribute"
 
 #: .\website\settings.py:163
 msgid "Portuguese"
@@ -2037,6 +1907,417 @@ msgstr "Portuguese"
 #: .\website\settings.py:164
 msgid "English"
 msgstr "English"
+
+#~ msgid "Principais Personalidades"
+#~ msgstr "Main personalities"
+
+#~ msgid "Account Inactive"
+#~ msgstr "Account Inactive"
+
+#~ msgid "This account is inactive."
+#~ msgstr "This account is inactive."
+
+#~ msgid "Messages:"
+#~ msgstr "Messages:"
+
+#~ msgid "E-mail Addresses"
+#~ msgstr "E-mail Addresses"
+
+#~ msgid "The following e-mail addresses are associated with your account:"
+#~ msgstr "The following e-mail addresses are associated with your account:"
+
+#~ msgid "Verified"
+#~ msgstr "Verified"
+
+#~ msgid "Unverified"
+#~ msgstr "Unverified"
+
+#~ msgid "Primary"
+#~ msgstr "Primary"
+
+#~ msgid "Make Primary"
+#~ msgstr "Make Primary"
+
+#~ msgid "Re-send Verification"
+#~ msgstr "Re-send Verification"
+
+#~ msgid "Remove"
+#~ msgstr "Remove"
+
+#~ msgid "Warning:"
+#~ msgstr "Warning:"
+
+#~ msgid ""
+#~ "You currently do not have any e-mail address set up. You should really add "
+#~ "an e-mail address so you can receive notifications, reset your password, "
+#~ "etc."
+#~ msgstr ""
+#~ "You currently do not have any e-mail address set up. You should really add "
+#~ "an e-mail address so you can receive notifications, reset your password, "
+#~ "etc."
+
+#~ msgid "Add E-mail Address"
+#~ msgstr "Add E-mail Address"
+
+#~ msgid "Add E-mail"
+#~ msgstr "Add E-mail"
+
+#~ msgid "Do you really want to remove the selected e-mail address?"
+#~ msgstr "Do you really want to remove the selected e-mail address?"
+
+#, python-format
+#~ msgid ""
+#~ "You are receiving this e-mail because you or someone else tried to signup for an\n"
+#~ "account using e-mail address:\n"
+#~ "\n"
+#~ "%(email)s\n"
+#~ "\n"
+#~ "However, an account using that e-mail address already exists.  In case you have\n"
+#~ "forgotten about this, please use the password forgotten procedure to recover\n"
+#~ "your account:\n"
+#~ "\n"
+#~ "%(password_reset_url)s"
+#~ msgstr ""
+#~ "You are receiving this e-mail because you or someone else tried to signup for an\n"
+#~ "account using e-mail address:\n"
+#~ "\n"
+#~ "%(email)s\n"
+#~ "\n"
+#~ "However, an account using that e-mail address already exists.  In case you have\n"
+#~ "forgotten about this, please use the password forgotten procedure to recover\n"
+#~ "your account:\n"
+#~ "\n"
+#~ "%(password_reset_url)s"
+
+#~ msgid "Account Already Exists"
+#~ msgstr "Account Already Exists"
+
+#, python-format
+#~ msgid "Hello from %(site_name)s!"
+#~ msgstr "Hello from %(site_name)s!"
+
+#, python-format
+#~ msgid ""
+#~ "Thank you for using %(site_name)s!\n"
+#~ "%(site_domain)s"
+#~ msgstr ""
+#~ "Thank you for using %(site_name)s!\n"
+#~ "%(site_domain)s"
+
+#, python-format
+#~ msgid ""
+#~ "You're receiving this e-mail because user %(user_display)s has given your e-mail address to register an account on %(site_domain)s.\n"
+#~ "\n"
+#~ "To confirm this is correct, go to %(activate_url)s"
+#~ msgstr ""
+#~ "You're receiving this e-mail because user %(user_display)s has given your e-mail address to register an account on %(site_domain)s.\n"
+#~ "\n"
+#~ "To confirm this is correct, go to %(activate_url)s"
+
+#~ msgid "Please Confirm Your E-mail Address"
+#~ msgstr "Please Confirm Your E-mail Address"
+
+#~ msgid ""
+#~ "You're receiving this e-mail because you or someone else has requested a password for your user account.\n"
+#~ "It can be safely ignored if you did not request a password reset. Click the link below to reset your password."
+#~ msgstr ""
+#~ "You're receiving this e-mail because you or someone else has requested a password for your user account.\n"
+#~ "It can be safely ignored if you did not request a password reset. Click the link below to reset your password."
+
+#, python-format
+#~ msgid "In case you forgot, your username is %(username)s."
+#~ msgstr "In case you forgot, your username is %(username)s."
+
+#~ msgid "Password Reset E-mail"
+#~ msgstr "Password Reset E-mail"
+
+#, python-format
+#~ msgid ""
+#~ "You are receiving this e-mail because you or someone else has requested a\n"
+#~ "password for your user account. However, we do not have any record of a user\n"
+#~ "with email %(email)s in our database.\n"
+#~ "\n"
+#~ "This mail can be safely ignored if you did not request a password reset.\n"
+#~ "\n"
+#~ "If it was you, you can sign up for an account using the link below."
+#~ msgstr ""
+#~ "You are receiving this e-mail because you or someone else has requested a\n"
+#~ "password for your user account. However, we do not have any record of a user\n"
+#~ "with email %(email)s in our database.\n"
+#~ "\n"
+#~ "This mail can be safely ignored if you did not request a password reset.\n"
+#~ "\n"
+#~ "If it was you, you can sign up for an account using the link below."
+
+#~ msgid "Confirm E-mail Address"
+#~ msgstr "Confirm E-mail Address"
+
+#, python-format
+#~ msgid ""
+#~ "Please confirm that <a href=\"mailto:%(email)s\">%(email)s</a> is an e-mail "
+#~ "address for user %(user_display)s."
+#~ msgstr ""
+#~ "Please confirm that <a href=\"mailto:%(email)s\">%(email)s</a> is an e-mail "
+#~ "address for user %(user_display)s."
+
+#~ msgid "Confirm"
+#~ msgstr "Confirm"
+
+#, python-format
+#~ msgid ""
+#~ "This e-mail confirmation link expired or is invalid. Please <a "
+#~ "href=\"%(email_url)s\">issue a new e-mail confirmation request</a>."
+#~ msgstr ""
+#~ "This e-mail confirmation link expired or is invalid. Please <a "
+#~ "href=\"%(email_url)s\">issue a new e-mail confirmation request</a>."
+
+#~ msgid "Sign In"
+#~ msgstr "Sign In"
+
+#~ msgid "Change E-mail"
+#~ msgstr "Change E-mail"
+
+#~ msgid "Faça parte dessa comunidade!"
+#~ msgstr "Be part of this community!"
+
+#~ msgid ""
+#~ "Junte-se e fique ligado com as atualizações e informações da Universidade de"
+#~ " Cambridge"
+#~ msgstr ""
+#~ "Join and stay connected with updates and information from the University of "
+#~ "Cambridge"
+
+#~ msgid "Sign Up"
+#~ msgstr "Sign Up"
+
+#~ msgid "Forgot Password?"
+#~ msgstr "Forgot Password?"
+
+#~ msgid "Ainda não tem conta?"
+#~ msgstr "Don't have an account yet?"
+
+#~ msgid "Cadastre-se"
+#~ msgstr "Sign in"
+
+#~ msgid "Ou entre com:"
+#~ msgstr "Or login with: "
+
+#, python-format
+#~ msgid "You cannot remove your primary e-mail address (%(email)s)."
+#~ msgstr "You cannot remove your primary e-mail address (%(email)s)."
+
+#, python-format
+#~ msgid "Confirmation e-mail sent to %(email)s."
+#~ msgstr "Confirmation e-mail sent to %(email)s."
+
+#, python-format
+#~ msgid "You have confirmed %(email)s."
+#~ msgstr "You have confirmed %(email)s."
+
+#, python-format
+#~ msgid "Removed e-mail address %(email)s."
+#~ msgstr "Removed e-mail address %(email)s."
+
+#, python-format
+#~ msgid "Successfully signed in as %(name)s."
+#~ msgstr "Successfully signed in as %(name)s."
+
+#~ msgid "You have signed out."
+#~ msgstr "You have signed out."
+
+#~ msgid "Password successfully changed."
+#~ msgstr "Password successfully changed."
+
+#~ msgid "Password successfully set."
+#~ msgstr "Password successfully set."
+
+#~ msgid "Primary e-mail address set."
+#~ msgstr "Primary e-mail address set."
+
+#~ msgid "Your primary e-mail address must be verified."
+#~ msgstr "Your primary e-mail address must be verified."
+
+#~ msgid "Change Password"
+#~ msgstr "Change Password"
+
+#~ msgid "Password Reset"
+#~ msgstr "Password Reset"
+
+#~ msgid ""
+#~ "Forgotten your password? Enter your e-mail address below, and we'll send you"
+#~ " an e-mail allowing you to reset it."
+#~ msgstr ""
+#~ "Forgotten your password? Enter your e-mail address below, and we'll send you"
+#~ " an e-mail allowing you to reset it."
+
+#~ msgid "Reset My Password"
+#~ msgstr "Reset My Password"
+
+#~ msgid "Please contact us if you have any trouble resetting your password."
+#~ msgstr "Please contact us if you have any trouble resetting your password."
+
+#~ msgid ""
+#~ "We have sent you an e-mail. If you have not received it please check your "
+#~ "spam folder. Otherwise contact us if you do not receive it in a few minutes."
+#~ msgstr ""
+#~ "We have sent you an e-mail. If you have not received it please check your "
+#~ "spam folder. Otherwise contact us if you do not receive it in a few minutes."
+
+#~ msgid "Bad Token"
+#~ msgstr "Bad Token"
+
+#, python-format
+#~ msgid ""
+#~ "The password reset link was invalid, possibly because it has already been "
+#~ "used.  Please request a <a href=\"%(passwd_reset_url)s\">new password "
+#~ "reset</a>."
+#~ msgstr ""
+#~ "The password reset link was invalid, possibly because it has already been "
+#~ "used.  Please request a <a href=\"%(passwd_reset_url)s\">new password "
+#~ "reset</a>."
+
+#~ msgid "change password"
+#~ msgstr "change password"
+
+#~ msgid "Your password is now changed."
+#~ msgstr "Your password is now changed."
+
+#~ msgid "Set Password"
+#~ msgstr "Set Password"
+
+#~ msgid "Signup"
+#~ msgstr "Signup"
+
+#, python-format
+#~ msgid ""
+#~ "Already have an account? Then please <a href=\"%(login_url)s\">sign in</a>."
+#~ msgstr ""
+#~ "Already have an account? Then please <a href=\"%(login_url)s\">sign in</a>."
+
+#~ msgid "Sign Up Closed"
+#~ msgstr "Sign Up Closed"
+
+#~ msgid "We are sorry, but the sign up is currently closed."
+#~ msgstr "We are sorry, but the sign up is currently closed."
+
+#~ msgid "Note"
+#~ msgstr "Note"
+
+#, python-format
+#~ msgid "you are already logged in as %(user_display)s."
+#~ msgstr "you are already logged in as %(user_display)s."
+
+#~ msgid "Verify Your E-mail Address"
+#~ msgstr "Verify Your E-mail Address"
+
+#~ msgid ""
+#~ "We have sent an e-mail to you for verification. Follow the link provided to "
+#~ "finalize the signup process. If you do not see the verification e-mail in "
+#~ "your main inbox, check your spam folder. Please contact us if you do not "
+#~ "receive the verification e-mail within a few minutes."
+#~ msgstr ""
+#~ "We have sent an e-mail to you for verification. Follow the link provided to "
+#~ "finalize the signup process. If you do not see the verification e-mail in "
+#~ "your main inbox, check your spam folder. Please contact us if you do not "
+#~ "receive the verification e-mail within a few minutes."
+
+#~ msgid ""
+#~ "This part of the site requires us to verify that\n"
+#~ "you are who you claim to be. For this purpose, we require that you\n"
+#~ "verify ownership of your e-mail address. "
+#~ msgstr ""
+#~ "This part of the site requires us to verify that\n"
+#~ "you are who you claim to be. For this purpose, we require that you\n"
+#~ "verify ownership of your e-mail address."
+
+#~ msgid ""
+#~ "We have sent an e-mail to you for\n"
+#~ "verification. Please click on the link inside that e-mail. If you do not see the verification e-mail in your main inbox, check your spam folder. Otherwise\n"
+#~ "contact us if you do not receive it within a few minutes."
+#~ msgstr ""
+#~ "We have sent an e-mail to you for\n"
+#~ "verification. Please click on the link inside that e-mail. If you do not see the verification e-mail in your main inbox, check your spam folder. Otherwise\n"
+#~ "contact us if you do not receive it within a few minutes."
+
+#, python-format
+#~ msgid ""
+#~ "<strong>Note:</strong> you can still <a href=\"%(email_url)s\">change your "
+#~ "e-mail address</a>."
+#~ msgstr ""
+#~ "<strong>Note:</strong> you can still <a href=\"%(email_url)s\">change your "
+#~ "e-mail address</a>."
+
+#~ msgid "OpenID Sign In"
+#~ msgstr "OpenID Sign In"
+
+#~ msgid "Social Network Login Failure"
+#~ msgstr "Social Network Login Failure"
+
+#~ msgid ""
+#~ "An error occurred while attempting to login via your social network account."
+#~ msgstr ""
+#~ "An error occurred while attempting to login via your social network account."
+
+#~ msgid "Account Connections"
+#~ msgstr "Account Connections"
+
+#~ msgid ""
+#~ "You can sign in to your account using any of the following third party "
+#~ "accounts:"
+#~ msgstr ""
+#~ "You can sign in to your account using any of the following third party "
+#~ "accounts:"
+
+#~ msgid ""
+#~ "You currently have no social network accounts connected to this account."
+#~ msgstr ""
+#~ "You currently have no social network accounts connected to this account."
+
+#~ msgid "Add a 3rd Party Account"
+#~ msgstr "Add a 3rd Party Account"
+
+#, python-format
+#~ msgid "Connect %(provider)s"
+#~ msgstr "Connect %(provider)s"
+
+#, python-format
+#~ msgid "You are about to connect a new third party account from %(provider)s."
+#~ msgstr "You are about to connect a new third party account from %(provider)s."
+
+#, python-format
+#~ msgid "Entrar com %(provider)s"
+#~ msgstr "Sign With %(provider)s"
+
+#, python-format
+#~ msgid ""
+#~ "You are about to sign in using a third party account from %(provider)s."
+#~ msgstr ""
+#~ "You are about to sign in using a third party account from %(provider)s."
+
+#~ msgid "Continue"
+#~ msgstr "Continue"
+
+#~ msgid "Login Cancelled"
+#~ msgstr "Login Cancelled"
+
+#, python-format
+#~ msgid ""
+#~ "You decided to cancel logging in to our site using one of your existing "
+#~ "accounts. If this was a mistake, please proceed to <a "
+#~ "href=\"%(login_url)s\">sign in</a>."
+#~ msgstr ""
+#~ "You decided to cancel logging in to our site using one of your existing "
+#~ "accounts. If this was a mistake, please proceed to <a "
+#~ "href=\"%(login_url)s\">sign in</a>."
+
+#~ msgid "The social account has been connected."
+#~ msgstr "The social account has been connected."
+
+#~ msgid "The social account is already connected to a different account."
+#~ msgstr "The social account is already connected to a different account."
+
+#~ msgid "The social account has been disconnected."
+#~ msgstr "The social account has been disconnected."
 
 #~ msgid "Tem certeza que deseja sair?"
 #~ msgstr "Are you sure you want to quit?"

@@ -96,3 +96,15 @@ class Places(models.Model):
     
     class Meta:
         verbose_name_plural = 'Places'
+        
+class Exchange(models.Model):
+    title = models.CharField(max_length=120)
+    image = models.ImageField(upload_to='New/cover/%Y/%m/%d/', blank=True)
+    mini_decription = models.CharField(max_length=300)
+    mini_decription_en = models.CharField(max_length=300, default='en')
+    text = models.TextField()
+    text_en = models.TextField()
+    
+    def __str__(self):
+        return self.title
+    

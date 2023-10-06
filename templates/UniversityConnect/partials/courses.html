@@ -4,8 +4,8 @@
     {% for course in courses %}
         <a class="option-block-link" href="{% url 'UniversityConnect:courses_detail' course.id %}">
             <div class="options-block">
-                {% if lang %}
-                    <h2>{{ course.tittle_en }}</h2>
+                {% if "en/" in request.path %}
+                    <h2>{{ course.title_en }}</h2>
                     <p>{{ course.mini_description_en }}</p>
                 {% else %}
                     <h2>{{ course.title }}</h2>

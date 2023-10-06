@@ -7,6 +7,7 @@ from django.shortcuts import get_object_or_404, render
 from django.views.decorators.csrf import csrf_protect
 from .models import Category, Course, ExStudent, New, Places
 from django.core.paginator import Paginator
+from django.utils.translation import gettext_lazy as _
 
 
 def homepage(request):
@@ -41,7 +42,7 @@ def homepage(request):
 
 @csrf_protect
 def courses(request):
-    PAGE_NAME = 'Cursos'
+    PAGE_NAME = _('Cursos')
     courses = Course.objects.all()
     
     category = Category.objects.all()
@@ -100,7 +101,7 @@ def courses_detail(request, id):
         lang = True
         
 
-    PAGE_NAME = f'{course.title}'
+    PAGE_NAME = _(course.title)
     context = {
         'request': request,
         'course': course,
@@ -114,7 +115,8 @@ def courses_detail(request, id):
 @login_required(login_url='/accounts/login/')
 def profile(request):
     user = request.user
-    PAGE_NAME = f'Perfil - {user.first_name.title()}'
+    PAGE_NAME = _('Perfil ') + user.first_name.title()
+    
     if user.is_authenticated and SocialAccount.objects.filter(user=user, provider='google').exists():
         google_account = SocialAccount.objects.get(user=user, provider='google')
         email = google_account.extra_data['email']
@@ -135,7 +137,7 @@ def history(request):
     new = New.objects.first()
 
     return render(request, 'UniversityConnect/pages/history.html', {
-        'page_name': 'História de Cambridge',
+        'page_name': _('História de Cambridge'),
         'new': new,
     })
 
@@ -145,7 +147,7 @@ def ex_students(request):
     page_number = request.GET.get("page")
     students = paginator.get_page(page_number)
     return render(request, 'UniversityConnect/pages/list.html', {
-        'page_name': 'História de Cambridge',
+        'page_name': _('Ex alunos de Cambridge'),
         'students': students,
     })
     
@@ -156,7 +158,7 @@ def places(request):
     page_number = request.GET.get("page")
     paginated_places = paginator.get_page(page_number)
     return render(request, 'UniversityConnect/pages/list.html', {
-        'page_name': 'Moradias',
+        'page_name': _('Moradias'),
         'places': paginated_places,
     })
     
@@ -164,6 +166,17 @@ def places(request):
     
 def about(request):
     return render(request, 'UniversityConnect/pages/team.html', {
-        'page_name': 'Quem somos',
+        'page_name': _('Quem somos'),
+    })
+    
+    
+def exchange(request):
+    exchange = Exchange.objects.all()
+    paginator = Paginator(exchange, 6)
+    page_number = request.GET.get("page")
+    exchange = paginator.get_page(page_number)
+    return render(request, 'UniversityConnect/pages/list.html', {
+        'page_name': _('Intercambios para Cambridge'),
+        'exchange': exchange,
     })
     
