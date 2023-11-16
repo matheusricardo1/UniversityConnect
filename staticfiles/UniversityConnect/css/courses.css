@@ -395,3 +395,7 @@ html{
     padding: 10px 0px;
     font-family: var(--fontPrimary);
 }
+
+.margin-t-b{
+    margin: 10px 0;
+}
