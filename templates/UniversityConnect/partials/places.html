@@ -2,23 +2,22 @@
 {% load i18n %}
 {% if places %}
     {% for place in places %}
-        <div class="option-block-link">
-            <div class="options-block-student">
+        <a class="option-block-link" href="{{place.link}}" target="_blank">
+            <div class="options-block-student margin-t-b">
                 <div class="student-img tag-place">
                     {{place.iframe_link|safe}}
                 </div>
                 <div class="options-block tag-student">
+                    <h2>{{ place.title }}</h2>
                     {% if 'en/' in request.path %}
-                        <h2>{{ place.tittle_en }}</h2>
                         <p>{{ place.mini_description_en }}</p>
                     {% else %}
-                        <h2>{{ place.title }}</h2>
                         <p>{{ place.mini_description }}</p>
                     {% endif %}
                 </div>
                
             </div>
-        </div>
+        </a>
     {% endfor %}
 
 {% else %}

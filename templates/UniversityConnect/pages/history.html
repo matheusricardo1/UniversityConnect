@@ -122,34 +122,20 @@
         <div class="block2 tag-new-background">
             <div class="other tag-new-more-news">
                 <h2>{% trans "Veja mais nótícias" %}</h2>
-                {% if other_news %}
-                    {% for new in other_news %}
-                        <a class="option-block-link" href="{% url 'UniversityConnect:courses_detail' new.id %}">
-                            <div class="options-block">
+                
+                        <a class="option-block-link" href="{% url 'UniversityConnect:ex_students' %}">
+                            <div class="options-block ">
                                 {% if lang %}
-                                <h2>{{ new.title_en }}</h2>
-                                <p>{{ new.mini_description_en }}</p>
+                                <h2>Meet Cambridge's famous alumni!</h2>
+                                <p>Incredible students who went through Cambridge University and are now famous!</p>
                                 {% else %}
-                                <h2>{{ new.title }}</h2>
-                                <p>{{ new.mini_description }}</p>
+                                <h2>Conheça os ex-alunos de famosos de Cambrige!</h2>
+                                <p>Alunos incríveis que passaram pela Univeridade de Cambridge e hoje são famosos!</p>
                                 {% endif %}
-                                <div class="details-icon">
-                                    <img src="{% static "/UniversityConnect/images/icons/enter.png" %}" alt="">
-                                </div>
+                               
                             </div>
                         </a>
-                    {% endfor %}
-                {% else %}
-                <a class="option-block-link " href="">
-                    <div class="options-block">
-                        <h2>{% trans "Não há noticias" %}</h2>
-                        <p>{% trans "Não foi possivel encontrar mais notícias!" %}</p>
-                        <div class="details-icon">
-                            <img src="{% static "/UniversityConnect/images/icons/enter.png" %}" alt="">
-                        </div>
-                    </div>
-                </a>
-                {% endif %}
+                                
             </div>
         </div>
     </section>
